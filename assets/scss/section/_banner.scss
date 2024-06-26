@@ -1,0 +1,152 @@
+/*======= Banner Home One =======*/
+.home__one__banner {
+    position: relative;
+    overflow: hidden;
+
+    .rts__banner__background {
+        background-image: url('../img/home-1/banner/header__background.svg');
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%; 
+        @extend %background;   
+
+        .__first {
+            position: absolute;
+            left: -3%;
+            top: 0;
+        }
+
+        .__second {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+    }
+
+    .rts__banner__content {
+        position: relative;
+        z-index: 1;
+        max-width: 675px;
+
+        .rts__banner__title {
+            letter-spacing: -1px;
+
+            span {
+                color: var(--rts-button-1);
+            }
+        }
+    }
+
+    .rts__banner__image {
+        margin-top: -90px;
+        z-index: 1;
+
+        .banner__image__shape {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+
+            .facebook {
+                height: 62px;
+                width: 62px;
+                border-radius: 6px;
+                background-color: var(--rts-white);
+                font-size: 30px;
+                display: grid;
+                place-items: center;
+                color: rgba(119, 99, 229, 1);
+                position: absolute;
+                top: 0;
+                left: 25%;
+                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+
+            }
+
+            .twitter {
+                @extend .facebook;
+                color: var(--rts-button-1);
+                position: absolute;
+                top: 22%;
+                left: 5%;
+            }
+
+            .linkedin {
+                @extend .facebook;
+                color: var(--rts-button-3);
+                position: absolute;
+                top: 28%;
+                left: 88%;
+            }
+        }
+    }
+}
+
+.rts__job__search {
+    background: #FFFFFF;
+    box-shadow: 0px 30px 30px rgba(175, 175, 175, 0.16);
+    border-radius: 16px;
+    padding: 22px 20px;
+
+    .single__input {
+        min-width: 190px;
+
+        label {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--rts-heading);
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            letter-spacing: -1px;
+            line-height: 1;
+        }
+
+        .nice-select {
+            border: none;
+            padding: 0;
+            font-size: 18px;
+            height: auto;
+            line-height: 1;
+
+            &.open {
+                &::before {
+                    content: "\f077";
+                    font-family: var(--fontawesome-pro);
+                    transition: var(--transition);
+                }
+            }
+
+            &::after {
+                border-bottom: 0;
+                border-right: 0;
+            }
+
+            &::before {
+                position: absolute;
+                content: "\f078";
+                font-family: var(--fontawesome-pro);
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                color: var(--rts-heading);
+                font-size: 12px;
+                transition: var(--transition);
+            }
+
+
+
+        }
+    }
+
+    .job__search {
+        min-width: 160px;
+        height: 60px;
+        text-align: center;
+        border-radius: 10px;
+    }
+}
+

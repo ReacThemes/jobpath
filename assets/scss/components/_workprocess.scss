@@ -1,0 +1,38 @@
+.rts__workprocess__box {
+    background: linear-gradient(226.58deg, #FEF2EB 1.52%, #F1F1F1 47.05%, #E4E0EA 99.84%);
+    padding: 30px 42px;
+    text-align: center;
+    .rts__icon {
+        height: 76px;
+        width: 76px;
+        background-color: var(--rts-white);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        display: grid;
+        place-items: center;
+        margin: 0 auto 20px;
+        img{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    .process__title{
+        margin-bottom: 15px;
+    }
+    .work__readmore{
+        a{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            color: var(--rts-heading);
+            i{
+                color: var(--rts-button-1);
+            }
+        }
+    }
+}
+
+

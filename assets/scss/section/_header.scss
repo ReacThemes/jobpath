@@ -1,0 +1,16 @@
+/* ====== Header ====== */
+.rts__menu__background{
+    background-color: var(--rts-white);
+    max-width: 1410px;
+    padding: 15px 45px;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+}
+
+.absolute__header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}

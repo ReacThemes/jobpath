@@ -1,0 +1,23 @@
+/** This is main css file of template. You can customize this file with your own
+ * styles. To learn more about SASS variables visit http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+ */
+
+
+ //  default scss files
+ @import 'default/serialize';
+ @import 'default/variables';
+ @import 'default/reset';
+ @import 'default/typography';
+ @import 'default/spacing';
+ @import 'default/animation';
+ @import 'default/input';
+
+// mixin files
+@import 'mixin/mixin';
+
+// section
+@import 'section/section';
+
+// components
+@import 'components/components';
+
