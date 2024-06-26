@@ -1,0 +1,20 @@
+.rts__single__counter {
+    position: relative;
+
+    .counter__round {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: linear-gradient(228.34deg, #FEF2EB 0%, #F1F1F1 46.31%, #E4E0EA 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1 ;
+    }
+    .heading__color{
+        color: var(--rts-button-1);
+    }
+    p{
+        color: var(--rts-para);
+    }
+}

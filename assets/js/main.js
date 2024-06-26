@@ -17,6 +17,7 @@
       },
       methods: function (e) {
         rtsJs.swiperActivation();
+        rtsJs.counterUp();
         rtsJs.niceSelect();
         rtsJs.backToTop();
       },
@@ -41,7 +42,16 @@
   
         });
       },
-      
+      counterUp: function () {
+        try {
+          $(".counter").counterUp({
+            delay: 10,
+            time: 2000,
+          });
+        } catch (error) {
+          console.log("Counterup not declared");
+        }
+      },
       niceSelect: function (e) {
         try {
           $("select").niceSelect();
