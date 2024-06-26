@@ -1,0 +1,18 @@
+.rts__testimonial__background{
+    background-image: url('../img/home-1/testimonial/testimonial__bg.png');
+    @extend %background;
+}
+.rts__single__testimonial{
+    .testimonial__text{
+        color: var(--rts-para);
+        font-weight: 600;
+        letter-spacing: -1%;
+    }
+    .author__image{
+        img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+    }
+}

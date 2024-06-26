@@ -1,4 +1,7 @@
 // spacing
+.rts__section{
+    position: relative;
+}
 // margin negative
 .mtn-1{
     margin-top: -10px;
@@ -9,8 +12,14 @@
 .mb-40{
     margin-bottom: 40px;
 }
+.mt-40{
+    margin-top: 40px;
+}
 .mb-50{
     margin-bottom: 50px;
+}
+.mt-50{
+    margin-top: 50px;
 }
 .mb-60{
     margin-bottom: 60px;
@@ -41,9 +50,14 @@
 }
 // section padding
 .section__padding{
-    padding: 120px 0;
+    padding-top: 110px;
+    padding-bottom: 120px;
 }
 
 .max-contnet{
     max-width: max-content;
+}
+.g-30{
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 30px;
 }

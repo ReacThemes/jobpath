@@ -1,0 +1,74 @@
+// job card
+.rts__job__card {
+    padding: 30px;
+    border: 1px solid #dcdddf;
+    border-radius: 10px;
+    position: relative;
+    transition: var(--transition);
+    &::before{
+        background: linear-gradient(228.34deg, #FEF2EB 0%, #F1F1F1 46.31%, #E4E0EA 100%);
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        border-radius: inherit;
+        z-index: -1;
+        opacity: 0;
+        border: 0;
+        transition: var(--transition);
+    }
+    &:hover{
+        border-color: transparent;
+        .company__icon{
+            background-color: var(--rts-white);
+        }
+        .featured__option span{
+            background-color: var(--rts-white);
+        }
+        &::before{
+            opacity: 1;
+        }
+    }
+    .company__icon {
+        height: 60px;
+        width: 60px;
+        display: grid;
+        place-items: center;
+        border-radius: 6px;
+        background-color: var(--rts-gray);
+        transition: var(--transition);
+    }
+    .featured__option{
+        span{
+            background-color: var(--rts-gray);
+            border-radius: 6px;
+            padding: 10px;
+            line-height: 1;
+            font-size: 16px;
+            display: block;
+            transition: var(--transition);
+            color: var(--rts-button-1);
+        }
+    }
+    .job__title a {
+        color: var(--rts-heading);
+    }
+
+    .job__tags {
+        a {
+            padding: 10px;
+            border-radius: 6px;
+            background-color: var(--rts-gray);
+            color: var(--rts-para);
+            line-height: 1;
+            text-transform: capitalize;
+            transition: var(--transition);
+            &:hover{
+                color: var(--rts-white);
+                background-color: var(--rts-button-1);
+            }
+        }
+    }
+
+}

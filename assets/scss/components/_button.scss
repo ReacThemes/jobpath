@@ -2,6 +2,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    line-height: 100%;
     cursor: pointer;
     text-align: center;
     &:active{
@@ -45,7 +46,13 @@
     justify-content: center;
     font-weight: 500;
 }
-
+.common__btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 15px 15px;
+}
 // border radius
 .border-4{
     border-radius: 4px;
