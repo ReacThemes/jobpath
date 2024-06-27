@@ -46,6 +46,21 @@
     justify-content: center;
     font-weight: 500;
 }
+.pricing__btn{
+    padding: 17px 35px;
+    color: var(--rts-heading);
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid var(--rts-button-1);
+    background-color: var(--rts-white);
+    border-radius: 10px;
+    transition: var(--transition);
+    &:hover{
+        background-color: var(--rts-button-1);
+        color: var(--rts-white);
+        border-color: var(--rts-button-1);
+    }
+}
 .common__btn{
     display: inline-flex;
     align-items: center;

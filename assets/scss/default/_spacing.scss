@@ -25,6 +25,12 @@
     margin-bottom: 60px;
 }
 // padding
+.pt-60{
+    padding-top: 60px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
 .pt-100{
     padding-top: 100px;
 }
@@ -57,7 +63,13 @@
 .max-contnet{
     max-width: max-content;
 }
+.max-content{
+    max-width: max-content;
+}
 .g-30{
     --bs-gutter-x: 30px;
     --bs-gutter-y: 30px;
+}
+.max-630{
+    max-width: 630px;
 }

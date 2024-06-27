@@ -1,0 +1,25 @@
+.rts__appcenter{
+    background-color: var(--rts-button-1);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    max-height: 430px;
+    &>*{
+        position: relative;
+        z-index: 1;
+    }
+    &__shape{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .content__left{
+        padding-left: 100px;
+    }
+    .content__right{
+        padding: 90px 80px 90px 0;
+    }
+    .top-15px{
+        top: 15px;
+    }
+}

@@ -1,0 +1,11 @@
+.rts__social{
+    a{
+        display: inline-block;
+        font-size: 20px;
+        color: var(--rts-para);
+        transition: var(--transition);
+        &:hover{
+            color: var(--rts-primary);
+        }
+    }
+}

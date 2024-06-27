@@ -103,7 +103,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="">
         <!-- banner area -->
          <div class="rts__banner home__one__banner pt-260">
             <div class="rts__banner__background">
@@ -781,28 +781,28 @@
                         <div class="rts__single__counter">
                             <div class="counter__round"></div>
                             <h2 class="fw-bold ms-3 heading__color"><span class="counter">20</span>K</h2>
-                            <p class="h6 mb-0">Happy Employer</p>
+                            <p class="h6 mb-0 fw-semibold">Happy Employer</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="rts__single__counter">
                             <div class="counter__round"></div>
                             <h2 class="fw-bold ms-3 heading__color"><span class="counter">11</span>K</h2>
-                            <p class="h6 mb-0">Opening Position</p>
+                            <p class="h6 mb-0 fw-semibold">Opening Position</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="rts__single__counter">
                             <div class="counter__round"></div>
                             <h2 class="fw-bold ms-3 heading__color"><span class="counter">1</span>M</h2>
-                            <p class="h6 mb-0">Daily active users</p>
+                            <p class="h6 mb-0 fw-semibold">Daily active users</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="rts__single__counter">
                             <div class="counter__round"></div>
                             <h2 class="fw-bold ms-3 heading__color"><span class="counter">100</span>+</h2>
-                            <p class="h6 mb-0">Job Categories</p>
+                            <p class="h6 mb-0 fw-semibold">Job Categories</p>
                         </div>
                     </div>
                 </div>
@@ -813,28 +813,118 @@
         <!-- pricing section -->
          <div class="rts__section">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-between mb-60">
                     <div class="col-lg-6">
     <div class="rts__section__content text-start">
         <h3 class="rts__section__title mb-3">Pricing Plan</h3>
         <p class="rts__section__desc">Looking for your next career opportunity.</p>
     </div>
 </div>
-                    <div class="pricing__switch"></div>
+                    <div class="d-flex align-items-end max-content gap-2">
+                        <p class="mb-0">Monthly</p>
+                        <label class="switch">
+                            <input type="checkbox" class="pricing__toogle" id="pricing__toogle" />
+                            <span class="slider round"></span>
+                        </label>
+                        <p class="mb-0">Yearly</p>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="rts__pricing__box">
-                            <span class="package">Basic</span>
-                            <div class="plan__price"><span class="h2">Free/</span>Month</div>
-                            <ul class="plan__feature">
-                                <li><i class="fa-sharp fa-solid fa-check"></i> Unlimited access to 100+ Job</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i> 10+ Featured job</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i> Job duration for 30 days</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i> Get 10+ job</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i> Try for free, forever!</li>
-                                <li><i class="fa-sharp fa-solid fa-check"></i> Individual Job</li>
-                            </ul>
+
+                <div class="monthly__pricing active">
+                    <div class="row" >
+                        <div class="col-lg-4">
+                            <div class="rts__pricing__box">
+                                <div class="h6 fw-medium lh-1 mb-2 text-primary">Free</div>
+                                <div class="plan__price lh-1 mb-40"><span class="h2">Free/</span>Month</div>
+                                <ul class="plan__feature">
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Unlimited access to 100+ Job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> 10+ Featured job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Job duration for 30 days</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Get 10+ job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Try for free, forever!</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Individual Job</li>
+                                </ul>
+                                <a href="#" class="rts__btn pricing__btn  no__fill__btn mt-40">Get Started Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="rts__pricing__box">
+                                <div class="h6 fw-medium lh-1 mb-2 text-primary">Basic</div>
+                                <div class="plan__price lh-1 mb-40"><span class="h2">99$/</span>Month</div>
+                                <ul class="plan__feature">
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Unlimited access to 100+ Job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> 10+ Featured job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Job duration for 30 days</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Get 10+ job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Try for free, forever!</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Individual Job</li>
+                                </ul>
+                                <a href="#" class="rts__btn pricing__btn  no__fill__btn mt-40">Get Started Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="rts__pricing__box">
+                                <div class="h6 fw-medium lh-1 mb-2 text-primary">Standard</div>
+                                <div class="plan__price lh-1 mb-40"><span class="h2">199$/</span>Month</div>
+                                <ul class="plan__feature">
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Unlimited access to 100+ Job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> 10+ Featured job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Job duration for 30 days</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Get 10+ job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Try for free, forever!</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Individual Job</li>
+                                </ul>
+                                <a href="#" class="rts__btn pricing__btn  no__fill__btn mt-40">Get Started Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="yearly__pricing">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="rts__pricing__box">
+                                <div class="h6 fw-medium lh-1 mb-2 text-primary">Free</div>
+                                <div class="plan__price lh-1 mb-40"><span class="h2">Free/</span>Yearly</div>
+                                <ul class="plan__feature">
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Unlimited access to 100+ Job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> 10+ Featured job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Job duration for 30 days</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Get 10+ job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Try for free, forever!</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Individual Job</li>
+                                </ul>
+                                <a href="#" class="rts__btn pricing__btn  no__fill__btn mt-40">Get Started Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="rts__pricing__box">
+                                <div class="h6 fw-medium lh-1 mb-2 text-primary">Basic</div>
+                                <div class="plan__price lh-1 mb-40"><span class="h2">399$/</span>Yearly</div>
+                                <ul class="plan__feature">
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Unlimited access to 100+ Job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> 10+ Featured job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Job duration for 30 days</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Get 10+ job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Try for free, forever!</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Individual Job</li>
+                                </ul>
+                                <a href="#" class="rts__btn pricing__btn  no__fill__btn mt-40">Get Started Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="rts__pricing__box">
+                                <div class="h6 fw-medium lh-1 mb-2 text-primary">Standard</div>
+                                <div class="plan__price lh-1 mb-40"><span class="h2">599$/</span>Yearly</div>
+                                <ul class="plan__feature">
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Unlimited access to 100+ Job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> 10+ Featured job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Job duration for 30 days</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Get 10+ job</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Try for free, forever!</li>
+                                    <li><i class="fa-sharp fa-solid fa-check"></i> Individual Job</li>
+                                </ul>
+                                <a href="#" class="rts__btn pricing__btn  no__fill__btn mt-40">Get Started Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -842,8 +932,179 @@
          </div>
         <!-- pricing section end -->
 
+        <!-- blog section -->
+         <div class="rts__section section__padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+    <div class="rts__section__content text-center mb-60">
+        <h3 class="rts__section__title mb-3">Read Our Latest News</h3>
+        <p class="rts__section__desc">Looking for your next career opportunity. Look no further</p>
+    </div>
+</div>
+                </div>
+                <div class="row g-30">
+                    <div class="col-lg-4">
+                        <div class="rts__single__blog">
+                            <a href="blog-details.html" class="blog__img">
+                                <img src="assets/img/home-1/blog/1.webp" class="mb-2" alt="blog">
+                            </a>
+                            <div class="blog__meta">
+                                <div class="blog__meta__info d-flex gap-3 my-3">
+                                    <span class="d-flex gap-1 align-items-center"> <img class="svg" src="assets/img/icon/calender.svg" alt=""> 20 March, 2022</span>
+                                    <a href="#" class="d-flex gap-1 align-items-center"> <img class="svg" src="assets/img/icon/user.svg" alt=""> Jon Adom</a>
+                                </div>
+                                <a href="blog-details.html" class="h6 fw-semibold">
+                                    7 Ways Job Post Has Improved Business Today
+                                </a>
+                                <a href="blog-details.html" class="readmore__btn d-flex mt-3 gap-2 align-items-center">Read More <i class="fa-light fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="rts__single__blog">
+                            <a href="blog-details.html" class="blog__img">
+                                <img src="assets/img/home-1/blog/2.webp" class="mb-2" alt="blog">
+                            </a>
+                            <div class="blog__meta">
+                                <div class="blog__meta__info d-flex gap-3 my-3">
+                                    <span class="d-flex gap-1 align-items-center"> <img class="svg" src="assets/img/icon/calender.svg" alt=""> 20 March, 2022</span>
+                                    <a href="#" class="d-flex gap-1 align-items-center"> <img class="svg" src="assets/img/icon/user.svg" alt=""> Jon Adom</a>
+                                </div>
+                                <a href="blog-details.html" class="h6 fw-semibold">
+                                    Start an online Job and work from home
+                                </a>
+                                <a href="blog-details.html" class="readmore__btn d-flex mt-3 gap-2 align-items-center">Read More <i class="fa-light fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="rts__single__blog">
+                            <a href="blog-details.html" class="blog__img">
+                                <img src="assets/img/home-1/blog/3.webp" class="mb-2" alt="blog">
+                            </a>
+                            <div class="blog__meta">
+                                <div class="blog__meta__info d-flex gap-3 my-3">
+                                    <span class="d-flex gap-1 align-items-center"> <img class="svg" src="assets/img/icon/calender.svg" alt=""> 20 March, 2022</span>
+                                    <a href="#" class="d-flex gap-1 align-items-center"> <img class="svg" src="assets/img/icon/user.svg" alt=""> Jon Adom</a>
+                                </div>
+                                <a href="blog-details.html" class="h6 fw-semibold">
+                                    Insider Strategies for Success on Job Websites
+                                </a>
+                                <a href="blog-details.html" class="readmore__btn d-flex mt-3 gap-2 align-items-center">Read More <i class="fa-light fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- blog section end -->
 
+        <!-- app center -->
+         <div class="rts__section pb-120">
+            <div class="container">
+                <div class="rts__appcenter">
+                    <div class="rts__appcenter__shape">
+                        <img src="assets/img/home-1/app/shape.png" alt="">
+                    </div>
+                    <div class="rts__appcenter__content d-flex align-items-center justify-content-between">
+                        <div class="content__left align-items-end d-flex position-relative top-15px">
+                            <img src="assets/img/home-1/app/app_screen.png" alt="">
+                        </div>
+                        <div class="content__right text-white max-630">
+                            <h3 class="l--1 mb-4 text-white">Download The app Free!</h3>
+                            <p>Looking for a new job can be both exciting and daunting. Navigating the job market involves exploring various avenues.</p>
+                            <div class="d-flex gap-3 mt-40">
+                                <div class="link">
+                                    <a href="#" target="_blank">
+                                        <img src="assets/img/home-1/app/app-store.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="#" target="_blank">
+                                        <img src="assets/img/home-1/app/play-store.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
     </main>
+
+    <footer class="rts__section  footer__home__one">
+    <div class="container">
+        <div class="row">
+            <div class="footer__wrapper d-flex justify-content-between pt-60 pb-60">
+                <div class="rts__footer__widget max-320">
+                    <a href="index.html" class="footer__logo" aria-label="logo">
+                        <img src="assets/img/logo/header__one.svg" width="160" height="40" alt="logo">
+                    </a>
+                    <p class="mt-4">Whether you're an experienced professional or a fresh graduate eager to dive into the workforce, we have something for everyone.
+                    </p>
+                </div>
+
+                <!-- footer menu -->
+                 <div class="rts__footer__widget max-content">
+                    <h6 class="font-20 fw-medium mb-3">Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Browse Candidates</a></li>
+                        <li><a href="#">Blog & News</a></li>
+                        <li><a href="#">FAQ Question</a></li>
+                        <li><a href="#">Job Alerts</a></li>
+                    </ul>
+                 </div>
+
+                 <div class="rts__footer__widget max-content">
+                    <h6 class="font-20 fw-medium mb-3">Links</h6>
+                    <ul class="list-unstyled mb-3">
+                        <li><a href="#"><i class="fa-light fa-location-dot"></i>2715 Ash Dr. San Jose,USA</a></li>
+                        <li><a href="#"><i class="fa-light fa-phone"></i>+(61) 545-432-234</a></li>
+                        <li><a href="#"><i class="fa-light fa-envelope"></i> jobpath@gmail.com</a></li>
+                    </ul>
+                    <h6 class="font-20 fw-medium mb-3">Social Link</h6>
+                    <div class="rts__social d-flex gap-4">
+    <a href="#" target="_blank" aria-label="social__link">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="#" target="_blank" aria-label="social__link">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#" target="_blank" aria-label="social__link">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="#" target="_blank" aria-label="social__link">
+        <i class="fa-brands fa-pinterest"></i>
+    </a>
+    <a href="#" target="_blank" aria-label="social__link">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+                 </div>
+
+                 <!-- newsletter form -->
+                  <div class="rts__footer__widget max-320">
+                    <h6 class="font-20 fw-medium mb-3">Subscribe Our Newsletter</h6>
+                    <p>Subscribe Our Newsletter get <br> Update our New Course</p>
+                    <form action="#" class="d-flex align-items-center justify-content-between mt-4 newsletter">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <button type="submit" class="rts__btn fill__btn">Subscribe</button>
+                  </div>
+                 <!-- newsletter form end -->
+
+            </div>
+        </div>
+    </div>
+    <div class="rts__copyright">
+        <div class="container">
+            <p class="text-center fw-medium py-4">
+                Copyright &copy; 2024 All Rights Reserved by jobpath
+            </p>
+        </div>
+    </div>
+</footer>
 
 
     <!-- all plugin js -->
