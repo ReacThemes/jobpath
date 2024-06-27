@@ -1809,7 +1809,7 @@ input:checked+.slider:before {
 
 .rts__social a {
    display: inline-block;
-   font-size: 20px;
+   font-size: 24px;
    color: var(--rts-para);
    transition: var(--transition);
 }
