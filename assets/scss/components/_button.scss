@@ -26,6 +26,10 @@
         background-color: var(--rts-button-3);
         border-color:var(--rts-button-3);
     }
+    &.he-3{
+        background-color: var(--rts-button-3);
+        border-color: var(--rts-button-3);
+    }
 }
 .no__fill__btn{
     background-color: transparent;
@@ -36,6 +40,15 @@
         background-color: var(--rts-button-3);
         border-color:var(--rts-button-3);
         color: var(--rts-white);    
+    }
+    &.he-3{
+        border-color: var(--rts-button-3);
+        color: var(--rts-button-3);
+        &:hover{
+            background-color: var(--rts-button-3);
+            border-color:var(--rts-button-3);
+            color: var(--rts-white);
+        }
     }
 }
 .small__btn{

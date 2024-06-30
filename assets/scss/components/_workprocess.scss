@@ -1,7 +1,9 @@
+// home one workprocess
 .rts__workprocess__box {
     background: linear-gradient(226.58deg, #FEF2EB 1.52%, #F1F1F1 47.05%, #E4E0EA 99.84%);
     padding: 30px 42px;
     text-align: center;
+
     .rts__icon {
         height: 76px;
         width: 76px;
@@ -11,16 +13,19 @@
         display: grid;
         place-items: center;
         margin: 0 auto 20px;
-        img{
+
+        img {
             height: 40px;
             width: 40px;
         }
     }
-    .process__title{
+
+    .process__title {
         margin-bottom: 15px;
     }
-    .work__readmore{
-        a{
+
+    .work__readmore {
+        a {
             display: flex;
             gap: 10px;
             justify-content: center;
@@ -28,11 +33,93 @@
             font-weight: 500;
             letter-spacing: -0.5px;
             color: var(--rts-heading);
-            i{
+
+            i {
                 color: var(--rts-button-1);
             }
         }
     }
 }
 
+// home two workprocess
+.single__feature__list {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
+    .single__item {
+        .icon {
+            height: 76px;
+            width: 76px;
+            background-color: var(--rts-gray);
+            display: grid;
+            place-items: center;
+            border-radius: 6px;
+        }
+
+        .content {
+            .h6 {
+                font-weight: 600;
+            }
+        }
+    }
+}
+.rts__workprocess__image{
+    position: relative;
+    img{
+        max-height: 700px;
+        border-top-left-radius: 320px;
+        border-top-right-radius: 320px;
+    }
+    .rts__applicants{
+        position: absolute;
+        bottom: 50px;
+        left: -150px;
+    }
+}
+.rts__applicants {
+    max-width: max-content;
+    border-radius: 10px;
+    background-color: var(--rts-white);
+    padding: 20px 30px;
+    box-shadow: 0px 4px 40px rgba(61, 61, 61, 0.16);
+
+    .font-20 {
+        color: var(--rts-heading);
+    }
+}
+
+.applicant__list {
+    display: flex;
+    margin-right: 15px;
+
+    .single__list {
+        margin-right: -15px;
+        position: relative;
+        .icon-plus{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            width: 100%;
+            background-color: rgba(#553cdf, $alpha: 0.6) ;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--rts-white);
+            font-size: 20px;
+            border: 5px solid #F9F8FF;
+        }
+    }
+
+    .single__list img {
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        border: 5px solid #F9F8FF;
+    }
+}

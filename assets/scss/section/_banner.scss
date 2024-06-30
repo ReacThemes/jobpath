@@ -9,8 +9,8 @@
         top: 0;
         left: 0;
         height: 100%;
-        width: 100%; 
-        @extend %background;   
+        width: 100%;
+        @extend %background;
 
         .__first {
             position: absolute;
@@ -150,3 +150,167 @@
     }
 }
 
+/*======= Banner Home Three =======*/
+.home__three__banner {
+    background-image: url('../img/home-3/banner/home_three.png');
+    @extend %background;
+    padding-bottom: 140px;
+    padding-top: 130px;
+
+    .rts__banner__title {
+        color: var(--rts-white);
+        letter-spacing: -2px;
+    }
+
+    p {
+        color: var(--rts-white);
+    }
+
+    .rts__banner__image {
+        z-index: 1;
+
+        .banner__image__shape {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+
+            .facebook {
+                height: 62px;
+                width: 62px;
+                border-radius: 6px;
+                background-color: var(--rts-white);
+                font-size: 30px;
+                display: grid;
+                place-items: center;
+                color: rgba(119, 99, 229, 1);
+                position: absolute;
+                top: 5%;
+                left: 18%;
+                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+
+            }
+
+            .twitter {
+                @extend .facebook;
+                color: var(--rts-button-1);
+                position: absolute;
+                top: 38%;
+                left: 5%;
+            }
+
+            .linkedin {
+                @extend .facebook;
+                color: var(--rts-button-3);
+                position: absolute;
+                top: 30%;
+                left: 80%;
+            }
+        }
+    }
+
+
+}
+
+// current job field
+.current__job {
+    background-color: var(--rts-white);
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: max-content;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+}
+
+.rts__icon {
+    height: 64px;
+    width: 64px;
+    background-color: #F4F6F5;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+
+}
+
+.rts__text {
+    span {
+        color: var(--rts-button-3);
+        display: block;
+    }
+}
+
+
+.rts__job__search.form-2 {
+    background: #FFFFFF;
+    box-shadow: unset;
+    border-radius: 16px;
+    padding: 10px 20px;
+
+    .single__input {
+        max-width: 230px;
+        min-width: 230px;
+
+        input {
+            padding: 12px 20px 12px 40px;
+            border-radius: 6px;
+            background: var(--rts-gray);
+            border: none;
+            line-height: 1;
+        }
+
+        .search__icon,
+        .location__icon {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: var(--rts-heading);
+        }
+
+        .nice-select {
+            padding: 14px 20px 14px 40px;
+            border-radius: 6px;
+            background: var(--rts-gray);
+            border: none;
+            line-height: 1;
+            font-size: 18px;
+
+            &.open {
+                &::before {
+                    content: "\f077";
+                    font-family: var(--fontawesome-pro);
+                    transition: var(--transition);
+                }
+            }
+
+            &::after {
+                border-bottom: 0;
+                border-right: 0;
+            }
+
+            &::before {
+                position: absolute;
+                content: "\f078";
+                font-family: var(--fontawesome-pro);
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                color: var(--rts-heading);
+                font-size: 12px;
+                transition: var(--transition);
+            }
+
+
+
+        }
+    }
+
+    .job__search {
+        min-width: 160px;
+        height: 50px;
+        text-align: center;
+        border-radius: 10px;
+    }
+}

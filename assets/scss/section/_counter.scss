@@ -9,12 +9,36 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1 ;
+        z-index: -1;
     }
-    .heading__color{
+
+    .heading__color {
         color: var(--rts-button-1);
     }
-    p{
+
+    p {
         color: var(--rts-para);
     }
+
+    
+}
+
+// funfact__bg two
+.funfact__bg {
+    background-image: url('../img/home-3/funfact__bg.png');
+    @extend %background;
+
+}
+.funfact__style__two {
+    .rts__single__counter{
+        text-align: center;
+    }
+    p{
+        
+        color: var(--rts-white);
+    }
+    .heading__color {
+        color: var(--rts-white);
+    }
+
 }
