@@ -42,6 +42,22 @@
           });
         }
       });
+      var swiper = new Swiper(".rts__testimonial__four", {
+        grabCursor: true,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: [0, 0, -800],
+          rotate: [180, 0, 0],
+        },
+        next: {
+          shadow: true,
+          translate: [0, 0, -800],
+          rotate: [-180, 0, 0],
+        },
+      },
+      });
     },
     counterUp: function () {
       try {

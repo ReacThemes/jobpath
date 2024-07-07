@@ -38,4 +38,15 @@
             transform: translate(-50%, -400%);
         }
     }
+    
+}
+.swiper-slide.long__item{
+    max-width: 645px;
+}
+
+// explore job slider two
+.explore__slider{
+    .swiper-slide{
+        width: 25%;
+    }
 }

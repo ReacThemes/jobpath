@@ -4,3 +4,19 @@
 .l--1{
     letter-spacing: -1px;
 }
+.l--3{
+    letter-spacing: -3px;
+}
+.focus-none{
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+.br-md-none{
+    @media only screen and (max-width: 768px) {
+       br{
+        display: none;
+       }
+    }
+}

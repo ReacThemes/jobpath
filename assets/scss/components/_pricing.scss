@@ -52,3 +52,48 @@
         display: block;
     }
 }
+
+// pricing style three
+.pricing__style__three{
+    .plan__feature li{
+        i{
+            color: var(--rts-primary);
+            font-size: 20px;
+        }
+    }
+    .pricing__btn{
+        border-color: #7D8087;
+    }
+    &:hover{
+        background-color: var(--rts-button-3);
+        color: var(--rts-white);
+        .pricing__btn{
+            background-color: var(--rts-white);
+            color: var(--rts-button-3);
+            border-color: var(--rts-white);
+        }
+        .plan__price span.h4{
+            color: var(--rts-white);
+        }
+        .plan__feature li i{
+            color: var(--rts-white);
+        }
+        .text-dark{
+            color: var(--rts-white) !important;
+        }
+    }
+}
+
+// pricing style three tab
+.rts__pricing__tab{
+    .nav-link{
+        background-color: var(--rts-gray);
+        padding: 15px 20px;
+        border-radius: 6px;
+        color: var(--rts-button-3);
+        &.active{
+            background-color: var(--rts-button-3);
+            color: var(--rts-white);
+        }
+    }
+}

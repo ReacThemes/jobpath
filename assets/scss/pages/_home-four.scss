@@ -1,0 +1,37 @@
+/* ==== Job Cta Card ==== */
+.job__cta__card{
+    background-color: var(--rts-gray);
+    position: relative;
+    
+    .cta__content{
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 55%;
+        color: var(--rts-white);
+        &::after{
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            right: -10px;
+            background-image: url('../img/hom-4/cta__shape.svg');
+            top: 0;
+            z-index: -1;
+            @extend %background;
+        }
+        margin-left: 50px;
+    }
+    .fill__btn{
+        padding: 18px 20px;
+        border-radius: 0;
+        background-color: var(--rts-gray);
+        border: 0;
+        color: var(--rts-button-1);
+        font-weight: 500;
+        margin-top: 30px;
+        text-transform: capitalize;
+    }
+}

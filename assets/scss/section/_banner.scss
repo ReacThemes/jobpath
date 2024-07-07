@@ -314,3 +314,184 @@
         border-radius: 10px;
     }
 }
+
+/* ======= Banner Home Four =======*/
+.home__four__banner {
+    background-color: var(--rts-gray);
+
+    .rts__banner__content {
+        min-width: 730px;
+    }
+
+    .rts__banner__image {
+        figure.banner__image {
+            height: 530px;
+            width: 730px;
+        }
+    }
+}
+
+.rts__job__search.form-4 {
+    max-width: 665px;
+    border-radius: 0;
+    padding: 15px 20px;
+
+    input {
+        width: 100%;
+        border: 0;
+        padding-right: 15px;
+    }
+
+    .job__search {
+        border-radius: 0;
+        height: 50px;
+        min-width: 130px;
+    }
+}
+
+/* ======= Banner Home Five =======*/
+.home__five__banner {
+    background-image: url('../img/home-5/banner/banner__background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 160px;
+
+    .rts__banner__content {
+        min-width: 750px;
+    }
+
+    .rts__banner__desc {
+        color: var(--rts-gray);
+    }
+
+    .rts__job__search.form-2 {
+        box-shadow: 0px 30px 30px rgba(20, 22, 55, 0.1);
+        padding: 15px;
+    }
+
+    .rts__banner__image {
+        margin-bottom: -160px;
+        margin-top: -35px;
+
+        img {
+            max-width: 900px;
+            height: 600px;
+            border-radius: 16px;
+            border-bottom-right-radius: 140px;
+        }
+    }
+
+    .applicant {
+        bottom: 50px;
+    }
+
+    .rts__banner__shape {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        .shape__one,
+        .shape__two {
+            height: 68px;
+            width: 68px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, #58D379 0%, #44B964 100%);
+        }
+
+        .shape__one {
+            position: absolute;
+            left: -10%;
+            bottom: 40%;
+        }
+
+        .shape__two {
+            position: absolute;
+            right: 25%;
+            top: 15%;
+        }
+
+        .shape__three {
+            position: absolute;
+            bottom: 20%;
+            left: 15%;
+        }
+    }
+}
+
+
+/* ====== Banner Home Six ======= */
+.home__six__banner {
+    padding-top: 180px;
+    padding-bottom: 150px;
+    background-image: url('../img/home-6/banner/banner__bg.png');
+    @extend %background;
+    margin: 0 65px;
+    position: relative;
+
+    & *> {
+        position: relative;
+        z-index: 1;
+    }
+
+    .rounded-full {
+        border-radius: 125px;
+        position: relative;
+        top: -30px;
+    }
+
+    .rts__banner__shape {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+
+        .shape {
+            height: 60px;
+            width: 60px;
+            place-items: center;
+            display: grid;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            background-color: var(--rts-white);
+        }
+
+        .shape__one {
+            position: absolute;
+            left: 35%;
+            top: 6%;
+        }
+
+        .shape__two {
+            position: absolute;
+            right: 40%;
+            top: 6%;
+        }
+
+        .shape__three {
+            position: absolute;
+            left: 35%;
+            bottom: 25%;
+        }
+
+        .shape__four {
+            position: absolute;
+            right: 40%;
+            bottom: 25%;
+        }
+
+        .shape__five {
+            position: absolute;
+            left: 10%;
+            top: 30%;
+        }
+
+        .shape__six {
+            position: absolute;
+            right: 10%;
+            top: 30%;
+        }
+    }
+
+}

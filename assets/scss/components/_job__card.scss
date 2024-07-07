@@ -72,6 +72,7 @@
             line-height: 1;
             text-transform: capitalize;
             transition: var(--transition);
+            font-size: 16px;
 
             &:hover {
                 color: var(--rts-white);
@@ -177,6 +178,7 @@
     border: 1px solid rgba(#7D8087, $alpha: 0.3);
     border-radius: 10px;
     transition: var(--transition);
+
     .icon {
         height: 60px;
         width: 60px;
@@ -191,5 +193,92 @@
         box-shadow: 0px 4px 40px rgba(73, 73, 73, 0.1);
         background-color: var(--rts-white);
         border-color: var(--rts-white);
+    }
+}
+
+// job card style two
+.rts__job__card {
+    &.style__four {
+        position: relative;
+        text-align: center;
+        border-radius: 0;
+
+        &:hover {
+            background-color: var(--rts-gray);
+
+            .fill__btn {
+                background-color: var(--rts-button-1);
+                color: var(--rts-white);
+            }
+        }
+
+        .fill__btn {
+            padding: 18px 20px;
+            border-radius: 0;
+            background-color: var(--rts-gray);
+            border: 0;
+            color: var(--rts-heading);
+            font-weight: 600;
+            margin-top: 30px;
+            text-transform: capitalize;
+        }
+
+    }
+}
+
+// job card style five
+.rts__job__card {
+    &.style__five {
+        &:hover {
+            background-color: var(--rts-button-1);
+            color: var(--rts-white);
+
+            .job__title {
+                color: var(--rts-white);
+            }
+        }
+    }
+}
+
+// job card style six
+.rts__job__card {
+    &.style__six {
+        background-color: var(--rts-white);
+        border: none;
+        box-shadow: 0px 4px 40px rgba(166, 166, 166, 0.16);
+        border-radius: 10px;
+
+        &:hover {
+            background-color: var(--rts-button-3);
+            color: var(--rts-white);
+
+            .job__title {
+                color: var(--rts-white);
+            }
+        }
+    }
+}
+
+// top employer style six
+.rts__single__employer {
+    &.style__six {
+        background-color: var(--rts-white);
+        border: 0;
+        box-shadow: 0px 4px 40px rgba(166, 166, 166, 0.16);
+        border-radius: 10px;
+        transition: var(--transition);
+        &:hover {
+            background-color: var(--rts-button-3);
+            color: var(--rts-white);
+            .content{
+                a.text-dark{
+                    color: var(--rts-white) !important;
+                }
+            }
+            .apply__btn{
+                background-color: var(--rts-white);
+                color: var(--rts-button-3);
+            }
+        }
     }
 }

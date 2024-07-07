@@ -17,6 +17,9 @@ a, a:hover, a:focus{
 .font-xs{
     font-size: var(--p-xs);
 }
+.font-sm{
+    font-size: 16px;
+}
 .rts__white{
     color: var(--rts-white);
 }
@@ -61,5 +64,5 @@ p{
     font-size: 20px;
 }
 .text-dark{
-    color: var(--rts-heading);
+    color: var(--rts-heading) !important;
 }

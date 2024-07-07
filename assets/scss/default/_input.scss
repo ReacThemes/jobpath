@@ -53,12 +53,14 @@
     input{
       position: relative;
       padding: 20px 18px;
+      padding-right: 120px;
       border-radius: 10px;
       border: 0;
+      width: 100%;
     }
     button{
       position: absolute;
-      right: 0;
+      right: 15px;
       padding: 10px;
       border-radius: 6px;
       font-size: 16px;
