@@ -97,3 +97,27 @@
         }
     }
 }
+
+// blog style two
+.blog__slider {
+    .blog__content {
+        a.category{
+            background-color: var(--rts-gray);
+            padding: 10px 15px;
+            max-width: max-content;
+            border-radius: 25px;
+            color: var(--rts-para);
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        &__meta {
+            max-width: 100%;
+        }
+
+        .blog__thumb {
+            img {
+                min-width: 615px;
+            }
+        }
+    }
+}

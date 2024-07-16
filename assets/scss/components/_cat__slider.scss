@@ -3,6 +3,10 @@
 .cat__slider__bg {
     position: relative;
     background-color: var(--rts-gray);
+    background-image: url('../img/home-1/cat/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .single__cat {
@@ -11,7 +15,10 @@
     background-color: var(--rts-white);
     max-width: max-content;
     min-width: 305px;
-
+    transition: var(--transition);
+    &:hover {
+        box-shadow: 0px 4px 40px rgba(73, 73, 73, 0.1);
+    }
     &__icon {
         height: 60px;
         width: 60px;
@@ -51,56 +58,6 @@
             box-shadow: 0px 4px 40px rgba(73, 73, 73, 0.1);
             border-color: var(--rts-white);
         }
-    }
-}
-
-// slider control
-.rts__slider__control {
-    .slider__btn {
-        height: 43px;
-        width: 40px;
-        background-color: var(--rts-white);
-        border-radius: 6px;
-        display: grid;
-        place-items: center;
-        font-size: 14px;
-        transition: var(--transition);
-
-        &:hover {
-            background-color: var(--rts-button-1);
-            color: var(--rts-white);
-        }
-    }
-}
-
-// dot sytle slider control
-.rts__slider__control {
-    &.dot__style {}
-
-    .rts__pagination {
-        max-width: max-content;
-        margin: 0 auto;
-
-        .swiper-pagination-bullet {
-            height: 10px;
-            width: 10px;
-            border-radius: 50%;
-            background-color: var(--rts-para);
-            transition: var(--transition);
-
-            &-active {
-                background-color: var(--rts-button-3);
-                width: 45px;
-                border-radius: 5px;
-            }
-        }
-    }
-}
-
-
-.style-gray {
-    .slider__btn {
-        background-color: var(--rts-gray);
     }
 }
 
@@ -158,6 +115,31 @@
             span{
                 color: var(--rts-white);
             }
+        }
+    }
+}
+
+// cat slider two
+.single__cat{
+    &.style__two{
+        padding-top: 30px;
+        padding-bottom: 35px;
+        background: var(--rts-gray);
+        transition: var(--transition);
+        &:hover{
+            background: var(--rts-button-2);
+            .single__cat__link{
+                a, span{
+                    color: var(--rts-white);
+                }
+            }
+        }
+    }
+}
+.style__two__control{
+    .slider__btn{
+        &:hover{
+            background-color: var(--rts-button-2);
         }
     }
 }

@@ -6,6 +6,12 @@
 .mtn-1{
     margin-top: -10px;
 }
+.mb-20{
+    margin-bottom: 20px;
+}
+.mt-20{
+    margin-top: 20px;
+}
 .my-40{
     margin: 40px 0;
 }
@@ -27,6 +33,9 @@
 .mt-50{
     margin-top: 50px;
 }
+.mt-60{
+    margin-top: 60px;
+}
 .mb-60{
     margin-bottom: 60px;
 }
@@ -34,6 +43,9 @@
     margin-left: 100px;
 }
 // padding
+.pt-30{
+    padding-top: 30px;
+}
 .py-40{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -56,11 +68,18 @@
 .pb-100{
     padding-bottom: 100px;
 }
+.pt-110{
+    padding-top: 110px;
+}
 .pb-120{
     padding-bottom: 120px;
 }
 .pb-130{
     padding-bottom: 130px;
+}
+.py-135{
+    padding-top: 135px;
+    padding-bottom: 135px;
 }
 .pt-120{
     padding-top: 120px;
@@ -82,8 +101,12 @@
 .gap-30{
     --bs-gutter-x: 30px;
 }
+
 .gy-30{
     --bs-gutter-y: 30px;
+}
+.row-35{
+    row-gap: 35px;
 }
 // section padding
 .section__padding{
@@ -107,11 +130,17 @@
 .max-750{
     max-width: 750px;
 }
+.max-720{
+    max-width: 720px;
+}
 .max-695{
     max-width: 695px;
 }
 .max-360{
     max-width: 360px;
+}
+.mnw-500{
+    min-width: 500px;
 }
 
 .top-30{
@@ -125,4 +154,13 @@
 }
 .left-20{
     left: 20px;
+}
+.padding-75{
+    padding: 0 75px;
+}
+.gap-40{
+    gap: 40px;
+}
+.gap-30{
+    gap: 30px;
 }

@@ -1,5 +1,8 @@
 .max-320{
     max-width: 320px;
+    @include mq($xs){
+        max-width: 450px;
+    }
 }
 .max-410{
     max-width: 410px;
@@ -7,6 +10,7 @@
 
 .footer__home__one{
     background-image: url('../img/footer/footer__bg.png');
+    @extend %background;
 }
 .rts__footer__widget{
     ul{
@@ -38,6 +42,15 @@
     border-top: 1px solid rgba($color: #7D8087, $alpha: 0.1);
 }
 
+
+// footer home two
+.footer__home__two{
+    background-image: url('../img/home-2/footer.png');
+    padding-top: 220px;
+    .rts__footer__widget ul li a{
+        color: var(--rts-gray);
+    }
+}
 // footer home three
 .footer__home__three{
     background-image: url('../img/home-3/footer__bg.png');

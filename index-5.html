@@ -24,6 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <title>Jobpath - Job Seeker &amp; Job Holder HTML Template</title>
+    <!-- rt icons -->
+    <link rel="stylesheet" href="assets/fonts/icon/css/rt-icons.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.min.css">
     <!-- all plugin css -->
@@ -43,11 +45,19 @@
                                     <img class="logo__image" src="assets/img/logo/logo__five.svg" width="160" height="40" alt="logo">
                                 </a>
                             </div>
-                            <div class="navigation">
-    <nav class="navigation__menu">
+                            <div class="navigation d-none d-lg-block">
+    <nav class="navigation__menu" id="offcanvas__menu">
         <ul class="list-unstyled">
-            <li class="navigation__menu--item">
+            <li class="navigation__menu--item has-child has-arrow">
                 <a href="#" class="navigation__menu--item__link">Home</a>
+                <ul class="submenu sub__style" role="menu">
+                    <li role="menuitem"><a href="index.html">Home One</a></li>
+                    <li role="menuitem"><a href="index-2.html">Home Two</a></li>
+                    <li role="menuitem"><a href="index-3.html">Home Three</a></li>
+                    <li role="menuitem"><a href="index-4.html">Home Four</a></li>
+                    <li role="menuitem"><a href="index-5.html">Home Five</a></li>
+                    <li role="menuitem"><a href="index-6.html">Home Six</a></li>
+                </ul>
             </li>
 
             <li class="navigation__menu--item has-child has-arrow">
@@ -191,7 +201,6 @@
 </div>
                 </div>
                 <div class="row g-30">
-
                     <div class="col-lg-3">
                         <div class="single__cat style__five d-flex gap-4">
                             <div class="single__cat__icon color-3">
@@ -454,7 +463,7 @@
          <div class="rts__section rts__brand pb-120 pt-120 text-center">
     <div class="container">
         <div class="row">
-            <div class="section__title mb-60">
+            <div class="section__title mb-40">
                 <span class="h6 d-block fw-semibold">Trusted by 300+ leading companies</span>
             </div>
         </div>
@@ -551,7 +560,7 @@
 </div>
          <!-- brand area end -->
 
-        <!-- about sectiond  -->
+        <!-- about section  -->
          <div class="pt-120"></div>
          <div class="rts__section">
             <div class="container">
@@ -755,21 +764,25 @@
         <!-- top candidate end -->
 
         <!-- explore job -->
-        <section class="rts__section">
+        <section class="rts__section pt-110">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center position-relative">
                 <div class="col-lg-6">
     <div class="rts__section__content text-center mb-60">
         <h3 class="rts__section__title mb-3">Explore Nearby with JobPath</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further.</p>
     </div>
 </div>
+                <div class="rts__slider__control style-gray d-flex z-3 w-100 justify-content-between g-0 position-absolute top-50  translate-middle-y">
+                    <div class="rts__slide__next slider__btn"><i class="fa-sharp fa-solid fa-chevron-left"></i></div>
+                    <div class="rts__slide__prev slider__btn"><i class="fa-sharp fa-solid fa-chevron-right"></i></div>
+                </div>
             </div>
             <div class="row overflow-hidden">
                 <div class="swiper-data explore__slider" data-swiper='{
                         "slidesPerView": 3,
-                        "autoplay": false,
-                        "loop": false,
+                        "autoplay": true,
+                        "loop": true,
                         "navigation": {
                             "nextEl": ".rts__slide__next",
                             "prevEl": ".rts__slide__prev"
@@ -780,7 +793,7 @@
                                 <div class="single__destination__item ">
                                     <a href="#" class="d-block">
                                         <div class="destination__thumb">
-                                            <img src="assets/img/home-3/job/1.webp" alt="">
+                                            <img src="assets/img/home-5/explore/3.webp" alt="">
                                         </div>
                                         <div class="destination__meta text-center">
                                             <a href="#" class="d-block h6 mb-0">New York City</a>
@@ -957,12 +970,10 @@
         <!-- cta area  end -->
 
 
-    <footer class="rts__section  footer__home__five">
+    <footer class="rts__section  footer__home__five pt-120">
     <div class="container">
         <div class="row">
-            <div class="footer__wrapper d-flex justify-content-between pt-60 pb-60">
-            
-
+            <div class="footer__wrapper d-flex justify-content-between pb-60">
                 <!-- footer menu -->
                  <div class="rts__footer__widget max-content">
                     <div class="h6 fw-semibold mb-3 h6 lh-1">Pages</div>
@@ -1052,7 +1063,46 @@
     </div>
 </footer>
 
-    <!-- all plugin js -->
+    
+
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header p-0 mb-5 mt-4">
+      <a href="index.html" class="offcanvas-title" id="offcanvasLabel">
+        <img src="assets/img/logo/header__one.svg" alt="logo">
+      </a>      
+
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="rts__offcanvas__menu overflow-hidden">
+        <div class="offcanvas__menu"></div>
+      </div>
+      <p class="max-auto font-20 fw-medium text-center text-decoration-underline mt-4">Our Social Links</p>
+      <div class="rts__social d-flex justify-content-center gap-3 mt-3">
+    <a href="https://facebook.com"  aria-label="facebook">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://instagram.com"  aria-label="instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com"  aria-label="linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://pinterest.com"  aria-label="pinterest">
+        <i class="fa-brands fa-pinterest"></i>
+    </a>
+    <a href="https://youtube.com"  aria-label="youtube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+    </div>
+  </div>
+
+<button type="button" class="rts__back__top" id="rts-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!-- all plugin js -->
 <script src="assets/js/plugins.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>

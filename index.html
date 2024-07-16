@@ -24,6 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <title>Jobpath - Job Seeker &amp; Job Holder HTML Template</title>
+    <!-- rt icons -->
+    <link rel="stylesheet" href="assets/fonts/icon/css/rt-icons.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.min.css">
     <!-- all plugin css -->
@@ -44,11 +46,19 @@
                                 </a>
                             </div>
                             <div class="rts__menu d-flex gap-5 align-items-center">
-                                <div class="navigation">
-    <nav class="navigation__menu">
+                                <div class="navigation d-none d-lg-block">
+    <nav class="navigation__menu" id="offcanvas__menu">
         <ul class="list-unstyled">
-            <li class="navigation__menu--item">
+            <li class="navigation__menu--item has-child has-arrow">
                 <a href="#" class="navigation__menu--item__link">Home</a>
+                <ul class="submenu sub__style" role="menu">
+                    <li role="menuitem"><a href="index.html">Home One</a></li>
+                    <li role="menuitem"><a href="index-2.html">Home Two</a></li>
+                    <li role="menuitem"><a href="index-3.html">Home Three</a></li>
+                    <li role="menuitem"><a href="index-4.html">Home Four</a></li>
+                    <li role="menuitem"><a href="index-5.html">Home Five</a></li>
+                    <li role="menuitem"><a href="index-6.html">Home Six</a></li>
+                </ul>
             </li>
 
             <li class="navigation__menu--item has-child has-arrow">
@@ -92,7 +102,7 @@
 
                                 <div class="header__right__btn d-flex gap-3">
                                     <a href="#" class="small__btn no__fill__btn border-6 font-xs" aria-label="Login Button"> 
-                                        
+                                        <i class="rt-login"></i>
                                         Sign In</a>
                                     <a href="#" class="small__btn fill__btn border-6 font-xs" aria-label="Job Posting Button">Add Job</a>
                                 </div>
@@ -242,7 +252,7 @@
          <div class="rts__section rts__brand pb-120 text-center">
     <div class="container">
         <div class="row">
-            <div class="section__title mb-60">
+            <div class="section__title mb-40">
                 <span class="h6 d-block fw-semibold">Trusted by 300+ leading companies</span>
             </div>
         </div>
@@ -699,9 +709,7 @@
                                     </span>
                                     <span>Internation job   </span>
                                 </div>
-
                             </div>
-
                             <a href="#" class="rts__btn common__btn  fill__btn mt-50">Explore More <i class="fa-regular fa-arrow-right"></i></a>
 
                         </div>
@@ -724,7 +732,8 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <div class="rts__testimonial__active overflow-hidden swiper-data" data-swiper='{
+                        <div class="rts__testimonial__active overflow-hidden swiper-data" 
+                        data-swiper='{
                             "slidesPerView": 1,
                             "autoplay": true,
                             "loop": true,
@@ -1045,7 +1054,7 @@
     <footer class="rts__section  footer__home__one">
     <div class="container">
         <div class="row">
-            <div class="footer__wrapper d-flex justify-content-between pt-60 pb-60">
+            <div class="footer__wrapper d-flex flex-wrap flex-column flex-sm-row gap-4 gap-sm-0 justify-content-between pt-60 pb-60">
                 <div class="rts__footer__widget max-320">
                     <a href="index.html" class="footer__logo" aria-label="logo">
                         <img src="assets/img/logo/header__one.svg" width="160" height="40" alt="logo">
@@ -1056,7 +1065,7 @@
 
                 <!-- footer menu -->
                  <div class="rts__footer__widget max-content">
-                    <div class="font-20 fw-medium mb-3 h6 lh-1">Links</div>
+                    <div class="font-20 fw-medium mb-3 h6 ">Links</div>
                     <ul class="list-unstyled">
                         <li><a href="#" aria-label="footer__menu__link">Browse Jobs</a></li>
                         <li><a href="#" aria-label="footer__menu__link">Browse Candidates</a></li>
@@ -1067,13 +1076,13 @@
                  </div>
 
                  <div class="rts__footer__widget max-content">
-                    <div class="font-20 fw-medium mb-3 h6 lh-1">Links</div>
+                    <div class="font-20 fw-medium mb-3 h6 ">Links</div>
                     <ul class="list-unstyled mb-3">
                         <li><a href="#"><i class="fa-light fa-location-dot"></i>2715 Ash Dr. San Jose,USA</a></li>
                         <li><a href="callto:+880171234578"><i class="fa-light fa-phone"></i>+(61) 545-432-234</a></li>
                         <li><a href="mailto:jobpath@gmail.com"><i class="fa-light fa-envelope"></i> jobpath@gmail.com</a></li>
                     </ul>
-                    <div class="font-20 fw-medium mb-3">Social Link</div>
+                    <div class="font-20 fw-medium mb-30 text-dark">Social Link</div>
                     <div class="rts__social d-flex gap-4">
     <a href="https://facebook.com"  aria-label="facebook">
         <i class="fa-brands fa-facebook"></i>
@@ -1095,8 +1104,8 @@
 
                  <!-- newsletter form -->
                   <div class="rts__footer__widget max-320">
-                    <div class="font-20 fw-medium mb-3 h6 lh-1">Subscribe Our Newsletter</div>
-                    <p>Subscribe Our Newsletter get <br> Update our New Course</p>
+                    <div class="font-20 fw-medium mb-3 h6 ">Subscribe Our Newsletter</div>
+                    <p class="br-sm-none">Subscribe Our Newsletter get <br> Update our New Course</p>
                     <form action="#" class="d-flex align-items-center justify-content-between mt-4 newsletter">
                         <input type="email" name="email" id="email" placeholder="Enter your email" required>
                         <button type="submit" class="rts__btn fill__btn">Subscribe</button>
@@ -1117,7 +1126,46 @@
 </footer>
 
 
-    <!-- all plugin js -->
+    
+
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header p-0 mb-5 mt-4">
+      <a href="index.html" class="offcanvas-title" id="offcanvasLabel">
+        <img src="assets/img/logo/header__one.svg" alt="logo">
+      </a>      
+
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="rts__offcanvas__menu overflow-hidden">
+        <div class="offcanvas__menu"></div>
+      </div>
+      <p class="max-auto font-20 fw-medium text-center text-decoration-underline mt-4">Our Social Links</p>
+      <div class="rts__social d-flex justify-content-center gap-3 mt-3">
+    <a href="https://facebook.com"  aria-label="facebook">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://instagram.com"  aria-label="instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com"  aria-label="linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://pinterest.com"  aria-label="pinterest">
+        <i class="fa-brands fa-pinterest"></i>
+    </a>
+    <a href="https://youtube.com"  aria-label="youtube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+    </div>
+  </div>
+
+<button type="button" class="rts__back__top" id="rts-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!-- all plugin js -->
 <script src="assets/js/plugins.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>

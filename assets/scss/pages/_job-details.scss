@@ -1,0 +1,306 @@
+// job details
+.rts__job__details {
+    .apply__btn {
+        background-color: var(--rts-primary);
+        color: var(--rts-white);
+        padding: 20px 30px;
+        border-radius: 6px;
+    }
+}
+
+.rts__tab {
+    .nav {
+        border-bottom: none;
+        display: flex;
+        gap: 15px;
+
+        .nav-link {
+            padding: 15px 12px;
+            background-color: var(--rts-gray);
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            color: var(--rts-heading);
+            letter-spacing: -0.5px;
+            font-weight: 500;
+            line-height: 1.2;
+
+            &.active {
+                background-color: var(--rts-primary);
+                color: var(--rts-white);
+            }
+        }
+    }
+}
+
+// tags
+.job__tags {
+    &.job__details__tags {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        a {
+            padding: 5px 10px;
+            border-radius: 6px;
+            background-color: var(--rts-gray);
+            color: var(--rts-para);
+            line-height: 1.3;
+            text-transform: capitalize;
+            transition: var(--transition);
+            border: 1px solid #F1F1F1;
+        }
+    }
+}
+
+// video section
+.video__section__content {
+    position: relative;
+
+    img {
+        border-radius: 10px;
+    }
+
+    .video__play__btn {
+        &::before {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: var(--rts-white);
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+
+        &::after {
+            content: '';
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color: rgba(#fff, $alpha: 0.6);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        i {
+            font-size: 30px;
+            color: var(--rts-primary);
+        }
+    }
+
+    &.style__two {
+        .video__play__btn {
+            @extend .video__play__btn;
+
+            i {
+                font-size: 20px;
+                color: #7763E5;
+            }
+
+            &::before {
+                height: 65px;
+                width: 65px;
+            }
+
+            &::after {
+                height: 78px;
+                width: 78px;
+            }
+        }
+    }
+}
+
+// company card.
+.company__card {
+    --section-bg: linear-gradient(228.42deg, #FEF2EB 0%, #F1F1F1 46.48%, #E4E0EA 100.36%);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background: var(--section-bg);
+
+    .icon {
+        height: 82px;
+        width: 82px;
+        border-radius: 6px;
+        background-color: var(--rts-white);
+        display: grid;
+        place-items: center;
+        margin: 0 auto;
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    .apply__btn {
+        width: 100%;
+        background-color: var(--rts-primary);
+        color: var(--rts-white);
+        font-weight: 700;
+        border-radius: 6px;
+    }
+
+}
+
+.company__link {
+    color: var(--rts-heading);
+    font-weight: 500;
+}
+
+// job overview
+.job__overview {
+    background: linear-gradient(228.42deg, #FEF2EB 0%, #F1F1F1 46.48%, #E4E0EA 100.36%);
+    padding: 30px;
+    border-radius: 10px;
+
+    &__content {
+        li {
+            padding-bottom: 15px;
+            margin-top: 15px;
+            border-bottom: 1px solid rgba(#7D8087, $alpha: 0.2);
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .left-text {
+            color: var(--rts-heading);
+            font-weight: 500;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            i {
+                color: var(--rts-primary);
+                font-size: 20px;
+            }
+        }
+
+        .text {
+            font-weight: 500;
+        }
+    }
+
+    .icon {
+        height: 38px;
+        width: 38px;
+        border-radius: 50%;
+        background-color: var(--rts-white);
+        display: grid;
+        place-items: center;
+
+        i {
+            font-size: 18px;
+            color: var(--rts-primary);
+        }
+    }
+
+    &.no-border-bottom {
+        li {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+    }
+
+    .grid-style {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 30px;
+        justify-items: start;
+    }
+    &.style__four{
+        padding: 0;
+        background: unset;
+        .icon{
+            background-color: var(--rts-gray);
+        }
+    }
+}
+
+// job location
+.job__location {
+
+    .gmap {
+        iframe {
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    &__map{
+        .gmap{
+            iframe{
+                height: 500px;
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+// job contact
+.job__contact {
+    background: linear-gradient(228.42deg, #FEF2EB 0%, #F1F1F1 46.48%, #E4E0EA 100.36%);
+    padding: 30px;
+    border-radius: 10px;
+
+    .search__item {
+        label {
+            line-height: 1;
+        }
+
+        i {
+            color: #939393;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 105px;
+            width: 100%;
+            border-radius: 4px;
+            border: none;
+            padding: 15px 20px;
+            padding-left: 45px;
+        }
+    }
+
+    .apply__btn {
+        background-color: var(--rts-primary);
+        color: var(--rts-white);
+        font-weight: 500;
+    }
+}
+
+.card-shadow {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+
+}
+
+.company__icon {
+    &.recent__post {
+        display: grid;
+        place-items: center;
+        border-radius: 6px;
+        height: 75px;
+        min-width: 75px;
+        background-color: var(--rts-gray);
+
+        img {
+            height: 45px;
+            width: 45px;
+        }
+    }
+}

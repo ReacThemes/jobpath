@@ -1,0 +1,96 @@
+.breadcrumb__background {
+    background-image: url('../img/breadcrumb/breadcrumb.png');
+    @extend %background;
+}
+
+.breadcrumb__padding {
+    padding: 210px 0 130px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '\e803';
+    font-family: 'rt-icons';
+    font-size: 14px;
+    padding-right: 10px;
+    position: relative;
+    top: 3px;
+    color: var(--rts-button-1);
+}
+
+.breadcrumb {
+    li {
+        a {
+            color: var(--rts-para);
+        }
+
+        &.active {
+            color: var(--rts-button-1);
+        }
+    }
+
+}
+
+.breadcrumb__area__shape {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 10%;
+    top: 60%;
+
+    @include mq($md) {
+        right: 0;
+    }
+
+    @include mq($xs) {
+        display: none !important;
+    }
+
+    transform: translate(0, -50%);
+
+    .shape__one {
+        right: 25%;
+        position: absolute;
+
+        @include mq($md) {
+            display: none;
+        }
+    }
+}
+
+
+// breadcrumb two style
+.breadcrumb__area {
+    .rts__job__card__big {
+        .job__tags {
+            a {
+                background-color: var(--rts-white);
+            }
+        }
+    }
+    .breadcrumb__apply{
+        @include mq($md){
+            margin: 0 auto;
+        }
+    }
+    .apply__btn {
+        background-color: var(--rts-primary);
+        color: var(--rts-white);
+        font-weight: 500;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 50%;
+        @include mq($lg){
+            margin-top: 50px;
+            position: relative;
+        }
+    }
+}
+// breadcrumb four style
+.breadcrumb__area__shape{
+    &.breadcrumb__style__four{
+        .shape__one{
+            left: 10%;
+        }
+    }
+}

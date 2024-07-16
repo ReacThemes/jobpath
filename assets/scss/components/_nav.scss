@@ -15,6 +15,9 @@
         @include mq($xl){
           margin: 0 25px;
         }
+        @include mq($lg){
+          margin: 0 15px;
+        }
         &:last-child {
           margin-right: 0;
           &::after{
@@ -42,7 +45,7 @@
           font-size: 16px;
           text-transform: capitalize;
           padding: 15px 0;
-          font-weight: 600;
+          font-weight: 500;
           display: block;
           color: var(--rts-heading);
         }
@@ -69,7 +72,6 @@
   
         &.has-arrow {
           position: relative;
-  
           &::before {
             position: absolute;
             content: "\f078";
@@ -95,7 +97,7 @@
           position: absolute;
           top: 100%;
           min-width: 200px;
-          background: var(--white);
+          background: var(--rts-white);
           z-index: 1024;
           display: inline-block;
           opacity: 0;
@@ -114,7 +116,7 @@
               margin-bottom: 0;
             }
             &:hover > a {
-              color: var(--base-color);
+              color: var(--rts-heading);
   
               &::before {
                 width: 80%;
@@ -122,11 +124,10 @@
             }
   
             &:not(:last-child) {
-              margin: 0 0 15px;
+              margin: 0 0 10px;
             }
             &.has-arrow {
               position: relative;
-  
               &::before {
                 position: absolute;
                 content: "\2b";
@@ -134,8 +135,8 @@
                 top: 50%;
                 right: 25px;
                 transform: translateY(-50%);
-                color: var(--gray-1);
-                font-size: 12px;
+                color: var(--rts-heading);
+                font-size: 14px;
                 transition: var(--transition);
               }
               &:hover {
@@ -150,9 +151,9 @@
               padding: 0;
               font-size: 15px;
               text-transform: capitalize;
-              font-weight: 400;
+              font-weight: 500;
               position: relative;
-              color: var(--gray-1);
+              color: var(--rts-heading);
   
               &::before {
                 left: 0;
@@ -160,7 +161,7 @@
                 width: 0;
                 height: 1px;
                 @extend %position-style;
-                background: var(--base-color);
+                background: var(--rts-heading);
                 transition: var(--transition);
               }
   
@@ -206,7 +207,7 @@
     &.fixed {
       position: fixed !important;
       box-shadow: 0px 7px 18px #1810100d;
-      background: var(--white);
+      background: var(--rts-white);
     }
   }
 

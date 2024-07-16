@@ -20,7 +20,7 @@
         color: var(--rts-para);
     }
 
-    
+
 }
 
 // funfact__bg two
@@ -29,16 +29,48 @@
     @extend %background;
 
 }
+
 .funfact__style__two {
-    .rts__single__counter{
+    .rts__single__counter {
         text-align: center;
     }
-    p{
-        
+
+    p {
+
         color: var(--rts-white);
     }
+
     .heading__color {
         color: var(--rts-white);
     }
 
+}
+
+// funfact style two
+.rts__single__counter {
+    &.style__two {
+        background-color: var(--rts-gray);
+        text-align: center;
+        padding: 50px;
+        border-radius: 6px;
+        .heading__color {
+            color: var(--rts-button-2);
+            position: relative;
+            z-index: 2;
+            max-width: max-content;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            &::before {
+                content: '';
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: linear-gradient(226.53deg, #F1F1F1 21.32%, #F9AB00 100%);
+                position: absolute;
+                top: 0;
+                left: -20px;
+                z-index: -1;
+            }
+        }
+    }
 }

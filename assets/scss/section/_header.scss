@@ -5,6 +5,10 @@
     padding: 15px 45px;
     border-radius: 0 0 30px 30px;
     margin: 0 auto;
+    @include mq($xs){
+        padding: 15px;
+        border-radius: 0;
+    }
 }
 
 .absolute__header{
@@ -13,4 +17,13 @@
     top: 0;
     width: 100%;
     z-index: 9;
+}
+
+// header two style
+.header__style__two{
+    background-color: var(--rts-white);
+    margin: 30px 60px;
+    padding: 20px 0;
+    border-radius: 50px;
+    width: 94%;
 }

@@ -21,6 +21,8 @@
       rtsJs.niceSelect();
       rtsJs.pricingToggle();
       rtsJs.svgInject();
+      rtsJs.mobileMenu();
+      rtsJs.activeButton();
       rtsJs.backToTop();
     },
     swiperActivation: function () {
@@ -43,20 +45,15 @@
         }
       });
       var swiper = new Swiper(".rts__testimonial__four", {
-        grabCursor: true,
-      effect: "creative",
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: [0, 0, -800],
-          rotate: [180, 0, 0],
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+          delay: 5000,
         },
-        next: {
-          shadow: true,
-          translate: [0, 0, -800],
-          rotate: [-180, 0, 0],
+        navigation: {
+          nextEl: ".rts__slide__next",
+          prevEl: ".rts__slide__prev",
         },
-      },
       });
     },
     counterUp: function () {
@@ -95,6 +92,28 @@
       } catch (error) {
         console.log("svginject is not declared");
       }
+    },
+    mobileMenu: function () {
+        try {
+          $("#offcanvas__menu").meanmenu({
+            meanMenuContainer: ".offcanvas__menu",
+            meanScreenWidth: "767",
+            meanExpand: ["+"],
+          });
+        } catch (error) {
+          console.log("Mobile Menu Not loaded");
+        }
+    },
+    activeButton: function () {
+      document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    })
     },
     backToTop: function () {
       $(document).ready(function () {

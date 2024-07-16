@@ -1,6 +1,7 @@
 .text-primary{
     color: var(--rts-primary) !important;
 }
+
 .l--1{
     letter-spacing: -1px;
 }
@@ -19,4 +20,14 @@
         display: none;
        }
     }
+}
+.br-sm-none{
+    @media only screen and (max-width: 576px) {
+       br{
+        display: none;
+       }
+    }
+}
+.rounded-50{
+    border-radius: 50px !important;
 }

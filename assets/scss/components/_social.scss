@@ -9,6 +9,14 @@
         }
     }
 }
+.social__two{
+    a{
+        color: var(--rts-white);
+        &:hover{
+            color: var(--rts-button-2);
+        }
+    }
+}
 .social__three{
     a{
         color: var(--rts-white);
