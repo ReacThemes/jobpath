@@ -101,7 +101,7 @@
 // blog style two
 .blog__slider {
     .blog__content {
-        a.category{
+        a.category {
             background-color: var(--rts-gray);
             padding: 10px 15px;
             max-width: max-content;
@@ -110,6 +110,7 @@
             margin-bottom: 20px;
             line-height: 1;
         }
+
         &__meta {
             max-width: 100%;
         }
@@ -118,6 +119,112 @@
             img {
                 min-width: 615px;
             }
+        }
+    }
+}
+
+// latest post
+.latest__blog {
+    .thumb {
+        img {
+            height: 100px;
+            min-width: 100px;
+
+        }
+    }
+
+    .content {
+        a {
+            font-size: 18px;
+            color: var(--rts-heading);
+        }
+    }
+}
+
+// blog full width
+.rts__single__blog {
+    &.blog__full__width {
+        .blog__img {
+            img {
+                max-width: 250px;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+
+        .blog__meta {
+            padding: 0;
+        }
+    }
+}
+
+// listing blog style
+.rts__listing {
+    &.is__3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// tag list
+.job__tags {
+    &.is__blog__details {
+        a {
+            background-color: var(--rts-gray);
+            padding: 6px 12px;
+            max-width: max-content;
+            border-radius: 2px;
+            color: var(--rts-para);
+            line-height: 1;
+            font-weight: 500;
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--rts-white);
+                background-color: var(--rts-button-1);
+            }
+        }
+    }
+}
+
+// comment list
+.comment__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.comment__list .reply__btn {
+    color: var(--rts-button-1);
+    font-weight: 500;
+}
+
+// block quote
+.rts__blockquote {
+    padding: 95px 68px 78px 38px;
+    background: linear-gradient(229.19deg, #FEF2EB 0%, #F1F1F1 47.08%, #E4E0EA 101.65%);
+    border-radius: 16px;
+    h6{
+        color: var(--rts-para);
+        position: relative;
+        max-width: max-content;
+        
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../img/icon-pac/quote-1.svg');
+            top: -40px;
+            left: 0;
+            height: 28px;
+            width: 36px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../img/icon-pac/quote-1.svg');
+            bottom: -20px;
+            right: 0;
+            height: 28px;
+            width: 36px;
         }
     }
 }

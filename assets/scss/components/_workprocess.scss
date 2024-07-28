@@ -3,7 +3,6 @@
     background: linear-gradient(226.58deg, #FEF2EB 1.52%, #F1F1F1 47.05%, #E4E0EA 99.84%);
     padding: 30px 42px;
     text-align: center;
-
     .rts__icon {
         height: 76px;
         width: 76px;
@@ -19,11 +18,9 @@
             width: 40px;
         }
     }
-
     .process__title {
         margin-bottom: 15px;
     }
-
     .work__readmore {
         a {
             display: flex;
@@ -39,6 +36,25 @@
             }
         }
     }
+    &.is__contact{
+        background: transparent;
+        border: 1px solid rgba(#7D8087, $alpha: 0.3);
+        padding: 40px 36px;
+        transition: var(--transition);
+        .rts__icon{
+            background-color: #F1F1F1;
+            box-shadow: none;
+            transition: var(--transition);
+        }
+        &:hover{
+            background: linear-gradient(226.58deg, #FEF2EB 1.52%, #F1F1F1 47.05%, #E4E0EA 99.84%);
+            border-color: transparent;
+            .rts__icon{
+                background-color: var(--rts-white);
+            }
+        }
+    }
+
 }
 
 // home two workprocess

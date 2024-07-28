@@ -175,3 +175,14 @@ textarea, input {
     color: var(--rts-para) !important;
   }
 }
+
+// form
+.job__contact{
+  &.is__contact{
+    background: transparent;
+    padding: 0;
+    input, textarea{
+      border: 1px solid var(--rts-border) !important;
+    }
+  }
+}

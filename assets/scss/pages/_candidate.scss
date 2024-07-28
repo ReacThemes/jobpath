@@ -109,4 +109,19 @@
         min-width: 122px;
         border-radius: 10px;
     }
+    &.small__thumb{
+        img{
+            height: 60px;
+            min-width: 60px;
+        }
+    }
+}
+.review__form .rating i{
+    color: var(--rts-button-2);
+}
+
+.candidate__info{
+    .grid-style{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
