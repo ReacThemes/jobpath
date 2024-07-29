@@ -108,7 +108,12 @@
             border-radius: 25px;
             color: var(--rts-para);
             margin-bottom: 20px;
-            line-height: 1;
+            line-height: 1.2;
+            transition: var(--transition);
+            &:hover{
+                background-color: var(--rts-button-2);
+                color: var(--rts-white);
+            }
         }
 
         &__meta {
@@ -118,6 +123,10 @@
         .blog__thumb {
             img {
                 min-width: 615px;
+                @include mq($md){
+                    width: 100% !important;
+                    min-width: 100%;
+                }
             }
         }
     }

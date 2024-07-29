@@ -106,9 +106,19 @@
     }
 }
 
-// contact google map
-.place-card-large{
-        display: none !important;
+// contact method no border
+.is__half__section {
+    margin-top: -150px;
 }
 
-    
+.is__no__border {
+    .rts__workprocess__box {
+        border: none;
+    }
+}
+
+.shadow-rt-sm {
+    box-shadow: 0px 4px 80px rgba(28, 28, 28, 0.1);
+
+
+}

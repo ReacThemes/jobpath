@@ -92,6 +92,12 @@
         position: absolute;
         bottom: 50px;
         left: -150px;
+        @include mq($lg){
+            left: -100px;
+        }
+        @include mq($md){
+            left: 0;
+        }
     }
 }
 .rts__applicants {

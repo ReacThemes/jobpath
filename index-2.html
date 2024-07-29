@@ -37,6 +37,7 @@
 
 <body>
 
+    <!-- header -->
     <header class="rts__section rts__header header__style__two absolute__header">
         <div class="container">
             <div class="row">
@@ -104,7 +105,7 @@
                     <div class="rts__menu d-flex gap-5 align-items-center">
                         <div class="header__right__btn d-flex gap-3">
                             <a href="#" class="small__btn he-2 no__fill__btn rounded-5 font-xs"
-                                aria-label="Login Button">Sign In</a>
+                                aria-label="Login Button"><i class="rt-login"></i> Sign In</a>
                             <a href="#" class="small__btn he-2 fill__btn rounded-5 font-xs"
                                 aria-label="Job Posting Button">Add Job</a>
                         </div>
@@ -113,10 +114,10 @@
             </div>
         </div>
     </header>
+    <!-- header end -->
 
     <!-- banner area -->
     <section class="rts__banner home__two__banner pt-260">
-        
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -131,7 +132,8 @@
                                 exploring various avenues, including online job boards.
                             </p>
                             <div class="rts__job__search max-720 mx-auto rounded-50">
-                                <form action="#" class="d-flex align-items-center justify-content-between">
+                                <form action="#" class="d-flex align-items-center flex-wrap 
+                                flex-md-nowrap gap-4 gap-xl-0 justify-content-between">
                                     <div class="input-group d-flex gap-4">
                                         <div class="single__input d-flex flex-column">
                                             <label for="location">location</label>
@@ -142,7 +144,7 @@
                                                 <option value="4">Chittagong</option>
                                             </select>
                                         </div>
-                                        <div class="vr"></div>
+                                        <div class="vr d-none d-md-block"></div>
                                         <div class="single__input d-flex flex-column">
                                             <label for="job__type">job type</label>
                                             <select name="job__type" id="job__type">
@@ -153,11 +155,11 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <button type="submit" class="rts__btn he-2 fill__btn job__search rounded-5" aria-label="Search">Search
+                                    <button type="submit" class="rts__btn he-2 fill__btn job__search rounded-5 gap-2" aria-label="Search"><i class="fa-light fa-magnifying-glass"></i> Search
                                         Job</button>
                                 </form>
                             </div>
-                            <div class="d-flex gap-4 align-items-center justify-content-center mt-30">
+                            <div class="d-flex gap-3 flex-wrap align-items-center justify-content-center mt-30">
                                 <span class="font-20  text-white mb-0 d-block fw-medium">Applicants</span>
                                 <div class="applicant__list">
                                     <div class="single__list">
@@ -186,15 +188,16 @@
     <!-- cat slider -->
     <div class="rts__section overflow-hidden section__padding">
         <div class="container">
-            <div class="row justify-content-between mb-50 position-relative mtn-1">
-                <div class="col-lg-6">
+            <div class="row justify-content-between gap-4 mb-50 position-relative mtn-1">
+                <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-start">
         <h3 class="rts__section__title mb-3">Browse Job Category</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further</p>
     </div>
 </div>
                 <div
-                    class="rts__slider__control style-gray style__two__control align-items-end position-relative z-3 d-flex gap-2 max-contnet">
+                    class="rts__slider__control style-gray pe-0 style__two__control align-items-end position-relative
+                    position-md-absolute right-md-0 bottom-md-0 z-3 d-flex gap-2 max-contnet">
                     <div class="rts__slide__next slider__btn"><i class="fa-sharp fa-solid fa-chevron-left"></i></div>
                     <div class="rts__slide__prev slider__btn"><i class="fa-sharp fa-solid fa-chevron-right"></i></div>
                 </div>
@@ -216,6 +219,23 @@
                     "navigation": {
                         "nextEl": ".rts__slide__next",
                         "prevEl": ".rts__slide__prev"
+                    },
+                    "breakpoints": {
+                        "1200": {
+                            "slidesPerView": 4
+                        },
+                        "992": {
+                            "slidesPerView": 3
+                        },
+                        "768": {
+                            "slidesPerView": 2.2
+                        },
+                        "576": {
+                            "slidesPerView": 2
+                        },
+                        "0": {
+                            "slidesPerView": 1.2
+                        }
                     }
                 
                 }'>
@@ -284,7 +304,7 @@
     <section class="rts__section job__board__bg pt-100">
         <div class="container">
             <div class="row justify-content-center mb-60">
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-center">
         <h3 class="rts__section__title mb-3">There Are More Then 1000+ Jobs in Jobpath</h3>
         <p class="rts__section__desc">From entry-level positions to executive roles browse through.</p>
@@ -295,16 +315,16 @@
 
                 <!-- single job item -->
                 <div class="col-lg-6">
-                    <div class="rts__job__card__big style__two d-flex gap-4 align-items-center">
+                    <div class="rts__job__card__big style__two flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap  d-flex gap-4 align-items-center">
                         <div class="company__icon">
                             <img src="assets/img/home-1/company/apple.svg" alt="">
                         </div>
                         <div class="job__meta w-100 d-flex flex-column gap-3">
                             <div class="d-flex justify-content-between align-items-center gap-3">
                                 <a href="#" class="job__title h6 mb-0">Senior UI Designer, Apple</a>
-                                <span class="badge bg-none">Urgent Hiring</span>
+                                <span class="badge bg-none d-none d-md-block">Urgent Hiring</span>
                             </div>
-                            <div class="d-flex gap-4">
+                            <div class="d-flex gap-3 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -326,16 +346,16 @@
                 <!-- single job item end -->
                 <!-- single job item -->
                 <div class="col-lg-6">
-                    <div class="rts__job__card__big style__two d-flex gap-4 align-items-center">
+                    <div class="rts__job__card__big style__two flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap  d-flex gap-4 align-items-center">
                         <div class="company__icon">
                             <img src="assets/img/home-1/company/microsoft.svg" alt="">
                         </div>
                         <div class="job__meta w-100 d-flex flex-column gap-3">
                             <div class="d-flex justify-content-between align-items-center gap-3">
                                 <a href="#" class="job__title h6 mb-0">Senior UI Designer, Bing</a>
-                                <span class="badge bg-none">Featured</span>
+                                <span class="badge bg-none d-none d-md-block">Featured</span>
                             </div>
-                            <div class="d-flex gap-4">
+                            <div class="d-flex gap-3 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -357,16 +377,16 @@
                 <!-- single job item end -->
                 <!-- single job item -->
                 <div class="col-lg-6">
-                    <div class="rts__job__card__big style__two d-flex gap-4 align-items-center">
+                    <div class="rts__job__card__big style__two flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap  d-flex gap-4 align-items-center">
                         <div class="company__icon">
                             <img src="assets/img/home-1/company/google.svg" alt="">
                         </div>
                         <div class="job__meta w-100 d-flex flex-column gap-3">
                             <div class="d-flex justify-content-between align-items-center gap-3">
                                 <a href="#" class="job__title h6 mb-0">Software Engineer, Google</a>
-                                <span class="badge bg-none">Urgent Hiring</span>
+                                <span class="badge bg-none d-none d-md-block">Urgent Hiring</span>
                             </div>
-                            <div class="d-flex gap-4">
+                            <div class="d-flex gap-3 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -388,16 +408,16 @@
                 <!-- single job item end -->
                 <!-- single job item -->
                 <div class="col-lg-6">
-                    <div class="rts__job__card__big style__two d-flex gap-4 align-items-center">
+                    <div class="rts__job__card__big style__two flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap  d-flex gap-4 align-items-center">
                         <div class="company__icon">
                             <img src="assets/img/home-1/company/apple.svg" alt="">
                         </div>
                         <div class="job__meta w-100 d-flex flex-column gap-3">
                             <div class="d-flex justify-content-between align-items-center gap-3">
                                 <a href="#" class="job__title h6 mb-0">Senior UI Designer, Apple</a>
-                                <span class="badge bg-none">Urgent Hiring</span>
+                                <span class="badge bg-none d-none d-md-block">Urgent Hiring</span>
                             </div>
-                            <div class="d-flex gap-4">
+                            <div class="d-flex gap-3 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -419,16 +439,16 @@
                 <!-- single job item end -->
                 <!-- single job item -->
                 <div class="col-lg-6">
-                    <div class="rts__job__card__big style__two d-flex gap-4 align-items-center">
+                    <div class="rts__job__card__big style__two flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap  d-flex gap-4 align-items-center">
                         <div class="company__icon">
                             <img src="assets/img/home-1/company/upwork.svg" alt="">
                         </div>
                         <div class="job__meta w-100 d-flex flex-column gap-3">
                             <div class="d-flex justify-content-between align-items-center gap-3">
                                 <a href="#" class="job__title h6 mb-0">Web developer, Upwork</a>
-                                <span class="badge bg-none"></span>
+                                <span class="badge bg-none d-none d-md-block"></span>
                             </div>
-                            <div class="d-flex gap-4">
+                            <div class="d-flex gap-3 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -450,16 +470,16 @@
                 <!-- single job item end -->
                 <!-- single job item -->
                 <div class="col-lg-6">
-                    <div class="rts__job__card__big style__two d-flex gap-4 align-items-center">
+                    <div class="rts__job__card__big style__two flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap  d-flex gap-4 align-items-center">
                         <div class="company__icon">
                             <img src="assets/img/home-1/company/facebook.svg" alt="">
                         </div>
                         <div class="job__meta w-100 d-flex flex-column gap-3">
                             <div class="d-flex justify-content-between align-items-center gap-3">
                                 <a href="#" class="job__title h6 mb-0">Digital Marketing, Facebook</a>
-                                <span class="badge bg-none"></span>
+                                <span class="badge bg-none d-none d-md-block"></span>
                             </div>
-                            <div class="d-flex gap-4">
+                            <div class="d-flex gap-3 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -487,7 +507,7 @@
     <div class="rts__section pt-120">
         <div class="container">
             <div class="row mb-60">
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-start">
         <h3 class="rts__section__title mb-3">Explore Nearby with JobPath</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further.</p>
@@ -496,7 +516,7 @@
             </div>
             <div class="row g-30">
 
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="single__destination__item style__two">
                         <a href="#" class="d-block">
                             <div class="destination__thumb">
@@ -509,7 +529,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="single__destination__item style__two">
                         <a href="#" class="d-block">
                             <div class="destination__thumb">
@@ -522,7 +542,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="single__destination__item style__two">
                         <a href="#" class="d-block">
                             <div class="destination__thumb">
@@ -535,7 +555,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="single__destination__item style__two">
                         <a href="#" class="d-block">
                             <div class="destination__thumb">
@@ -548,7 +568,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="single__destination__item style__two">
                         <a href="#" class="d-block">
                             <div class="destination__thumb">
@@ -561,7 +581,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="single__destination__item style__two">
                         <a href="#" class="d-block">
                             <div class="destination__thumb">
@@ -582,29 +602,29 @@
     <!-- funfact section -->
     <div class="rts__section section__padding">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="row g-30">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="rts__single__counter style__two">
                         <div class="counter__round"></div>
                         <h2 class="fw-bold heading__color"><span class="counter">20</span>K</h2>
                         <p class="h6 mb-0 fw-medium ">Happy Employer</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="rts__single__counter style__two">
                         <div class="counter__round"></div>
                         <h2 class="fw-bold heading__color"><span class="counter">11</span>K</h2>
                         <p class="h6 mb-0 fw-medium ">Opening Position</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="rts__single__counter style__two">
                         <div class="counter__round"></div>
                         <h2 class="fw-bold heading__color"><span class="counter">1</span>M</h2>
                         <p class="h6 mb-0 fw-medium ">Daily active users</p>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="rts__single__counter style__two">
                         <div class="counter__round"></div>
                         <h2 class="fw-bold heading__color"><span class="counter">100</span>+</h2>
@@ -620,7 +640,7 @@
     <div class="rts__section featured__section__bg section__padding">
         <div class="container">
             <div class="row justify-content-center mb-60">
-                <div class="col-lg-6">
+                <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-center">
         <h3 class="rts__section__title mb-3">Featured Candidates</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further</p>
@@ -634,6 +654,23 @@
                     "pagination": {
                         "el": ".rts__pagination",
                         "clickable": true
+                    },
+                    "breakpoints": {
+                        "1200": {
+                            "slidesPerView": 4
+                        },
+                        "992": {
+                            "slidesPerView": 3
+                        },
+                        "768": {
+                            "slidesPerView": 2
+                        },
+                        "576": {
+                            "slidesPerView": 1.5
+                        },
+                        "0": {
+                            "slidesPerView": 1
+                        }
                     }
                     }'>
                 <div class="swiper-wrapper">
@@ -647,7 +684,7 @@
                                     <a href="#" class="job__title h6 mb-0">Jonathon Doe</a>
                                     <span class="author">Ui/UX Designer</span>
                                 </div>
-                                <div class="d-flex gap-3">
+                                <div class="d-flex gap-3 flex-wrap justify-content-center">
                                     <div class="d-flex gap-2 align-items-center">
                                         <i class="fa-light fa-location-dot"></i> Newyork, USA
                                     </div>
@@ -673,7 +710,7 @@
                                     <a href="#" class="job__title h6 mb-0">Michael Roy</a>
                                     <span class="author">Software Engineer</span>
                                 </div>
-                                <div class="d-flex gap-3">
+                                <div class="d-flex gap-3 flex-wrap justify-content-center">
                                     <div class="d-flex gap-2 align-items-center">
                                         <i class="fa-light fa-location-dot"></i> Newyork, USA
                                     </div>
@@ -699,7 +736,7 @@
                                     <a href="#" class="job__title h6 mb-0">Al Amin Bali</a>
                                     <span class="author">UX Designer</span>
                                 </div>
-                                <div class="d-flex gap-3">
+                                <div class="d-flex gap-3 flex-wrap justify-content-center">
                                     <div class="d-flex gap-2 align-items-center">
                                         <i class="fa-light fa-location-dot"></i> Newyork, USA
                                     </div>
@@ -725,7 +762,7 @@
                                     <a href="#" class="job__title h6 mb-0">Kakon Matabbar</a>
                                     <span class="author">Blockchain Dev</span>
                                 </div>
-                                <div class="d-flex gap-3">
+                                <div class="d-flex gap-3 flex-wrap justify-content-center">
                                     <div class="d-flex gap-2 align-items-center">
                                         <i class="fa-light fa-location-dot"></i> Newyork, USA
                                     </div>
@@ -753,14 +790,14 @@
     <!-- blog section -->
     <div class="rts__section section__padding">
         <div class="container">
-            <div class="row justify-content-between mb-50 position-relative mtn-1">
-                <div class="col-lg-6">
+            <div class="row justify-content-between gap-4 mb-50 position-relative mtn-1">
+                <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-start">
         <h3 class="rts__section__title mb-3">Our Latest Blog</h3>
         <p class="rts__section__desc">Breaking News & Current Events</p>
     </div>
 </div>
-                <div class="rts__slider__control style-gray style__two__control align-items-end position-relative z-3 d-flex gap-2 max-contnet">
+                <div class="rts__slider__control style-gray style__two__control align-items-end position-relative position-md-absolute right-md-0 bottom-md-0 z-3 d-flex gap-2 max-contnet">
                     <div class="rts__slide__next slider__btn"><i class="fa-sharp fa-solid fa-chevron-left"></i></div>
                     <div class="rts__slide__prev slider__btn"><i class="fa-sharp fa-solid fa-chevron-right"></i></div>
                 </div>
@@ -781,7 +818,7 @@
             '>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="blog__content d-flex gap-5 align-items-center">
+                        <div class="blog__content d-flex flex-wrap flex-xl-nowrap gap-5 align-items-center">
                             <div class="blog__thumb">
                                 <a href="blog-details.html" class="blog__thumbnail">
                                     <img class="rounded-2 w-50" src="assets/img/home-2/blog/1.jpg" alt="">
@@ -799,7 +836,7 @@
                                     wizards to marketing mavens, finance gurus to creative minds, our diverse 
                                     range of listings caters to a variety of skills and interests.
                                 </p>
-                                <div class="blog__author mt-50 d-flex gap-3 align-items-center">
+                                <div class="blog__author mt-40 d-flex gap-3 align-items-center">
                                     <div class="author__img">
                                         <img class="rounded-5" src="assets/img/home-2/author/1.svg" alt="">
                                     </div>
@@ -819,7 +856,7 @@
 
     <footer class="rts__section  footer__home__two">
     <div class="container">
-        <div class="row">
+        <div class="row g-30">
             <div class="col-lg-6">
                 <div class="footer__social__left">
                     <h2 class="text-white">Never Want to Miss Any job News Ready To Get Started?</h2>
@@ -834,7 +871,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="d-flex justify-content-around">
+                <div class="d-flex justify-content-md-around flex-wrap gap-4 ">
                     <!-- footer menu -->
                     <div class="rts__footer__widget max-content">
                         <div class="text-white fw-semibold mb-3 h6 lh-1">Job Seekers</div>
@@ -863,7 +900,7 @@
     </div>
     <div class="rts__copyright mt-60">
         <div class="container">
-            <div class="d-flex align-items-center py-4 justify-content-between">
+            <div class="d-flex align-items-center flex-wrap gap-4 py-4 justify-content-between">
                 <p class="text-gray fw-medium ">
                     Copyright &copy; 2024 All Rights Reserved by jobpath
                 </p>

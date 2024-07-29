@@ -16,7 +16,13 @@
         box-shadow: none;
     }
 }
-
+.br-lg-none{
+    @media only screen and (max-width: 1199px) {
+        br {
+            display: none;
+        }
+    }
+}
 .br-md-none {
     @media only screen and (max-width: 768px) {
         br {

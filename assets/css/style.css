@@ -629,6 +629,7 @@ template {
 .footer__home__four::after,
 .footer__home__four,
 .footer__home__three,
+.footer__home__two,
 .footer__home__one,
 .funfact__bg,
 .rts__testimonial__background,
@@ -1059,6 +1060,12 @@ p {
    box-shadow: none;
 }
 
+@media only screen and (max-width: 1199px) {
+   .br-lg-none br {
+      display: none;
+   }
+}
+
 @media only screen and (max-width: 768px) {
    .br-md-none br {
       display: none;
@@ -1350,6 +1357,12 @@ input::placeholder {
    overflow: hidden;
 }
 
+@media screen and (max-width: 992px) {
+   .home__one__banner {
+      padding-top: 150px;
+   }
+}
+
 .home__one__banner .rts__banner__background {
    background-image: url("../img/home-1/banner/header__background.svg");
    position: absolute;
@@ -1382,8 +1395,28 @@ input::placeholder {
    letter-spacing: -1px;
 }
 
+@media screen and (max-width: 1400px) {
+   .home__one__banner .rts__banner__content .rts__banner__title {
+      font-size: 75px;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .home__one__banner .rts__banner__content .rts__banner__title {
+      font-size: 55px;
+      line-height: 1.2;
+   }
+}
+
 .home__one__banner .rts__banner__content .rts__banner__title span {
    color: var(--rts-button-1);
+}
+
+@media screen and (max-width: 992px) {
+   .home__one__banner .rts__banner__wrapper {
+      flex-wrap: wrap;
+      gap: 180px !important;
+   }
 }
 
 .home__one__banner .rts__banner__image {
@@ -1438,6 +1471,18 @@ input::placeholder {
 
 .rts__job__search .single__input {
    min-width: 190px;
+}
+
+@media screen and (max-width: 1400px) {
+   .rts__job__search .single__input {
+      min-width: 170px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .rts__job__search .single__input {
+      min-width: 100%;
+   }
 }
 
 .rts__job__search .single__input label {
@@ -1497,6 +1542,12 @@ input::placeholder {
    background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 992px) {
+   .home__two__banner {
+      padding-top: 200px;
+   }
+}
+
 .home__two__banner .rts__job__search {
    padding-top: 20px;
    padding-right: 20px;
@@ -1514,6 +1565,12 @@ input::placeholder {
 .home__three__banner .rts__banner__title {
    color: var(--rts-white);
    letter-spacing: -2px;
+}
+
+@media screen and (max-width: 576px) {
+   .home__three__banner .rts__banner__title {
+      font-size: 65px;
+   }
 }
 
 .home__three__banner p {
@@ -1574,6 +1631,12 @@ input::placeholder {
    right: -50px;
 }
 
+@media screen and (max-width: 576px) {
+   .current__job {
+      right: 0;
+   }
+}
+
 .rts__icon {
    height: 64px;
    width: 64px;
@@ -1595,9 +1658,21 @@ input::placeholder {
    padding: 10px 20px;
 }
 
+@media screen and (max-width: 1200px) {
+   .rts__job__search.form-2 {
+      padding: 20px;
+   }
+}
+
 .rts__job__search.form-2 .single__input {
    max-width: 230px;
    min-width: 230px;
+}
+
+@media screen and (max-width: 768px) {
+   .rts__job__search.form-2 .single__input {
+      min-width: 100%;
+   }
 }
 
 .rts__job__search.form-2 .single__input input {
@@ -1661,13 +1736,50 @@ input::placeholder {
    background-color: var(--rts-gray);
 }
 
+@media screen and (max-width: 992px) {
+   .home__four__banner .rts__banner__wrapper.pb-200 {
+      padding-bottom: 100px;
+   }
+}
+
 .home__four__banner .rts__banner__content {
    min-width: 730px;
+}
+
+@media screen and (max-width: 1400px) {
+   .home__four__banner .rts__banner__content {
+      min-width: 670px;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .home__four__banner .rts__banner__content {
+      min-width: 500px;
+   }
+}
+
+@media screen and (max-width: 1400px) {
+   .home__four__banner .rts__banner__title {
+      font-size: 75px;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .home__four__banner .rts__banner__title {
+      font-size: 55px;
+      line-height: 1.2;
+   }
 }
 
 .home__four__banner .rts__banner__image figure.banner__image {
    height: 530px;
    width: 730px;
+}
+
+@media screen and (max-width: 1400px) {
+   .home__four__banner .rts__banner__image figure.banner__image {
+      width: 670px;
+   }
 }
 
 .rts__job__search.form-4 {
@@ -1976,15 +2088,35 @@ input::placeholder {
    position: relative;
 }
 
-.rts__single__counter .counter__round {
+@media screen and (max-width: 992px) {
+   .rts__single__counter {
+      text-align: center;
+   }
+}
+
+.rts__single__counter .heading__color {
+   position: relative;
+   z-index: 2;
+   max-width: -moz-max-content;
+   max-width: max-content;
+   margin: 0 auto;
+   padding-bottom: 10px;
+}
+
+.rts__single__counter .heading__color::before {
+   content: "";
    height: 40px;
    width: 40px;
    border-radius: 50%;
    background: linear-gradient(228.34deg, #FEF2EB 0%, #F1F1F1 46.31%, #E4E0EA 100%);
    position: absolute;
    top: 0;
-   left: 0;
+   left: -20px;
    z-index: -1;
+}
+
+.rts__single__counter .heading__color.__noround::before {
+   display: none;
 }
 
 .rts__single__counter .heading__color {
@@ -2016,6 +2148,12 @@ input::placeholder {
    text-align: center;
    padding: 50px;
    border-radius: 6px;
+}
+
+@media screen and (max-width: 1200px) {
+   .rts__single__counter.style__two {
+      padding: 40px 5px;
+   }
 }
 
 .rts__single__counter.style__two .heading__color {
@@ -2072,13 +2210,13 @@ input::placeholder {
 }
 
 .rts__appcenter .content__left {
-   padding-left: 50px;
+   padding-left: 120px;
    padding-right: 50px;
 }
 
 @media screen and (max-width: 1400px) {
    .rts__appcenter .content__left {
-      padding-left: 50px;
+      padding-left: 120px;
       margin-right: 50px;
    }
 }
@@ -2224,6 +2362,12 @@ input::placeholder {
    background-image: url("../img/footer/footer__bg.png");
 }
 
+@media screen and (max-width: 768px) {
+   .rts__footer__widget.max-320 {
+      max-width: 100%;
+   }
+}
+
 .rts__footer__widget ul li {
    margin-bottom: 10px;
 }
@@ -2272,10 +2416,18 @@ input::placeholder {
    background-color: var(--rts-white);
    padding: 10px 10px 10px 20px;
    border-radius: 4px;
+   position: relative;
+}
+
+@media screen and (max-width: 576px) {
+   .footer__newsletter__three {
+      max-width: 100%;
+   }
 }
 
 .footer__newsletter__three input {
    border: 0;
+   padding: 13px 15px;
 }
 
 .footer__newsletter__three .newsletter__btn {
@@ -2285,6 +2437,15 @@ input::placeholder {
    color: var(--rts-white);
    border: 0;
    font-size: 16px;
+}
+
+@media screen and (max-width: 576px) {
+   .footer__newsletter__three .newsletter__btn {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translate(0, -50%);
+   }
 }
 
 .footer__bottom {
@@ -2316,6 +2477,12 @@ input::placeholder {
    border-radius: 4px;
 }
 
+@media screen and (max-width: 576px) {
+   .newsletter.mnw-500 {
+      min-width: 100%;
+   }
+}
+
 .style-border {
    border: 1px solid #DDD8F9;
 }
@@ -2335,6 +2502,12 @@ input::placeholder {
 
 .footer__six__copy p {
    color: var(--rts-para);
+}
+
+@media screen and (max-width: 768px) {
+   .footer__social__left h2 {
+      font-size: 45px;
+   }
 }
 
 .breadcrumb__background {
@@ -2739,7 +2912,7 @@ input::placeholder {
 
 .small__btn {
    height: 40px;
-   padding: 0 15px;
+   padding: 0 20px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -2890,6 +3063,18 @@ input::placeholder {
    left: -150px;
 }
 
+@media screen and (max-width: 1200px) {
+   .rts__workprocess__image .rts__applicants {
+      left: -100px;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .rts__workprocess__image .rts__applicants {
+      left: 0;
+   }
+}
+
 .rts__applicants {
    max-width: -moz-max-content;
    max-width: max-content;
@@ -2957,6 +3142,16 @@ input::placeholder {
    max-width: max-content;
    min-width: 305px;
    transition: var(--transition);
+}
+
+@media screen and (max-width: 992px) {
+
+   .single__cat,
+   .cat__style__two .single__cat {
+      width: 100%;
+      min-width: auto;
+      max-width: 100%;
+   }
 }
 
 .single__cat:hover {
@@ -3070,6 +3265,42 @@ input::placeholder {
 
 .style__two__control .slider__btn:hover {
    background-color: var(--rts-button-2);
+}
+
+@media screen and (max-width: 1200px) {
+   .position-lg-absolute {
+      position: absolute !important;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .position-lg-absolute {
+      position: static !important;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .position-md-absolute {
+      position: absolute !important;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .position-md-absolute {
+      position: static !important;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .right-md-0 {
+      right: 0;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .bottom-md-0 {
+      bottom: 0;
+   }
 }
 
 .rts__job__card {
@@ -3429,6 +3660,12 @@ input::placeholder {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: bottom center;
+}
+
+@media screen and (max-width: 992px) {
+   .job__board__bg {
+      padding-bottom: 0;
+   }
 }
 
 .rts__author__card {
@@ -3885,6 +4122,12 @@ input::placeholder {
    gap: 20px;
 }
 
+@media screen and (max-width: 576px) {
+   .rts__listing {
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
+
 .single__listing .icon {
    height: 22px;
    width: 22px;
@@ -4094,7 +4337,13 @@ input::placeholder {
    border-radius: 25px;
    color: var(--rts-para);
    margin-bottom: 20px;
-   line-height: 1;
+   line-height: 1.2;
+   transition: var(--transition);
+}
+
+.blog__slider .blog__content a.category:hover {
+   background-color: var(--rts-button-2);
+   color: var(--rts-white);
 }
 
 .blog__slider .blog__content__meta {
@@ -4103,6 +4352,13 @@ input::placeholder {
 
 .blog__slider .blog__content .blog__thumb img {
    min-width: 615px;
+}
+
+@media screen and (max-width: 992px) {
+   .blog__slider .blog__content .blog__thumb img {
+      width: 100% !important;
+      min-width: 100%;
+   }
 }
 
 .latest__blog .thumb img {
@@ -4670,8 +4926,16 @@ input::placeholder {
    border: 1px solid var(--rts-border);
 }
 
-.place-card-large {
-   display: none !important;
+.is__half__section {
+   margin-top: -150px;
+}
+
+.is__no__border .rts__workprocess__box {
+   border: none;
+}
+
+.shadow-rt-sm {
+   box-shadow: 0px 4px 80px rgba(28, 28, 28, 0.1);
 }
 
 .rts__back__top {

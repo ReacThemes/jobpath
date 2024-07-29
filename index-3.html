@@ -34,7 +34,7 @@
 
 </head>
 <body>
-    
+        <!-- header area -->
         <header class="rts__section rts__header relative__header">
             <div class="container-none">
                 <div class="rts__menu__background">
@@ -115,22 +115,22 @@
         <!-- header area end -->
 
         <!-- banner area -->
-         <section class="rts__banner overflow-hidden rts__section home__three__banner ">
+        <section class="rts__banner overflow-hidden rts__section home__three__banner ">
             <div class="rts__banner__background">
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="rts__banner__wrapper d-flex gap-4 justify-content-between align-items-center">
+                    <div class="rts__banner__wrapper d-flex flex-wrap flex-lg-nowrap gap-5 justify-content-between align-items-center">
                         <div class="rts__banner__content max-750">
                             <h1 class="rts__banner__title ">
                                 Unlock Your Dream Career with Jobpath
                             </h1>
-                            <p class="rts__banner__desc my-40">
+                            <p class="rts__banner__desc my-40 br-lg-none">
                                 Looking for a new job can be both exciting and daunting. Navigating the job market <br> involves exploring various avenues, including online job boards.
                             </p>
                             <div class="rts__job__search form-2 max-content">
-                                <form action="#" class="d-flex gap-4  align-items-center justify-content-between">
-                                    <div class="input-group d-flex gap-4">
+                                <form action="#" class="d-flex align-items-center flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap gap-4 justify-content-between">
+                                    <div class="input-group flex-md-nowrap d-flex gap-4">
                                         <div class="single__input d-flex flex-column">
                                             <input type="text" placeholder="Enter Type of job">
                                             <div class="search__icon fa-light fa-magnifying-glass"></div>
@@ -178,14 +178,14 @@
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
         <!-- banner area end -->
 
         <!-- job category -->
         <div class="rts__section overflow-hidden pt-100">
             <div class="container">
                 <div class="row justify-content-center mb-50 position-relative mtn-1">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-center">
         <h3 class="rts__section__title mb-3">Browse Job Category</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further</p>
@@ -209,6 +209,26 @@
     "navigation": {
         "nextEl": ".rts__slide__next",
         "prevEl": ".rts__slide__prev"
+    },
+    "breakpoints": {
+        "0": {
+            "slidesPerView": 1
+        },
+        "490": {
+            "slidesPerView": 1.5
+        },
+        "768": {
+            "slidesPerView": 2
+        },
+        "1024": {
+            "slidesPerView": 3
+        },
+        "1200": {
+            "slidesPerView": 3.5
+        },
+        "1400": {
+            "slidesPerView": 4
+        }
     }
 
 }'
@@ -276,8 +296,8 @@
         <!-- work process area -->
         <section class="rts__section section__padding">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 offset-xl-1">
+                <div class="row align-items-center justify-content-center g-30">
+                    <div class="col-lg-5 offset-xl-1 col-xl-5">
                         <div class="rts__workprocess__image">
                             <img src="assets/img/home-3/about/about-image.webp" alt="">
                             <div class="rts__applicants">
@@ -301,15 +321,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="rts__workprocess__content mx-5">
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="rts__workprocess__content mx-0 mx-lg-5">
                             <div class="rts__section__content text-start">
                                 <h3 class="rts__section__title mb-3">How Jobpath Works</h3>
                                 <p class="rts__section__desc">From entry-level positions to executive roles browse through.   </p>
                             </div>
                             <div class="single__feature__list">
                                 
-                                <div class="single__item d-flex align-items-center gap-4">
+                                <div class="single__item d-flex align-items-center flex-wrap flex-sm-nowrap gap-4">
                                     <div class="">
                                         <div class="icon">
                                             <img src="assets/img/icon/create.svg" alt="">
@@ -320,7 +340,7 @@
                                         <p>Consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit mollitia eum ipsum.</p>
                                     </div>
                                 </div>
-                                <div class="single__item d-flex align-items-center gap-4">
+                                <div class="single__item d-flex align-items-center flex-wrap flex-sm-nowrap gap-4">
                                     <div class="">
                                         <div class="icon">
                                             <img src="assets/img/icon/khata.svg" alt="">
@@ -331,7 +351,7 @@
                                         <p>Consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit mollitia eum ipsum.</p>
                                     </div>
                                 </div>
-                                <div class="single__item d-flex align-items-center gap-4">
+                                <div class="single__item d-flex align-items-center flex-wrap flex-sm-nowrap gap-4">
                                     <div class="">
                                         <div class="icon">
                                             <img src="assets/img/icon/apply.svg" alt="">
@@ -354,7 +374,7 @@
          <section class="rts__section section__padding featured__job featured__bg">
             <div class="container">
                 <div class="row justify-content-between mb-60">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-start">
         <h3 class="rts__section__title mb-3">Featured Jobs</h3>
         <p class="rts__section__desc">From entry-level positions to executive roles browse through.</p>
@@ -364,163 +384,241 @@
                         <a href="#" class="view__all text-white d-flex gap-2 align-items-center">View All Job <i class="fa-regular fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="row d-flex flex-column g-30">
+                <div class="row px-3 d-flex flex-column g-30">
                     
                     <!-- single job item -->
-                    <div class="rts__job__card__big d-flex justify-content-between align-items-center">
+                    <div class="rts__job__card__big d-flex flex-wrap flex-md-nowrap gap-4 align-items-center">
                         <div class="company__icon">
                             <img src="assets/img/home-1/company/apple.svg" alt="">
                         </div>
-                        <div class="job__meta">
-                            <div class="d-flex align-items-center gap-3">
-                                <a href="#" class="job__title h6">Senior UI Designer, Apple</a>
-                                <span class="badge">Urgent Hiring</span>
+                        <div class="d-flex justify-content-between flex-wrap w-100 gap-3 gap-lg-2 gap-xl-5">
+                            <div class="job__meta">
+                                <div class="d-flex align-items-center justify-content-between gap-3">
+                                    <a href="#" class="job__title h6">Senior UI Designer, Apple</a>
+                                    <span class="badge d-none d-sm-block">Featured</span>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-location-dot"></i> Newyork, USA
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light rt-briefcase"></i> Full Time
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-clock"></i> 3 Days Ago
+                                    </div>
+                                </div>
                             </div>
-                            <div class="d-flex gap-4 mt-1">
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-location-dot"></i> Newyork, USA
+                            <div class="d-flex gap-3 gap-lg-5 flex-wrap align-items-center">
+                                <div class="job__tags d-flex flex-wrap gap-3">
+                                    <a href="#">Creative</a>
+                                    <a href="#">user interface</a>
+                                    <a href="#">web ui</a>
                                 </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-briefcase"></i> Full Time
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-clock"></i> 3 Days Ago
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <div class="job__sallery d-flex gap-2 align-items-center">
+                                        <i class="fa-sharp rt-price-tag"></i> $500 <span>Monthly</span>
+                                    </div>
+                                    <button class="apply__btn">Apply Now</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="job__tags d-flex flex-wrap gap-3">
-                            <a href="#">Creative</a>
-                            <a href="#">user interface</a>
-                            <a href="#">web ui</a>
-                        </div>
-                        <div class="job__sallery d-flex gap-1 align-items-center"><i class="fa-sharp fa-light fa-tag"></i> $500 <span>Monthly</span></div>
-                        <button class="apply__btn">Apply Now</button>
-                    </div>  
+                    </div> 
                     <!-- single job item end -->
                     <!-- single job item -->
-                    <div class="rts__job__card__big d-flex justify-content-between align-items-center">
-                        <div class="company__icon">
-                            <img src="assets/img/home-1/company/google.svg  " alt="">
-                        </div>
-                        <div class="job__meta">
-                            <div class="d-flex align-items-center gap-3">
-                                <a href="#" class="job__title h6">Software Engineer, Google</a>
-                                <span class="badge">Featured</span>
-                            </div>
-                            <div class="d-flex gap-4 mt-1">
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-location-dot"></i> Newyork, USA
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-briefcase"></i> Full Time
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-clock"></i> 3 Days Ago
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job__tags d-flex flex-wrap gap-3">
-                            <a href="#">Creative</a>
-                            <a href="#">user interface</a>
-                            <a href="#">web ui</a>
-                        </div>
-                        <div class="job__sallery d-flex gap-1 align-items-center"><i class="fa-sharp fa-light fa-tag"></i> $500 <span>Monthly</span></div>
-                        <button class="apply__btn">Apply Now</button>
-                    </div>  
-                    <!-- single job item end -->
-                    <!-- single job item -->
-                    <div class="rts__job__card__big d-flex justify-content-between align-items-center">
-                        <div class="company__icon">
-                            <img src="assets/img/home-1/company/upwork.svg" alt="">
-                        </div>
-                        <div class="job__meta">
-                            <div class="d-flex align-items-center gap-3">
-                                <a href="#" class="job__title h6">Web developer, Upwork</a>
-                                <span class="badge">Urgent Hiring</span>
-                            </div>
-                            <div class="d-flex gap-4 mt-1">
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-location-dot"></i> Newyork, USA
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-briefcase"></i> Full Time
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-clock"></i> 3 Days Ago
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job__tags d-flex flex-wrap gap-3">
-                            <a href="#">Creative</a>
-                            <a href="#">user interface</a>
-                            <a href="#">web ui</a>
-                        </div>
-                        <div class="job__sallery d-flex gap-1 align-items-center"><i class="fa-sharp fa-light fa-tag"></i> $500 <span>Monthly</span></div>
-                        <button class="apply__btn">Apply Now</button>
-                    </div>  
-                    <!-- single job item end -->
-                    <!-- single job item -->
-                    <div class="rts__job__card__big d-flex justify-content-between align-items-center">
+                    <div class="rts__job__card__big d-flex flex-wrap flex-md-nowrap gap-4 align-items-center">
                         <div class="company__icon">
                             <img src="assets/img/home-1/company/microsoft.svg" alt="">
                         </div>
-                        <div class="job__meta">
-                            <div class="d-flex align-items-center gap-3">
-                                <a href="#" class="job__title h6">Senior UX Designer, Microsoft</a>
-                                <span class="badge">Urgent Hiring</span>
+                        <div class="d-flex justify-content-between flex-wrap w-100 gap-3 gap-lg-2 gap-xl-5">
+                            <div class="job__meta">
+                                <div class="d-flex align-items-center justify-content-between gap-3">
+                                    <a href="#" class="job__title h6">Senior UI Designer, Bing</a> 
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-location-dot"></i> Canada, USA
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light rt-briefcase"></i> Full Time
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-clock"></i> 7 Days Ago
+                                    </div>
+                                </div>
                             </div>
-                            <div class="d-flex gap-4 mt-1">
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-location-dot"></i> Newyork, USA
+                            <div class="d-flex gap-3 gap-lg-5 flex-wrap align-items-center">
+                                <div class="job__tags d-flex flex-wrap gap-3">
+                                    <a href="#">Creative</a>
+                                    <a href="#">user interface</a>
+                                    <a href="#">web ui</a>
                                 </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-briefcase"></i> Full Time
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-clock"></i> 3 Days Ago
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <div class="job__sallery d-flex gap-2 align-items-center">
+                                        <i class="fa-sharp rt-price-tag"></i> $1000 <span>Monthly</span>
+                                    </div>
+                                    <button class="apply__btn">Apply Now</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="job__tags d-flex flex-wrap gap-3">
-                            <a href="#">Creative</a>
-                            <a href="#">user interface</a>
-                            <a href="#">web ui</a>
-                        </div>
-                        <div class="job__sallery d-flex gap-1 align-items-center"><i class="fa-sharp fa-light fa-tag"></i> $500 <span>Monthly</span></div>
-                        <button class="apply__btn">Apply Now</button>
-                    </div>  
+                    </div> 
                     <!-- single job item end -->
                     <!-- single job item -->
-                    <div class="rts__job__card__big d-flex justify-content-between align-items-center">
+                    <div class="rts__job__card__big d-flex flex-wrap flex-md-nowrap gap-4 align-items-center">
                         <div class="company__icon">
-                            <img src="assets/img/home-1/company/facebook.svg" alt="">
+                            <img src="assets/img/home-1/company/in.svg" alt="">
                         </div>
-                        <div class="job__meta">
-                            <div class="d-flex align-items-center gap-3">
-                                <a href="#" class="job__title h6">Digital Marketing, Facebook</a>
-                                <span class="badge">Urgent Hiring</span>
+                        <div class="d-flex justify-content-between flex-wrap w-100 gap-3 gap-lg-2 gap-xl-5">
+                            <div class="job__meta">
+                                <div class="d-flex align-items-center justify-content-between gap-3">
+                                    <a href="#" class="job__title h6">Digital Marketer, Linkedin</a>
+                                    <span class="badge d-none d-sm-block">Featured</span>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-location-dot"></i> Atlanta, USA
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light rt-briefcase"></i> Full Time
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-clock"></i> 30 Days Ago
+                                    </div>
+                                </div>
                             </div>
-                            <div class="d-flex gap-4 mt-1">
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-location-dot"></i> Newyork, USA
+                            <div class="d-flex gap-3 gap-lg-5 flex-wrap align-items-center">
+                                <div class="job__tags d-flex flex-wrap gap-3">
+                                    <a href="#">Marketing</a>
+                                    <a href="#">Selling</a> 
                                 </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-briefcase"></i> Full Time
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <i class="fa-light fa-clock"></i> 3 Days Ago
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <div class="job__sallery d-flex gap-2 align-items-center">
+                                        <i class="fa-sharp rt-price-tag"></i> $500 <span>Monthly</span>
+                                    </div>
+                                    <button class="apply__btn">Apply Now</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="job__tags d-flex flex-wrap gap-3">
-                            <a href="#">Creative</a>
-                            <a href="#">user interface</a>
-                            <a href="#">web ui</a>
-                        </div>
-                        <div class="job__sallery d-flex gap-1 align-items-center"><i class="fa-sharp fa-light fa-tag"></i> $500 <span>Monthly</span></div>
-                        <button class="apply__btn">Apply Now</button>
-                    </div>  
+                    </div> 
                     <!-- single job item end -->
+                    <!-- single job item -->
+                    <div class="rts__job__card__big d-flex flex-wrap flex-md-nowrap gap-4 align-items-center">
+                        <div class="company__icon">
+                            <img src="assets/img/home-1/company/google.svg" alt="">
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap w-100 gap-3 gap-lg-2 gap-xl-5">
+                            <div class="job__meta">
+                                <div class="d-flex align-items-center justify-content-between gap-3">
+                                    <a href="#" class="job__title h6">Senior Software Engineer, Google</a>
+                                    <span class="badge d-none d-sm-block">Featured</span>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-location-dot"></i> Newyork, USA
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light rt-briefcase"></i> Full Time
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-clock"></i> 3 Days Ago
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 gap-lg-5 flex-wrap align-items-center">
+                                <div class="job__tags d-flex flex-wrap gap-3">
+                                    <a href="#">Creative</a>
+                                    <a href="#">React</a>
+                                    <a href="#">web ui</a>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <div class="job__sallery d-flex gap-2 align-items-center">
+                                        <i class="fa-sharp rt-price-tag"></i> $1500 <span>Monthly</span>
+                                    </div>
+                                    <button class="apply__btn">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- single job item end -->
+                    <!-- single job item -->
+                    <div class="rts__job__card__big d-flex flex-wrap flex-md-nowrap gap-4 align-items-center">
+                        <div class="company__icon">
+                            <img src="assets/img/home-1/company/udemy.svg" alt="">
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap w-100 gap-3 gap-lg-2 gap-xl-5">
+                            <div class="job__meta">
+                                <div class="d-flex align-items-center justify-content-between gap-3">
+                                    <a href="#" class="job__title h6">Senior Instructor, Udemy</a>
+                                    <span class="badge d-none d-sm-block">Featured</span>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-location-dot"></i> Australia
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light rt-briefcase"></i> Full Time
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-clock"></i> 3 Days Ago
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 gap-lg-5 flex-wrap align-items-center">
+                                <div class="job__tags d-flex flex-wrap gap-3">
+                                    <a href="#">Creative</a>
+                                    <a href="#">E-learning</a>
+                                    <a href="#">web Design</a>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <div class="job__sallery d-flex gap-2 align-items-center">
+                                        <i class="fa-sharp rt-price-tag"></i> $1000 <span>Monthly</span>
+                                    </div>
+                                    <button class="apply__btn">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- single job item end -->
+                    <!-- single job item -->
+                    <div class="rts__job__card__big d-flex flex-wrap flex-md-nowrap gap-4 align-items-center">
+                        <div class="company__icon">
+                            <img src="assets/img/home-1/company/apple.svg" alt="">
+                        </div>
+                        <div class="d-flex justify-content-between flex-wrap w-100 gap-3 gap-lg-2 gap-xl-5">
+                            <div class="job__meta">
+                                <div class="d-flex align-items-center justify-content-between gap-3">
+                                    <a href="#" class="job__title h6">Senior UI Designer, Apple</a>
+                                    <span class="badge d-none d-sm-block">Featured</span>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap gap-lg-4 fw-medium">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-location-dot"></i> Newyork, USA
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light rt-briefcase"></i> Full Time
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-light fa-clock"></i> 3 Days Ago
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 gap-lg-5 flex-wrap align-items-center">
+                                <div class="job__tags d-flex flex-wrap gap-3">
+                                    <a href="#">Creative</a>
+                                    <a href="#">user interface</a>
+                                    <a href="#">web ui</a>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <div class="job__sallery d-flex gap-2 align-items-center">
+                                        <i class="fa-sharp rt-price-tag"></i> $500 <span>Monthly</span>
+                                    </div>
+                                    <button class="apply__btn">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- single job item end -->
+                    
                 </div>
             </div>
          </section>
@@ -530,7 +628,7 @@
         <section class="rts__section section__padding">
             <div class="container">
                 <div class="row justify-content-center mb-50">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-center">
         <h3 class="rts__section__title mb-3">Top Employers</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further</p>
@@ -539,7 +637,7 @@
                 </div>
                 <div class="row g-30">
                     <div class="col-lg-6">
-                        <div class="rts__single__employer d-flex justify-content-between align-items-center">
+                        <div class="rts__single__employer d-flex flex-wrap gap-4 justify-content-between align-items-center">
                             <div class="d-flex gap-4 align-items-center">
                                 <div class="icon">
                                     <img src="assets/img/icon/linkedin.svg" alt="">
@@ -549,7 +647,7 @@
                                     <span class="d-block">Ui Designer</span>
                                 </div>
                             </div>
-                            <div class="d-flex gap-4 align-items-center">
+                            <div class="d-flex gap-4 align-items-center flex-wrap">
                                 <div class="d-flex gap-3 align-items-center">
                                     <i class="fa-light fa-location-dot text-dark"></i> Newyork, USA
                                 </div>
@@ -558,7 +656,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="rts__single__employer d-flex justify-content-between align-items-center">
+                        <div class="rts__single__employer d-flex flex-wrap gap-4 justify-content-between align-items-center">
                             <div class="d-flex gap-4 align-items-center">
                                 <div class="icon">
                                     <img src="assets/img/icon/upwork.svg" alt="">
@@ -568,7 +666,7 @@
                                     <span class="d-block">Ui Designer</span>
                                 </div>
                             </div>
-                            <div class="d-flex gap-4 align-items-center">
+                            <div class="d-flex gap-4 align-items-center flex-wrap">
                                 <div class="d-flex gap-3 align-items-center">
                                     <i class="fa-light fa-location-dot text-dark"></i> Newyork, USA
                                 </div>
@@ -577,7 +675,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="rts__single__employer d-flex justify-content-between align-items-center">
+                        <div class="rts__single__employer d-flex flex-wrap gap-4 justify-content-between align-items-center">
                             <div class="d-flex gap-4 align-items-center">
                                 <div class="icon">
                                     <img src="assets/img/icon/microsoft.svg" alt="">
@@ -587,7 +685,7 @@
                                     <span class="d-block">Web Developer</span>
                                 </div>
                             </div>
-                            <div class="d-flex gap-4 align-items-center">
+                            <div class="d-flex gap-4 align-items-center flex-wrap">
                                 <div class="d-flex gap-3 align-items-center">
                                     <i class="fa-light fa-location-dot text-dark"></i> Newyork, USA
                                 </div>
@@ -596,7 +694,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="rts__single__employer d-flex justify-content-between align-items-center">
+                        <div class="rts__single__employer d-flex flex-wrap gap-4 justify-content-between align-items-center">
                             <div class="d-flex gap-4 align-items-center">
                                 <div class="icon">
                                     <img src="assets/img/icon/google.svg" alt="">
@@ -606,7 +704,7 @@
                                     <span class="d-block">Ui Designer</span>
                                 </div>
                             </div>
-                            <div class="d-flex gap-4 align-items-center">
+                            <div class="d-flex gap-4 align-items-center flex-wrap">
                                 <div class="d-flex gap-3 align-items-center">
                                     <i class="fa-light fa-location-dot text-dark"></i> Newyork, USA
                                 </div>
@@ -622,8 +720,8 @@
         <!-- explore job city -->
          <section class="rts__section pb-120">
             <div class="container">
-                <div class="row justify-content-between mb-50">
-                    <div class="col-lg-6">
+                <div class="row justify-content-between gap-4 mb-50">
+                    <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-start">
         <h3 class="rts__section__title mb-3">Explore Nearby with JobPath</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further</p>
@@ -643,6 +741,23 @@
             "centeredSlides": true,
             "autoplay":{
                 "delay":"7000"
+            },
+            "breakpoints": {
+                "1200": {
+                    "slidesPerView": 5
+                },
+                "992": {
+                    "slidesPerView": 4
+                },
+                "768": {
+                    "slidesPerView": 3
+                },
+                "576": {
+                    "slidesPerView": 2
+                },
+                "0": {
+                    "slidesPerView": 1.5
+                }
             }
         
         }'>
@@ -721,33 +836,29 @@
         <!-- funfact section -->
         <div class="rts__section section__padding funfact__bg funfact__style__two">
             <div class="container">
-                <div class="row">
+                <div class="row g-30">
                     
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="rts__single__counter">
-                            <div class="counter__round"></div>
-                            <h2 class="fw-bold heading__color"><span class="counter">20</span>K</h2>
+                            <h2 class="fw-bold heading__color __noround"><span class="counter">20</span>K</h2>
                             <p class="h6 mb-0 fw-medium">Happy Employer</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="rts__single__counter">
-                            <div class="counter__round"></div>
-                            <h2 class="fw-bold heading__color"><span class="counter">11</span>K</h2>
+                            <h2 class="fw-bold heading__color __noround"><span class="counter">11</span>K</h2>
                             <p class="h6 mb-0 fw-medium">Opening Position</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="rts__single__counter">
-                            <div class="counter__round"></div>
-                            <h2 class="fw-bold heading__color"><span class="counter">1</span>M</h2>
+                            <h2 class="fw-bold heading__color __noround"><span class="counter">1</span>M</h2>
                             <p class="h6 mb-0 fw-medium">Daily active users</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="rts__single__counter">
-                            <div class="counter__round"></div>
-                            <h2 class="fw-bold heading__color"><span class="counter">100</span>+</h2>
+                            <h2 class="fw-bold heading__color __noround"><span class="counter">100</span>+</h2>
                             <p class="h6 mb-0 fw-medium">Job Categories</p>
                         </div>
                     </div>
@@ -777,8 +888,8 @@
 
                 <div class="tab-content" id="nav-tabContent">
                     <div class="monthly__pricing tab-pane show active" id="monthly">
-                        <div class="row" >
-                            <div class="col-lg-4">
+                        <div class="row g-30" >
+                            <div class="col-lg-4 col-md-6">
                                 <div class="rts__pricing__box pricing__style__three">
                                     <div class="font-20 fw-medium lh-1 mb-3">Basic Plan</div>
                                     <div class="plan__price lh-1 mb-4"><span class="h4">Free/</span>Month</div>
@@ -794,7 +905,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="rts__pricing__box pricing__style__three">
                                     <div class="font-20 fw-medium lh-1 mb-3">Basic Plan</div>
                                     <div class="plan__price lh-1 mb-4"><span class="h4">$150/</span>Month</div>
@@ -810,7 +921,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="rts__pricing__box pricing__style__three">
                                     <div class="font-20 fw-medium lh-1 mb-3">Premium Plan</div>
                                     <div class="plan__price lh-1 mb-4"><span class="h4">$199/</span>Month</div>
@@ -829,8 +940,8 @@
                         </div>
                     </div>
                     <div class="yearly__pricing tab-pane " id="yearly">
-                        <div class="row" >
-                            <div class="col-lg-4">
+                        <div class="row g-30" >
+                            <div class="col-lg-4 col-md-6">
                                 <div class="rts__pricing__box pricing__style__three">
                                     <div class="font-20 fw-medium lh-1 mb-3">Basic Plan</div>
                                     <div class="plan__price lh-1 mb-4"><span class="h4">Free/</span>Yearly</div>
@@ -846,7 +957,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="rts__pricing__box pricing__style__three">
                                     <div class="font-20 fw-medium lh-1 mb-3">Basic Plan</div>
                                     <div class="plan__price lh-1 mb-4"><span class="h4">$150/</span>Yearly</div>
@@ -862,7 +973,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="rts__pricing__box pricing__style__three">
                                     <div class="font-20 fw-medium lh-1 mb-3">Premium Plan</div>
                                     <div class="plan__price lh-1 mb-4"><span class="h4">$199/</span>Yearly</div>
@@ -889,14 +1000,14 @@
         <div class="rts__section testimonial__style__three">
             <div class="container position-relative">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-10 col-xl-6">
                         <div class="rts__section__content text-start mb-40">
                             <h3 class="rts__section__title">What Our Customer Saying</h3>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-11">
+                    <div class="col-lg-11 col-md-12">
                         <div class="rts__testimonial__active overflow-hidden swiper-data testimonial__style__three" data-swiper='{
                             "slidesPerView": 1,
                             "autoplay": true,
@@ -969,8 +1080,11 @@
                     "0": {
                         "slidesPerView": 2
                     },
-                    "768": {
+                    "480": {
                         "slidesPerView": 3
+                    },
+                    "768": {
+                        "slidesPerView": 4
                     },
                     "1024": {
                         "slidesPerView": 4
@@ -1049,15 +1163,16 @@
 </div>
          <!-- brand area end -->
 
-    <footer class="rts__section pt-80  footer__home__three">
+    <footer class="rts__section pt-80 footer__home__three">
     <div class="container">
-        <div class="rts__footer__newsletter d-flex justify-content-between align-items-center pb-60">
-            <div class="text-white">
-                <h3 class="text-white mb-3">Subscribe To Get Our  Newsletter</h3>
+        <div class="rts__footer__newsletter d-flex flex-wrap flex-lg-nowrap gap-5 justify-content-md-center 
+        justify-content-lg-between align-items-center pb-60">
+            <div class="text-white text-center text-lg-start">
+                <h3 class="text-white text-center text-md-start mb-3">Subscribe To Get Our  Newsletter</h3>
                 <p>Looking for your next career opportunity. Look no further</p>
             </div>
             <div class="footer__newsletter__three">
-                <form action="#" method="post">
+                <form action="#" method="post" class="d-flex">
                     <input type="email" name="email" id="email" placeholder="Enter your email" required>
                     <button type="submit" class="rts__btn fill__btn newsletter__btn">Subscribe</button>
                 </form>
@@ -1067,7 +1182,8 @@
     <div class="footer__bottom py-40 text-white">
         <div class="container">
             <div class="row">
-                <div class="footer__bottom__content d-flex align-items-center justify-content-between">
+                <div class="footer__bottom__content d-flex flex-wrap gap-4 
+                align-items-center justify-content-between">
                     <a href="#" class="footer__logo">
                         <img src="assets/img/logo/logo_three_footer.svg" alt="">
                     </a>

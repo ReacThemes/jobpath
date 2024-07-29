@@ -13,6 +13,11 @@
     @extend %background;
 }
 .rts__footer__widget{
+    &.max-320{
+        @include mq($sm){
+            max-width: 100%;
+        }
+    }
     ul{
         li{
             
@@ -47,6 +52,7 @@
 .footer__home__two{
     background-image: url('../img/home-2/footer.png');
     padding-top: 220px;
+    @extend %background;
     .rts__footer__widget ul li a{
         color: var(--rts-gray);
     }
@@ -61,8 +67,13 @@
     background-color: var(--rts-white);
     padding: 10px 10px 10px 20px;
     border-radius: 4px;
+    position: relative;
+    @include mq($xs){
+        max-width: 100%;
+    }
     input{
         border: 0;
+        padding: 13px 15px;
     }
     .newsletter__btn{
         padding: 13px;
@@ -71,6 +82,12 @@
         color: var(--rts-white);
         border: 0;
         font-size: 16px;
+        @include mq($xs){
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
     }
 }
 .footer__bottom{
@@ -101,6 +118,13 @@
         border-radius: 4px;
     }
 }
+.newsletter{
+    &.mnw-500{
+        @include mq($xs){
+            min-width: 100%;
+        }
+    }
+}
 .style-border{
     border: 1px solid #DDD8F9;
 }
@@ -123,5 +147,13 @@
 .footer__six__copy{
     p{
         color: var(--rts-para);
+    }
+}
+
+.footer__social__left{
+    h2{
+        @include mq($sm){
+            font-size: 45px;
+        }
     }
 }

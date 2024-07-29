@@ -2,7 +2,9 @@
 .home__one__banner {
     position: relative;
     overflow: hidden;
-
+    @include mq($md){
+        padding-top: 150px;
+    }
     .rts__banner__background {
         background-image: url('../img/home-1/banner/header__background.svg');
         position: absolute;
@@ -35,9 +37,25 @@
         .rts__banner__title {
             letter-spacing: -1px;
 
+            @include mq($xl) {
+                font-size: 75px;
+            }
+
+            @include mq($lg) {
+                font-size: 55px;
+                line-height: 1.2;
+            }
+
             span {
                 color: var(--rts-button-1);
             }
+        }
+    }
+
+    .rts__banner__wrapper {
+        @include mq($md) {
+            flex-wrap: wrap;
+            gap: 180px !important;
         }
     }
 
@@ -95,6 +113,13 @@
     .single__input {
         min-width: 190px;
 
+        @include mq($xl) {
+            min-width: 170px;
+        }
+        @include mq($sm){
+            min-width: 100%;
+        }
+
         label {
             font-size: 20px;
             font-weight: 500;
@@ -151,19 +176,23 @@
 }
 
 /*======= Banner Home Two =======*/
-.home__two__banner{
+.home__two__banner {
     position: relative;
     background-image: url('../img/home-2/header.webp');
     padding-bottom: 250px;
     background-size: cover;
     background-repeat: no-repeat;
-    .rts__job__search{
+    @include mq($md){
+        padding-top: 200px;
+    }
+    .rts__job__search {
         padding-top: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
         padding-left: 30px;
     }
 }
+
 /*======= Banner Home Three =======*/
 .home__three__banner {
     background-image: url('../img/home-3/banner/home_three.png');
@@ -174,6 +203,9 @@
     .rts__banner__title {
         color: var(--rts-white);
         letter-spacing: -2px;
+        @include mq($xs){
+            font-size: 65px;
+        }
     }
 
     p {
@@ -236,6 +268,9 @@
     position: absolute;
     bottom: 50px;
     right: -50px;
+    @include mq($xs){
+        right: 0;
+    }
 }
 
 .rts__icon {
@@ -261,11 +296,15 @@
     box-shadow: unset;
     border-radius: 16px;
     padding: 10px 20px;
-
+    @include mq($lg){
+        padding: 20px;
+    }
     .single__input {
         max-width: 230px;
         min-width: 230px;
-
+        @include mq($sm){
+            min-width: 100%;
+        }
         input {
             padding: 12px 20px 12px 40px;
             border-radius: 6px;
@@ -333,14 +372,39 @@
 .home__four__banner {
     background-color: var(--rts-gray);
 
+    .rts__banner__wrapper{
+        &.pb-200{
+            @include mq($md){
+                padding-bottom: 100px;
+            }
+        }
+    }
     .rts__banner__content {
         min-width: 730px;
+        @include mq($xl){
+            min-width: 670px;
+        }
+        @include mq($lg){
+            min-width: 500px;
+        }
+    }
+    .rts__banner__title{
+        @include mq($xl){
+            font-size: 75px;
+        }
+        @include mq($lg){
+            font-size: 55px;
+            line-height: 1.2;
+        }
     }
 
     .rts__banner__image {
         figure.banner__image {
             height: 530px;
             width: 730px;
+            @include mq($xl){
+                width: 670px;
+            }
         }
     }
 }

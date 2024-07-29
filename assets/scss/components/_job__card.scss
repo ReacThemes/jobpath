@@ -344,6 +344,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
+    @include mq($md){
+        padding-bottom: 0;
+    }
 }
 
 
