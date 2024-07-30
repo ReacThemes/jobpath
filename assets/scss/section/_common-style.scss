@@ -7,5 +7,8 @@
     color: var(--rts-white);
     .rts__section__title{
         color: var(--rts-white);
+        @include mq($sm){
+            font-size: 35px;
+        }
     }
 }

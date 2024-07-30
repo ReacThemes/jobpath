@@ -74,6 +74,7 @@
             transition: var(--transition);
             font-size: 16px;
             font-weight: 500;
+
             &:hover {
                 color: var(--rts-white);
                 background-color: var(--rts-button-1);
@@ -137,6 +138,7 @@
         transition: var(--transition);
         border: 1px solid #F1F1F1;
         font-weight: 500;
+
         &:hover {
             color: var(--rts-white);
             background-color: var(--rts-button-3);
@@ -229,6 +231,7 @@
 // job card style five
 .rts__job__card {
     &.style__five {
+        
         &:hover {
             background-color: var(--rts-button-1);
             color: var(--rts-white);
@@ -273,9 +276,12 @@
             color: var(--rts-white);
 
             .content {
-                a.text-dark {
+                .text-dark {
                     color: var(--rts-white) !important;
                 }
+            }
+            i.text-dark{
+                color: var(--rts-white) !important;
             }
 
             .apply__btn {
@@ -344,7 +350,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-    @include mq($md){
+
+    @include mq($md) {
         padding-bottom: 0;
     }
 }
@@ -408,6 +415,7 @@
 
 .search__item {
     position: relative;
+
     input {
         padding: 15px 20px;
         padding-left: 45px;
@@ -504,8 +512,9 @@
             padding-left: 20px;
         }
     }
-    .job__tags{
-        a{
+
+    .job__tags {
+        a {
             padding: 10px 12px;
             border-radius: 2px;
             background: var(--rts-white);

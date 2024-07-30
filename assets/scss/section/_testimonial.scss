@@ -120,6 +120,10 @@
         font-weight: 600;
         font-style: italic;
         color: var(--rts-heading);
+        @include mq($lg){
+            font-size: 35px;
+            line-height: 1.5;
+        }
     }
 
     .rts__rating {
@@ -127,5 +131,13 @@
             color: var(--rts-button-1);
             font-size: 25px;
         }
+    }
+}
+.bottom-md-12{
+    @include mq($md){
+        bottom: -12%;
+    }
+    @include mq($sm){
+        display: none !important;
     }
 }

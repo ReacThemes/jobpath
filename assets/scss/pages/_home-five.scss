@@ -2,6 +2,9 @@
 .top__candidate__bg{
     background-image: url('../img/home-5/banner/banner__background.png');
     border-bottom-right-radius: 160px;
+    @include mq($md){
+        border-bottom-right-radius: 0;
+    }
     .rts__banner__shape {
         position: absolute;
         height: 100%;
@@ -58,5 +61,20 @@
 .rts__section__content.text-white{
     .rts__section__title{
         color: var(--rts-white) !important;
+    }
+}
+
+// about section
+.about__image{
+    img{
+        @include mq($lg){
+            width: 100%;
+            border-radius: 16px;
+        }
+    }
+    &.is__home__5{
+        @include mq($lg){
+            position: relative !important;
+        }
     }
 }

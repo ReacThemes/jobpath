@@ -125,3 +125,10 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+// top candidate
+.top__candidate__single{
+    .apply__btn{
+        min-width: 150px;
+    }
+}

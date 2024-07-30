@@ -63,13 +63,14 @@
     @extend %background;
 }
 .footer__newsletter__three{
-    max-width: 490px;
+    min-width: 450px;
     background-color: var(--rts-white);
     padding: 10px 10px 10px 20px;
     border-radius: 4px;
     position: relative;
     @include mq($xs){
         max-width: 100%;
+        min-width: 100%;
     }
     input{
         border: 0;
@@ -109,6 +110,13 @@
         z-index: -1;
         background-image: url('../img/hom-4/footer__bg.svg');
         @extend %background;
+    }
+    .rts__footer__widget{
+        &.max-410{
+            @include mq($sm){
+                min-width: 100%;
+            }
+        }
     }
 }
 .newsletter.style-border{

@@ -44,6 +44,7 @@
           });
         }
       });
+      // explorer slider
       var swiper = new Swiper(".rts__testimonial__four", {
         slidesPerView: 1,
         loop: true,

@@ -75,7 +75,9 @@
         padding: 15px 20px;
         background-color: rgba(#f1f1f1, $alpha: 0.3);
         box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
-
+        @include mq($xl){
+            min-width: 100%;
+        }
         .single__cat__icon {
             height: 70px;
             width: 70px;

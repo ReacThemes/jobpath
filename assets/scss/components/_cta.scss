@@ -6,11 +6,25 @@
     .cta__content{
         max-width: 720px;
         margin: 0 auto;
+        @include mq($md){
+            padding: 0 30px;
+        }
     }
     .cta__shape{
         left: 50%;
         top: 50%;
         width: 100%;
+        @include mq($md){
+            display: none;
+        }
+        img{
+            @include mq($xl){
+                width: 80%;
+            }
+            @include mq($lg){
+                width: 70%;
+            }
+        }
     }
     .newsletter{
         max-width: 490px;

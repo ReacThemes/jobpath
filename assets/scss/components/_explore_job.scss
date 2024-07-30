@@ -1,6 +1,9 @@
 .single__destination__item{
     max-width: 305px;
     position: relative;
+    &.is__full__width{
+        max-width: 100%;
+    }
     .destination__thumb{
         border-radius: 10px;
         overflow: hidden;

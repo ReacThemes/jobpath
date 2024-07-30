@@ -371,7 +371,7 @@
 /* ======= Banner Home Four =======*/
 .home__four__banner {
     background-color: var(--rts-gray);
-
+    background-image: url('../img/hom-4/banner/header__four__bg.svg');
     .rts__banner__wrapper{
         &.pb-200{
             @include mq($md){
@@ -387,6 +387,9 @@
         @include mq($lg){
             min-width: 500px;
         }
+        @include mq($md){
+            min-width: 100%;
+        }
     }
     .rts__banner__title{
         @include mq($xl){
@@ -396,6 +399,9 @@
             font-size: 55px;
             line-height: 1.2;
         }
+        @include mq($xs){
+            font-size: 45px;
+        }
     }
 
     .rts__banner__image {
@@ -404,6 +410,10 @@
             width: 730px;
             @include mq($xl){
                 width: 670px;
+            }
+            @include mq($md){
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -434,20 +444,48 @@
     background-size: cover;
     background-position: center;
     border-bottom-left-radius: 160px;
-
+    @include mq($lg){
+        border-bottom-left-radius: 0;
+    }
+    .pt-150{
+        @include mq($lg){
+            padding-top: 100px;
+        }
+    }
     .rts__banner__content {
         min-width: 750px;
+        @include mq($md){
+            min-width: 100%;
+        }
     }
-
+    .rts__banner__title{
+        @include mq($lg){
+            margin-bottom: 40px;
+        }
+        @include mq($md){
+            font-size: 60px;
+        }
+        @include mq($xs){
+            font-size: 45px;
+            line-height: 1.2;
+        }
+    }
     .rts__banner__desc {
         color: var(--rts-gray);
+        @include mq($xl){
+            max-width: 700px;
+        }
     }
 
     .rts__job__search.form-2 {
         box-shadow: 0px 30px 30px rgba(20, 22, 55, 0.1);
         padding: 15px;
     }
-
+    .rts__banner__wrapper{
+        @include mq($lg){
+            margin-bottom: 80px;
+        }
+    }
     .rts__banner__image {
         margin-bottom: -160px;
         margin-top: -35px;
@@ -457,11 +495,28 @@
             height: 600px;
             border-radius: 16px;
             border-bottom-right-radius: 140px;
+            
+            @include mq($xl){
+                max-width: 850px;
+                object-fit: cover;
+            }
+            @include mq($lg){
+                max-width: 100%;
+                border-bottom-right-radius: 16px;
+            }
+            @include mq($md){
+                height: 450px;
+            }
         }
     }
 
     .applicant {
         bottom: 50px;
+        @include mq($lg){
+            position: relative !important;
+            bottom: 0;
+            margin-top: 50px;
+        }
     }
 
     .rts__banner__shape {
@@ -493,6 +548,12 @@
             position: absolute;
             bottom: 20%;
             left: 15%;
+            @include mq($xl){
+                left: 10%;
+            }
+            @include mq($lg){
+                display: none;
+            }
         }
     }
 }
@@ -506,6 +567,11 @@
     @extend %background;
     margin: 0 65px;
     position: relative;
+    @include mq($md){
+        margin: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
     & *> {
         position: relative;
@@ -533,6 +599,9 @@
             box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
             border-radius: 6px;
             background-color: var(--rts-white);
+            @include mq($md){
+                display: none;
+            }
         }
 
         .shape__one {
@@ -569,6 +638,12 @@
             position: absolute;
             right: 10%;
             top: 30%;
+        }
+    }
+    .rts__banner__title{
+        @include mq($sm){
+            font-size: 55px;
+            line-height: 1.2;
         }
     }
 
