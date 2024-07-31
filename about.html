@@ -187,8 +187,8 @@
                     </div>
                     <div class="col-lg-6">
 
-                        <div class="about__image__section position-relative d-flex justify-content-between gap-5">
-                            
+                        <div class="about__image__section position-relative flex-wrap flex-sm-nowrap d-flex justify-content-between gap-5">
+    
                             <div class="about__image__one align-self-end">
                                 <figure>
                                     <img src="assets/img/home-6/about/1.webp" alt="">
@@ -238,8 +238,8 @@
     </div>
 </div>
                 </div>
-                <div class="row g-30">
-                    <div class="col-lg-4">
+                <div class="row justify-content-center g-30">
+                    <div class="col-lg-4 col-md-10">
                         <div class="rts__workprocess__box">
                             <div class="rts__icon">
                                 <img src="assets/img/home-1/process/icon-1.svg" alt="">
@@ -253,7 +253,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-10">
                         <div class="rts__workprocess__box">
                             <div class="rts__icon">
                                 <img src="assets/img/home-1/process/icon-2.svg" alt="">
@@ -267,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-10">
                         <div class="rts__workprocess__box">
                             <div class="rts__icon">
                                 <img src="assets/img/home-1/process/icon-3.svg" alt="">
@@ -289,32 +289,29 @@
         <!-- funfact section -->
         <div class="rts__section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
+                <div class="row g-30 justify-content-center">
+                    
+                    <div class="col-lg-3 col-md-6">
                         <div class="rts__single__counter">
-                            <div class="counter__round"></div>
-                            <h2 class="fw-bold ms-3 heading__color"><span class="counter">20</span>K</h2>
+                            <h2 class="fw-bold ms-lg-3 mx-auto heading__color"><span class="counter">20</span>K</h2>
                             <p class="h6 mb-0 fw-semibold">Happy Employer</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="rts__single__counter">
-                            <div class="counter__round"></div>
-                            <h2 class="fw-bold ms-3 heading__color"><span class="counter">11</span>K</h2>
+                            <h2 class="fw-bold ms-lg-3 mx-auto heading__color"><span class="counter">11</span>K</h2>
                             <p class="h6 mb-0 fw-semibold">Opening Position</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="rts__single__counter">
-                            <div class="counter__round"></div>
-                            <h2 class="fw-bold ms-3 heading__color"><span class="counter">1</span>M</h2>
+                            <h2 class="fw-bold ms-lg-3 mx-auto heading__color"><span class="counter">1</span>M</h2>
                             <p class="h6 mb-0 fw-semibold">Daily active users</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="rts__single__counter">
-                            <div class="counter__round"></div>
-                            <h2 class="fw-bold ms-3 heading__color"><span class="counter">100</span>+</h2>
+                            <h2 class="fw-bold ms-lg-3 mx-auto heading__color"><span class="counter">100</span>+</h2>
                             <p class="h6 mb-0 fw-semibold">Job Categories</p>
                         </div>
                     </div>
@@ -326,7 +323,7 @@
         <!-- top employer -->
         <div class="rts__section overflow-hidden pt-100 pb-100">
             <div class="container">
-                <div class="row justify-content-between mb-50 position-relative mtn-1">
+                <div class="row justify-content-between gap-4 mb-50 position-relative mtn-1">
                     <div class="col-xl-6 col-lg-10">
     <div class="rts__section__content text-start">
         <h3 class="rts__section__title section__mb">Let’s Meet Our Team</h3>
@@ -345,6 +342,23 @@
                     "navigation": {
                         "nextEl": ".rts__slide__next",
                         "prevEl": ".rts__slide__prev"
+                    },
+                    "breakpoints": {
+                        "0": {
+                            "slidesPerView": 1.05
+                        },
+                        "490": {
+                            "slidesPerView": 1.05
+                        },
+                        "768": {
+                            "slidesPerView": 2
+                        },
+                        "1024": {
+                            "slidesPerView": 3
+                        },
+                        "1200": {
+                            "slidesPerView": 4
+                        }
                     }
                     }'>
                     <!-- single company info -->
@@ -462,7 +476,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rts__slider__control d-flex justify-content-between g-0 position-absolute top-50  translate-middle-y">
+                    <div class="rts__slider__control d-none d-lg-flex justify-content-between g-0 position-absolute top-50  translate-middle-y">
                         <div class="rts__slide__next slider__btn"><i class="fa-sharp fa-solid fa-chevron-left"></i></div>
                         <div class="rts__slide__prev slider__btn"><i class="fa-sharp fa-solid fa-chevron-right"></i></div>
                     </div>
@@ -576,37 +590,37 @@
 </div>
         <!-- brand area end -->
 
-        <!-- app center -->
-         <div class="rts__section pb-120">
-            <div class="container">
-                <div class="rts__appcenter">
-                    <div class="rts__appcenter__shape">
-                        <img src="assets/img/home-1/app/shape.png" alt="">
+            <!-- app center -->
+    <div class="rts__section pb-120">
+        <div class="container">
+            <div class="rts__appcenter">
+                <div class="rts__appcenter__shape">
+                    <img src="assets/img/home-1/app/shape.png" alt="">
+                </div>
+                <div class="rts__appcenter__content d-flex flex-wrap flex-xl-nowrap align-items-center justify-content-between justify-content-lg-center">
+                    <div class="content__left align-items-end d-flex position-relative top-15px">
+                        <img src="assets/img/home-1/app/app_screen.png" alt="">
                     </div>
-                    <div class="rts__appcenter__content d-flex align-items-center justify-content-between">
-                        <div class="content__left align-items-end d-flex position-relative top-15px">
-                            <img src="assets/img/home-1/app/app_screen.png" alt="">
-                        </div>
-                        <div class="content__right text-white max-630">
-                            <h3 class="l--1 mb-4 text-white">Download The app Free!</h3>
-                            <p>Looking for a new job can be both exciting and daunting. Navigating the job market involves exploring various avenues.</p>
-                            <div class="d-flex gap-3 mt-40">
-                                <div class="link">
-                                    <a href="https://appstore.com" target="_blank" title="app store">
-                                        <img src="assets/img/home-1/app/app-store.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="link">
-                                    <a href="https://google.com" target="_blank" title="play store">
-                                        <img src="assets/img/home-1/app/play-store.svg" alt="">
-                                    </a>
-                                </div>
+                    <div class="content__right text-white text-center text-xl-start max-630">
+                        <h3 class="l--1 mb-4 text-white">Download The app Free!</h3>
+                        <p>Looking for a new job can be both exciting and daunting. Navigating the job market involves exploring various avenues.</p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-xl-start flex-wrap mt-40">
+                            <div class="link">
+                                <a href="https://appstore.com" target="_blank" title="app store">
+                                    <img src="assets/img/home-1/app/app-store.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="link">
+                                <a href="https://google.com" target="_blank" title="play store">
+                                    <img src="assets/img/home-1/app/play-store.svg" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
+        </div>
         <!-- app center end -->
 
     <footer class="rts__section  footer__home__one">

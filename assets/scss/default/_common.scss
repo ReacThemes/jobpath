@@ -82,3 +82,10 @@
         }
     }
 }
+.min-fit-content{
+    min-width: fit-content;
+}
+.bg-primary{
+    background: var(--rts-primary) !important;
+    color: var(--rts-white) !important;
+}

@@ -89,7 +89,16 @@
     background-color: var(--rts-white);
     border-radius: 10px;
     padding: 30px;
-
+    &.is__video__in{
+        margin-top: -70px;
+        margin-left: 50px;
+        padding-right: 60px !important;
+        @include mq($md){
+            margin-top: 50px;
+            margin-left: 0;
+            padding-right: 0 !important;
+        }
+    }
     .company__icon {
         height: 120px;
         min-width: 120px;

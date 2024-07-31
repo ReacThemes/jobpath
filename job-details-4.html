@@ -181,7 +181,7 @@
                             <img class="rounded-3" src="assets/img/pages/job-details-4.webp" alt="">
                         </div>
                         <div class="job__overview style__four no-border-bottom mb-40">
-                            <h6 class="fw-semibold mb-20">Job Overview</h6>
+                            <h6 class="fw-semibold mb-30">Job Overview</h6>
                             <div class="job__overview__content">
                                 <ul class="d-grid grid-style">
                                     <li
@@ -382,7 +382,7 @@
     </div>
     <!-- job list one end -->
 
-    <!-- top employer -->
+    <!-- Related Job -->
     <div class="rts__section pb-120 overflow-hidden">
         <div class="container">
             <div class="row justify-content-center position-relative">
@@ -392,32 +392,51 @@
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further.</p>
     </div>
 </div>
-                <div
-                    class="rts__slider__control style-gray d-flex z-3 w-100 justify-content-between g-0 position-absolute top-50  translate-middle-y">
+                <div class="rts__slider__control d-none d-md-flex style-gray z-3 w-100 justify-content-between g-0 position-absolute top-50  translate-middle-y">
                     <div class="rts__slide__next slider__btn"><i class="fa-sharp fa-solid fa-chevron-left"></i></div>
                     <div class="rts__slide__prev slider__btn"><i class="fa-sharp fa-solid fa-chevron-right"></i></div>
                 </div>
             </div>
             <div class="row swiper-data overflow-hidden" data-swiper='{
-                "slidesPerView": 4,
-                "autoplay": true,
-                "loop": true,
-                "navigation": {
-                    "nextEl": ".rts__slide__next",
-                    "prevEl": ".rts__slide__prev"
-                }
+                "slidesPerView": 4.1,
+                    "autoplay": true,
+                    "loop": true,
+                    "navigation": {
+                        "nextEl": ".rts__slide__next",
+                        "prevEl": ".rts__slide__prev"
+                    },
+                    "breakpoints": {
+                        "0": {
+                            "slidesPerView": 1.05
+                        },
+                        "576": {
+                            "slidesPerView": 1.05
+                        },
+                        "768": {
+                            "slidesPerView": 2.05
+                        },
+                        "992": {
+                            "slidesPerView": 3.05
+                        },
+                        "1200": {
+                            "slidesPerView": 4.05
+                        }
+                    }
+
                 }'>
-                <!-- single company info -->
                 <div class="swiper-wrapper">
                     <!-- single slide -->
                     <div class="swiper-slide">
-                        <div class="rts__job__card card-shadow border-0">
+                        <div class="rts__job__card style__five">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="company__icon">
                                     <img src="assets/img/home-1/company/microsoft.svg" alt="">
                                 </div>
+                                <div class="featured__option">
+                                    <span>Featured</span>
+                                </div>
                             </div>
-                            <div class="d-flex gap-3 mt-4">
+                            <div class="d-flex gap-3 mt-4 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center font-sm">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -440,13 +459,16 @@
                     <!-- single slide end -->
                     <!-- single slide -->
                     <div class="swiper-slide">
-                        <div class="rts__job__card card-shadow border-0">
+                        <div class="rts__job__card style__five">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="company__icon">
                                     <img src="assets/img/home-1/company/apple.svg" alt="">
                                 </div>
+                                <div class="featured__option">
+                                    <span>Featured</span>
+                                </div>
                             </div>
-                            <div class="d-flex gap-3 mt-4">
+                            <div class="d-flex gap-3 mt-4 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center font-sm">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -469,13 +491,16 @@
                     <!-- single slide end -->
                     <!-- single slide -->
                     <div class="swiper-slide">
-                        <div class="rts__job__card card-shadow border-0">
+                        <div class="rts__job__card style__five">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="company__icon">
                                     <img src="assets/img/home-1/company/google.svg" alt="">
                                 </div>
+                                <div class="featured__option">
+                                    <span>Featured</span>
+                                </div>
                             </div>
-                            <div class="d-flex gap-3 mt-4">
+                            <div class="d-flex gap-3 mt-4 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center font-sm">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -498,15 +523,19 @@
                         </div>
                     </div>
                     <!-- single slide end -->
+                
                     <!-- single slide -->
                     <div class="swiper-slide">
-                        <div class="rts__job__card card-shadow border-0">
+                        <div class="rts__job__card style__five">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="company__icon">
                                     <img src="assets/img/home-1/company/in.svg" alt="">
                                 </div>
+                                <div class="featured__option">
+                                    <span>Urgent</span>
+                                </div>
                             </div>
-                            <div class="d-flex gap-3 mt-4">
+                            <div class="d-flex gap-3 mt-4 flex-wrap">
                                 <div class="d-flex gap-2 align-items-center font-sm">
                                     <i class="fa-light fa-location-dot"></i> Newyork, USA
                                 </div>
@@ -528,11 +557,10 @@
                     </div>
                     <!-- single slide end -->
                 </div>
-                <!-- single company info end -->
             </div>
         </div>
     </div>
-    <!-- top employer end -->
+    <!-- Related Job end -->
 
     <!-- app center -->
     <div class="rts__section pb-120">

@@ -123,6 +123,12 @@
 .candidate__info{
     .grid-style{
         grid-template-columns: repeat(3, 1fr);
+        @include mq($lg){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mq($xs){
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }
 

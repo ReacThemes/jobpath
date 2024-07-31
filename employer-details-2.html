@@ -148,7 +148,7 @@
                         </div>
                     </div>  
                     <div class="breadcrumb__apply max-content">
-                        <a href="#" class="rts__btn apply__btn">Apply This Possition</a>
+                        <a href="#" class="rts__btn apply__btn fill__btn">Apply This Possition</a>
                     </div>             
                 </div>
                 <div class="breadcrumb__area__shape d-flex gap-4 justify-content-end align-items-center">
@@ -174,7 +174,7 @@
             <div class="row g-30">
                 <div class="col-xl-8 col-lg-7">
                     <div class="job__overview no-border-bottom mb-30">
-                        <h6 class="fw-semibold mb-20">Job Overview</h6>
+                        <h6 class="fw-semibold mb-30">Job Overview</h6>
                         <div class="job__overview__content">
                             <ul class="d-grid grid-style">
                                 <li class="d-flex flex-column gap-3 gap-sm-0 align-items-center justify-content-between">
@@ -295,10 +295,10 @@
                         </p>
                     </div>
                     <div class="video__section mt-20">
-                        <h6 class="mb-30 d-block">Job apply Process video</h6>
+                        <h5 class="mb-30 d-block">Job apply Process video</h5>
                         <div class="video__section__content">
-                            <img src="assets/img/pages/video-bg.webp" alt="">
-                            <a href="#" class="video__play__btn">
+                            <img src="assets/img/pages/video-bg-2.webp" alt="">
+                            <a href="https://www.youtube.com/watch?v=C9U1U15GSlM" class="video__play__btn" title="Play Video" data-lightbox>
                                 <i class="fa-sharp fa-solid fa-play"></i>
                             </a>
                         </div>
@@ -313,6 +313,21 @@
                             "pagination": {
                                 "el": ".rts__pagination",
                                 "clickable": true
+                            },
+                            "breakpoints": {
+                                "0": {
+                                    "slidesPerView": 1
+                                },
+                                "768": {
+                                    "slidesPerView": 1.5
+                                },
+                                "1024": {
+                                    "slidesPerView": 1.2    
+                                },
+                                "1200": {
+                                    "slidesPerView": 2
+                                }
+
                             }
                         }'>
                             <div class="swiper-wrapper">
@@ -320,7 +335,7 @@
                                 <!-- swiper slide -->
                                 <div class="swiper-slide">
                                     <div class="review__card">
-                                        <div class="d-flex align-items-center gap-3">
+                                        <div class="d-flex align-items-center flex-wrap gap-3">
                                             <img src="assets/img/author/5.svg" alt="" class="author__thumb">
                                             <div>
                                                 <span class="font-20 mb-2 fw-semibold d-block text-dark">Jhon Doe</span>
@@ -342,7 +357,7 @@
                                 <!-- swiper slide -->
                                 <div class="swiper-slide">
                                     <div class="review__card">
-                                        <div class="d-flex align-items-center gap-3">
+                                        <div class="d-flex align-items-center flex-wrap gap-3">
                                             <img src="assets/img/author/6.svg" alt="" class="author__thumb">
                                             <div>
                                                 <span class="font-20 mb-2 fw-semibold d-block text-dark">Jhon Doe</span>
@@ -364,7 +379,7 @@
                                 <!-- swiper slide -->
                                 <div class="swiper-slide">
                                     <div class="review__card">
-                                        <div class="d-flex align-items-center gap-3">
+                                        <div class="d-flex align-items-center flex-wrap gap-3">
                                             <img src="assets/img/author/3.svg" alt="" class="author__thumb">
                                             <div>
                                                 <span class="font-20 mb-2 fw-semibold d-block text-dark">Al Amin Bali</span>
@@ -386,7 +401,7 @@
                                 <!-- swiper slide -->
                                 <div class="swiper-slide">
                                     <div class="review__card">
-                                        <div class="d-flex align-items-center gap-3">
+                                        <div class="d-flex align-items-center flex-wrap gap-3">
                                             <img src="assets/img/author/2.svg" alt="" class="author__thumb">
                                             <div>
                                                 <span class="font-20 mb-2 fw-semibold d-block text-dark">Jhon Doe</span>
@@ -415,14 +430,14 @@
                 </div>
                 <div class="col-lg-5 col-xl-4  d-flex flex-column gap-40 ">
                     <div class="job__location">
-                        <h6 class="fw-semibold mb-20">Job Location</h6>
+                        <h6 class="fw-semibold mb-30">Job Location</h6>
                         <div class="gmap">
                             <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Reacthemes+(ReacThemes)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                             </iframe>
                         </div>
                     </div>
                     <div class="recent__post">
-                        <h6 class="fw-semibold mb-20">3 Job vacancies</h6>
+                        <h6 class="fw-semibold mb-30">3 Job vacancies</h6>
                         <div class="d-flex flex-column gap-30">
                             <div class="d-flex gap-4 align-items-center flex-md-row flex-column mx-auto mx-md-0">
                                 <div class="company__icon recent__post">

@@ -1,10 +1,17 @@
 .breadcrumb__background {
     background-image: url('../img/breadcrumb/breadcrumb.png');
     @extend %background;
+    min-height: 450px;
+    @include mq($md){
+        min-height: 100%;
+    }
 }
 
 .breadcrumb__padding {
     padding: 210px 0 130px;
+    @include mq($md){
+        padding: 150px 0 130px;
+    }
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -60,6 +67,9 @@
 
 // breadcrumb two style
 .breadcrumb__area {
+    @include mq($sm){
+        margin: 0 auto;
+    }
     .rts__job__card__big {
         .job__tags {
             a {
@@ -68,21 +78,30 @@
         }
     }
     .breadcrumb__apply{
-        @include mq($md){
-            margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: 52%;
+        @include mq($lg){
+            margin-top: 30px;
+            position: relative;
         }
+        @include mq($sm){
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
     }
     .apply__btn {
-        background-color: var(--rts-primary);
         color: var(--rts-white);
         font-weight: 500;
-        position: absolute;
+        padding: 20px 50px;
+        position: relative;
         z-index: 1;
-        right: 0;
-        top: 50%;
-        @include mq($lg){
-            margin-top: 50px;
-            position: relative;
+        &.no__fill__btn{
+            color: var(--rts-heading);
+            &:hover{
+                color: var(--rts-white);
+            }
         }
     }
 }

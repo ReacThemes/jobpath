@@ -1133,6 +1133,16 @@ p {
    margin-bottom: 0;
 }
 
+.min-fit-content {
+   min-width: -moz-fit-content;
+   min-width: fit-content;
+}
+
+.bg-primary {
+   background: var(--rts-primary) !important;
+   color: var(--rts-white) !important;
+}
+
 .nice-select {
    width: 100%;
    height: auto;
@@ -2735,10 +2745,23 @@ input::placeholder {
 
 .breadcrumb__background {
    background-image: url("../img/breadcrumb/breadcrumb.png");
+   min-height: 450px;
+}
+
+@media screen and (max-width: 992px) {
+   .breadcrumb__background {
+      min-height: 100%;
+   }
 }
 
 .breadcrumb__padding {
    padding: 210px 0 130px;
+}
+
+@media screen and (max-width: 992px) {
+   .breadcrumb__padding {
+      padding: 150px 0 130px;
+   }
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -2791,33 +2814,52 @@ input::placeholder {
    }
 }
 
+@media screen and (max-width: 768px) {
+   .breadcrumb__area {
+      margin: 0 auto;
+   }
+}
+
 .breadcrumb__area .rts__job__card__big .job__tags a,
 .breadcrumb__area .rts__author__card__big .job__tags a,
 .breadcrumb__area .rts__author__card .job__tags a {
    background-color: var(--rts-white);
 }
 
-@media screen and (max-width: 992px) {
+.breadcrumb__area .breadcrumb__apply {
+   position: absolute;
+   right: 0;
+   top: 52%;
+}
+
+@media screen and (max-width: 1200px) {
+   .breadcrumb__area .breadcrumb__apply {
+      margin-top: 30px;
+      position: relative;
+   }
+}
+
+@media screen and (max-width: 768px) {
    .breadcrumb__area .breadcrumb__apply {
       margin: 0 auto;
+      padding-top: 30px;
    }
 }
 
 .breadcrumb__area .apply__btn {
-   background-color: var(--rts-primary);
    color: var(--rts-white);
    font-weight: 500;
-   position: absolute;
+   padding: 20px 50px;
+   position: relative;
    z-index: 1;
-   right: 0;
-   top: 50%;
 }
 
-@media screen and (max-width: 1200px) {
-   .breadcrumb__area .apply__btn {
-      margin-top: 50px;
-      position: relative;
-   }
+.breadcrumb__area .apply__btn.no__fill__btn {
+   color: var(--rts-heading);
+}
+
+.breadcrumb__area .apply__btn.no__fill__btn:hover {
+   color: var(--rts-white);
 }
 
 .breadcrumb__area__shape.breadcrumb__style__four .shape__one {
@@ -3619,6 +3661,25 @@ input::placeholder {
    background-color: var(--rts-white);
    border-radius: 10px;
    padding: 30px;
+}
+
+.rts__job__card__big.is__video__in,
+.is__video__in.rts__author__card__big,
+.is__video__in.rts__author__card {
+   margin-top: -70px;
+   margin-left: 50px;
+   padding-right: 60px !important;
+}
+
+@media screen and (max-width: 992px) {
+
+   .rts__job__card__big.is__video__in,
+   .is__video__in.rts__author__card__big,
+   .is__video__in.rts__author__card {
+      margin-top: 50px;
+      margin-left: 0;
+      padding-right: 0 !important;
+   }
 }
 
 .rts__job__card__big .company__icon,
@@ -4605,11 +4666,31 @@ input::placeholder {
    color: var(--rts-heading);
 }
 
+@media screen and (max-width: 576px) {
+   .rts__single__blog.blog__full__width {
+      flex-wrap: wrap;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .rts__single__blog.blog__full__width .blog__img {
+      width: 100%;
+   }
+}
+
 .rts__single__blog.blog__full__width .blog__img img {
    max-width: 250px;
    height: 200px;
    -o-object-fit: cover;
    object-fit: cover;
+}
+
+@media screen and (max-width: 576px) {
+   .rts__single__blog.blog__full__width .blog__img img {
+      width: 100%;
+      min-width: 100%;
+      height: 100%;
+   }
 }
 
 .rts__single__blog.blog__full__width .blog__meta {
@@ -4618,6 +4699,18 @@ input::placeholder {
 
 .rts__listing.is__3 {
    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 1200px) {
+   .rts__listing.is__3 {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .rts__listing.is__3 {
+      grid-template-columns: repeat(1, 1fr);
+   }
 }
 
 .job__tags.is__blog__details a {
@@ -4817,7 +4910,7 @@ input::placeholder {
    transform: inherit;
    transform-origin: inherit;
    visibility: unset;
-   transition: var(--transition);
+   transition: unset;
    left: inherit;
    box-shadow: unset;
 }
@@ -5471,12 +5564,40 @@ input::placeholder {
    border: 1px solid #F1F1F1;
 }
 
+.video__section.height-550 {
+   margin-top: -250px;
+}
+
+.video__section.height-550 .video__section__content {
+   height: 550px;
+}
+
+.video__section.height-550 .video__section__content img {
+   height: 100%;
+   width: 100%;
+   -o-object-fit: cover;
+   object-fit: cover;
+}
+
 .video__section__content {
    position: relative;
 }
 
+.video__section__content::before {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   content: "";
+   background: rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+   left: 0;
+   top: 0;
+   z-index: 1;
+}
+
 .video__section__content img {
    border-radius: 10px;
+   position: relative;
 }
 
 .video__section__content .video__play__btn,
@@ -5485,6 +5606,7 @@ input::placeholder {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   z-index: 2;
 }
 
 .video__section__content .video__play__btn::before,
@@ -5501,6 +5623,15 @@ input::placeholder {
    transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 992px) {
+
+   .video__section__content .video__play__btn::before,
+   .video__section__content.style__two .video__play__btn::before {
+      height: 75px;
+      width: 75px;
+   }
+}
+
 .video__section__content .video__play__btn::after,
 .video__section__content.style__two .video__play__btn::after {
    content: "";
@@ -5513,12 +5644,32 @@ input::placeholder {
    left: 50%;
    z-index: -1;
    transform: translate(-50%, -50%);
+   animation: linear ripple 2s infinite;
+}
+
+@media screen and (max-width: 992px) {
+
+   .video__section__content .video__play__btn::after,
+   .video__section__content.style__two .video__play__btn::after {
+      height: 90px;
+      width: 90px;
+   }
 }
 
 .video__section__content .video__play__btn i,
 .video__section__content.style__two .video__play__btn i {
    font-size: 30px;
    color: var(--rts-primary);
+}
+
+@keyframes ripple {
+   0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+   }
+
+   100% {
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.6);
+   }
 }
 
 .video__section__content.style__two .video__play__btn i {
@@ -5631,6 +5782,24 @@ input::placeholder {
    justify-items: start;
 }
 
+@media screen and (max-width: 1400px) {
+   .job__overview .grid-style {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .job__overview .grid-style {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .job__overview .grid-style {
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
+
 .job__overview.style__four {
    padding: 0;
    background: unset;
@@ -5644,6 +5813,10 @@ input::placeholder {
    height: 250px;
    width: 100%;
    border-radius: 10px;
+}
+
+.job__location .gmap.height-500 iframe {
+   height: 500px;
 }
 
 .job__location__map .gmap iframe {
@@ -5684,6 +5857,24 @@ input::placeholder {
 
 .card-shadow {
    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+}
+
+.company__icon.is__height__240 {
+   height: 240px;
+   min-width: 240px;
+   box-shadow: 0px 4px 40px rgba(166, 166, 166, 0.16);
+   border-radius: 16px;
+}
+
+@media screen and (max-width: 576px) {
+   .company__icon.is__height__240 {
+      margin: 0 auto;
+   }
+}
+
+.company__icon.is__height__240 img {
+   height: 130px;
+   width: 130px;
 }
 
 .company__icon.recent__post {
@@ -5876,6 +6067,18 @@ input::placeholder {
 
 .candidate__info .grid-style {
    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 1200px) {
+   .candidate__info .grid-style {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .candidate__info .grid-style {
+      grid-template-columns: repeat(1, 1fr);
+   }
 }
 
 .top__candidate__single .apply__btn {
