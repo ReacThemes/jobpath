@@ -16,7 +16,7 @@
           margin: 0 25px;
         }
         @include mq($lg){
-          margin: 0 15px;
+          margin: 0 14px;
         }
         &:last-child {
           margin-right: 0;
@@ -44,7 +44,7 @@
           position: relative;
           font-size: 16px;
           text-transform: capitalize;
-          padding: 15px 0;
+          padding: 35px 0;
           font-weight: 500;
           display: block;
           color: var(--rts-heading);
@@ -88,6 +88,7 @@
               content: "\f077";
               font-family: var(--fontawesome-pro);
               transition: var(--transition);
+              color: var(--rts-button-1);
             }
           }
         }
@@ -101,7 +102,7 @@
           z-index: 1024;
           display: inline-block;
           opacity: 0;
-          padding: 30px 0;
+          padding: 20px 0 30px 0;
           transform: scaleY(0);
           transform-origin: top center;
           visibility: hidden;

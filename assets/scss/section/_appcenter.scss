@@ -21,7 +21,7 @@
     }
     .content__left{
         padding-left: 120px;
-        padding-right: 50px;
+        padding-right: 80px;
         @include mq($xl){
             padding-left: 120px;
             margin-right: 50px;
@@ -29,6 +29,7 @@
         @include mq($md){
             padding-left: 0;
             margin: 0 auto;
+            padding-right: 0;
         }
     }
     .content__right{

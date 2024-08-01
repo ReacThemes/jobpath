@@ -20,3 +20,15 @@
 	bottom: 30px;
 	opacity: 1;
 }
+
+// back to top button
+.home__two{
+	.rts__back__top{
+		background: var(--rts-button-2);
+	}
+}
+.home__three{
+	.rts__back__top{
+		background: var(--rts-button-3);
+	}
+}

@@ -98,7 +98,7 @@
         try {
           $("#offcanvas__menu").meanmenu({
             meanMenuContainer: ".offcanvas__menu",
-            meanScreenWidth: "767",
+            meanScreenWidth: "991",
             meanExpand: ["+"],
           });
         } catch (error) {

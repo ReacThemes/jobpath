@@ -1,7 +1,10 @@
 .similar__form {
     max-width: 600px;
     min-width: 600px;
-
+    @include mq($xs){
+        min-width: 100%;
+        max-width: 100%;
+    }
 
     input:not([type="checkbox"]) {
         border: 1px solid var(--rts-border);
@@ -56,11 +59,11 @@
         display: flex;
         gap: 10px;
         align-items: center;
-        padding: 16px 0;
+        padding: 16px 30px;
         width: 100%;
         border-radius: 4px;
         background-color: var(--rts-gray);
-
+        
         &.active {
             background-color: var(--rts-primary);
             color: var(--rts-white);
@@ -103,12 +106,19 @@
         min-width: 600px;
         border-radius: 16px;
         border: 1px solid var(--rts-border);
+        @include mq($xs){
+            min-width: auto;
+        }
     }
 }
 
 // contact method no border
 .is__half__section {
     margin-top: -150px;
+    @include mq($sm){
+        margin-top: 0;
+        padding-top: 100px;
+    }
 }
 
 .is__no__border {

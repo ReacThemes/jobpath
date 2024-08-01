@@ -925,6 +925,12 @@ p {
    padding-bottom: 120px;
 }
 
+@media screen and (max-width: 992px) {
+   .pb-120 {
+      padding-bottom: 100px;
+   }
+}
+
 .pb-130 {
    padding-bottom: 130px;
 }
@@ -936,6 +942,12 @@ p {
 
 .pt-120 {
    padding-top: 120px;
+}
+
+@media screen and (max-width: 1200px) {
+   .pt-120 {
+      padding-top: 100px;
+   }
 }
 
 .pt-260 {
@@ -962,6 +974,10 @@ p {
    --bs-gutter-y: 30px;
 }
 
+.row-30 {
+   row-gap: 30px;
+}
+
 .row-35 {
    row-gap: 35px;
 }
@@ -969,6 +985,13 @@ p {
 .section__padding {
    padding-top: 110px;
    padding-bottom: 120px;
+}
+
+@media screen and (max-width: 992px) {
+   .section__padding {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
 }
 
 .max-contnet {
@@ -1341,16 +1364,39 @@ input::placeholder {
 .rts__menu__background {
    background-color: var(--rts-white);
    max-width: 1410px;
-   padding: 15px 45px;
+   padding: 0 45px;
    border-radius: 0 0 30px 30px;
    margin: 0 auto;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px) {
    .rts__menu__background {
-      padding: 15px;
+      padding: 0 20px;
       border-radius: 0;
    }
+}
+
+@media screen and (max-width: 992px) {
+   .rts__menu__background {
+      padding: 20px 15px;
+      border-radius: 0;
+   }
+}
+
+.header__right__btn button {
+   padding: 8px 20px;
+   border: 1px solid var(--rts-button-1);
+   border-radius: 4px;
+   transition: var(--transition);
+}
+
+.header__right__btn button:hover {
+   background: var(--rts-button-1);
+   color: var(--rts-white);
+}
+
+.header__right__btn button i {
+   font-size: 20px;
 }
 
 .absolute__header {
@@ -1364,9 +1410,14 @@ input::placeholder {
 .header__style__two {
    background-color: var(--rts-white);
    margin: 30px 60px;
-   padding: 20px 0;
    border-radius: 50px;
    width: 94%;
+}
+
+@media screen and (max-width: 992px) {
+   .header__style__two {
+      padding: 30px 0;
+   }
 }
 
 /*======= Banner Home One =======*/
@@ -1426,8 +1477,20 @@ input::placeholder {
    }
 }
 
+@media screen and (max-width: 576px) {
+   .home__one__banner .rts__banner__content .rts__banner__title {
+      text-align: center;
+   }
+}
+
 .home__one__banner .rts__banner__content .rts__banner__title span {
    color: var(--rts-button-1);
+}
+
+@media screen and (max-width: 576px) {
+   .home__one__banner .rts__banner__content .rts__banner__desc {
+      text-align: center;
+   }
 }
 
 @media screen and (max-width: 992px) {
@@ -1674,6 +1737,7 @@ input::placeholder {
    box-shadow: unset;
    border-radius: 16px;
    padding: 10px 20px;
+   box-shadow: 0px 30px 30px rgba(20, 22, 55, 0.1);
 }
 
 @media screen and (max-width: 1200px) {
@@ -2155,6 +2219,13 @@ input::placeholder {
    line-height: 55px;
 }
 
+@media screen and (max-width: 768px) {
+   .testimonial__style__three .testimonial__text {
+      font-size: 30px;
+      line-height: 45px;
+   }
+}
+
 .testimonial__style__three .slider__btn {
    background-color: var(--rts-gray) !important;
 }
@@ -2385,7 +2456,7 @@ input::placeholder {
 
 .rts__appcenter .content__left {
    padding-left: 120px;
-   padding-right: 50px;
+   padding-right: 80px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -2399,6 +2470,7 @@ input::placeholder {
    .rts__appcenter .content__left {
       padding-left: 0;
       margin: 0 auto;
+      padding-right: 0;
    }
 }
 
@@ -2754,6 +2826,12 @@ input::placeholder {
    }
 }
 
+@media screen and (max-width: 576px) {
+   .breadcrumb-title {
+      text-align: center;
+   }
+}
+
 .breadcrumb__padding {
    padding: 210px 0 130px;
 }
@@ -2849,7 +2927,7 @@ input::placeholder {
 .breadcrumb__area .apply__btn {
    color: var(--rts-white);
    font-weight: 500;
-   padding: 20px 50px;
+   padding: 20px 22px;
    position: relative;
    z-index: 1;
 }
@@ -2864,6 +2942,10 @@ input::placeholder {
 
 .breadcrumb__area__shape.breadcrumb__style__four .shape__one {
    left: 10%;
+}
+
+.full__map iframe {
+   width: 100%;
 }
 
 .navigation__menu ul {
@@ -2888,7 +2970,7 @@ input::placeholder {
 
 @media screen and (max-width: 1200px) {
    .navigation__menu--item {
-      margin: 0 15px;
+      margin: 0 14px;
    }
 }
 
@@ -2921,7 +3003,7 @@ input::placeholder {
    position: relative;
    font-size: 16px;
    text-transform: capitalize;
-   padding: 15px 0;
+   padding: 35px 0;
    font-weight: 500;
    display: block;
    color: var(--rts-heading);
@@ -2959,6 +3041,7 @@ input::placeholder {
    content: "";
    font-family: var(--fontawesome-pro);
    transition: var(--transition);
+   color: var(--rts-button-1);
 }
 
 .navigation__menu--item ul.submenu,
@@ -2970,7 +3053,7 @@ input::placeholder {
    z-index: 1024;
    display: inline-block;
    opacity: 0;
-   padding: 30px 0;
+   padding: 20px 0 30px 0;
    transform: scaleY(0);
    transform-origin: top center;
    visibility: hidden;
@@ -3130,6 +3213,21 @@ input::placeholder {
 }
 
 .fill__btn.he-3 {
+   background-color: var(--rts-button-3);
+   border-color: var(--rts-button-3);
+}
+
+.fill__btn.he-3:hover {
+   background-color: var(--rts-button-1);
+   border-color: var(--rts-button-1);
+}
+
+.fill__btn.be-1 {
+   background-color: var(--rts-button-1);
+   border-color: var(--rts-button-1);
+}
+
+.fill__btn.be-1:hover {
    background-color: var(--rts-button-3);
    border-color: var(--rts-button-3);
 }
@@ -3490,7 +3588,7 @@ input::placeholder {
 }
 
 .single__cat.style__six {
-   padding: 17px 30px;
+   padding: 15px 20px;
    max-width: 100%;
    background: var(--rts-white);
    box-shadow: 0px 4px 40px rgba(166, 166, 166, 0.16);
@@ -5187,6 +5285,13 @@ input::placeholder {
    min-width: 600px;
 }
 
+@media screen and (max-width: 576px) {
+   .similar__form {
+      min-width: 100%;
+      max-width: 100%;
+   }
+}
+
 .similar__form input:not([type=checkbox]) {
    border: 1px solid var(--rts-border);
    padding: 15px 20px 15px 45px;
@@ -5240,7 +5345,7 @@ input::placeholder {
    display: flex;
    gap: 10px;
    align-items: center;
-   padding: 16px 0;
+   padding: 16px 30px;
    width: 100%;
    border-radius: 4px;
    background-color: var(--rts-gray);
@@ -5281,8 +5386,21 @@ input::placeholder {
    border: 1px solid var(--rts-border);
 }
 
+@media screen and (max-width: 576px) {
+   .similar__modal .modal-dialog {
+      min-width: auto;
+   }
+}
+
 .is__half__section {
    margin-top: -150px;
+}
+
+@media screen and (max-width: 768px) {
+   .is__half__section {
+      margin-top: 0;
+      padding-top: 100px;
+   }
 }
 
 .is__no__border .rts__workprocess__box {
@@ -5315,6 +5433,14 @@ input::placeholder {
    display: block;
    bottom: 30px;
    opacity: 1;
+}
+
+.home__two .rts__back__top {
+   background: var(--rts-button-2);
+}
+
+.home__three .rts__back__top {
+   background: var(--rts-button-3);
 }
 
 /* ==== Job Cta Card ==== */
@@ -5566,6 +5692,12 @@ input::placeholder {
 
 .video__section.height-550 {
    margin-top: -250px;
+}
+
+@media screen and (max-width: 992px) {
+   .video__section.height-550 {
+      margin-top: -100px;
+   }
 }
 
 .video__section.height-550 .video__section__content {

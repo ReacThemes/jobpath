@@ -33,6 +33,18 @@
     &.he-3{
         background-color: var(--rts-button-3);
         border-color: var(--rts-button-3);
+        &:hover{
+            background-color: var(--rts-button-1);
+            border-color:var(--rts-button-1);
+        }
+    }
+    &.be-1{
+        background-color: var(--rts-button-1);
+        border-color: var(--rts-button-1);
+        &:hover{
+            background-color: var(--rts-button-3);
+            border-color:var(--rts-button-3);
+        }
     }
 }
 .no__fill__btn{
