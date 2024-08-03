@@ -1166,6 +1166,14 @@ p {
    color: var(--rts-white) !important;
 }
 
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   outline: none;
+   border: none;
+}
+
 .nice-select {
    width: 100%;
    height: auto;
