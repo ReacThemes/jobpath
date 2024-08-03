@@ -23,6 +23,7 @@
       rtsJs.svgInject();
       rtsJs.mobileMenu();
       rtsJs.WowJs();
+      rtsJs.preloader();
       rtsJs.activeButton();
       rtsJs.backToTop();
     },
@@ -106,6 +107,11 @@
     },
     WowJs: function () {
       new WOW().init();
+    },
+    preloader:function(){
+      window.addEventListener('load',function(){
+        document.querySelector('body').classList.add("loaded")  
+      });          
     },
     activeButton: function () {
       document.addEventListener('DOMContentLoaded', function() {
