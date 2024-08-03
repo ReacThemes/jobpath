@@ -757,10 +757,17 @@
         width: 100%;
 
         input,
-        .nice-select {
+        .nice-select, select {
             background-color: var(--rts-gray);
             border: none;
             border-radius: 6px;
+            padding: 15px 20px 15px 40px;
+            &:focus{
+                box-shadow: unset;
+            }
+        }
+        i{
+            margin-top: 27.5px;
         }
     }
 

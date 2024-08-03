@@ -4488,10 +4488,22 @@ input::placeholder {
 }
 
 .advance__search__bg .search__item input,
-.advance__search__bg .search__item .nice-select {
+.advance__search__bg .search__item .nice-select,
+.advance__search__bg .search__item select {
    background-color: var(--rts-gray);
    border: none;
    border-radius: 6px;
+   padding: 15px 20px 15px 40px;
+}
+
+.advance__search__bg .search__item input:focus,
+.advance__search__bg .search__item .nice-select:focus,
+.advance__search__bg .search__item select:focus {
+   box-shadow: unset;
+}
+
+.advance__search__bg .search__item i {
+   margin-top: 27.5px;
 }
 
 .advance__search__bg .job__search {
