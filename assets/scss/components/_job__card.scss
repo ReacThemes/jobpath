@@ -588,7 +588,12 @@
         min-width: 200px;
     }
 
-    select {
+    .nice-select {
+        background-color: var(--rts-gray);
+        border: none !important;
+        padding: 4px 50px 4px 20px;
+    }
+    .s{
         background-color: var(--rts-gray);
         border: none !important;
         padding: 15px;

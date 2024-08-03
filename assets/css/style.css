@@ -4274,14 +4274,20 @@ input::placeholder {
    min-width: 200px;
 }
 
-.category-select select {
+.category-select .nice-select {
+   background-color: var(--rts-gray);
+   border: none !important;
+   padding: 4px 50px 4px 20px;
+}
+
+.category-select .s {
    background-color: var(--rts-gray);
    border: none !important;
    padding: 15px;
    min-width: 180px;
 }
 
-.category-select select:focus {
+.category-select .s:focus {
    box-shadow: unset;
 }
 

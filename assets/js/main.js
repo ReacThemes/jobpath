@@ -68,11 +68,11 @@
       }
     },
     niceSelect: function (e) {
-      // try {
-      //   $("select").niceSelect();
-      // } catch (error) {
-      //   console.log("error niceSelect");
-      // }
+      try {
+        $("select").niceSelect();
+      } catch (error) {
+        console.log("error niceSelect");
+      }
     },
     pricingToggle: function () {
       $(document).ready(function () {
