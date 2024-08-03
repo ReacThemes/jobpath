@@ -46,7 +46,12 @@
 
 .blog__meta {
     padding: 12px 12px 0 12px;
-
+    a{
+        transition: var(--transition);
+        &:hover{
+            color: var(--rts-button-1);
+        }
+    }
     &__info {
 
         span,

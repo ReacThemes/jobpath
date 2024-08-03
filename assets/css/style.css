@@ -3221,6 +3221,11 @@ input::placeholder {
    border-color: var(--rts-button-2);
 }
 
+.fill__btn.he-2:hover {
+   background-color: var(--rts-button-3);
+   border-color: var(--rts-button-3);
+}
+
 .fill__btn.he-3 {
    background-color: var(--rts-button-3);
    border-color: var(--rts-button-3);
@@ -3371,6 +3376,11 @@ input::placeholder {
    font-weight: 500;
    letter-spacing: -0.5px;
    color: var(--rts-heading);
+   transition: var(--transition);
+}
+
+.rts__workprocess__box .work__readmore a:hover {
+   color: var(--rts-button-1);
 }
 
 .rts__workprocess__box .work__readmore a i {
@@ -3544,6 +3554,11 @@ input::placeholder {
    font-size: 24px;
    color: var(--rts-heading);
    font-weight: 600;
+   transition: var(--transition);
+}
+
+.single__cat__link a:hover {
+   color: var(--rts-button-1);
 }
 
 .single__cat__link span {
@@ -4208,6 +4223,7 @@ input::placeholder {
 
 .search__item__list .list:last-child {
    border-bottom: 0;
+   padding-bottom: 0;
 }
 
 .search__item.no-icon .nice-select {
@@ -4278,17 +4294,6 @@ input::placeholder {
    background-color: var(--rts-gray);
    border: none !important;
    padding: 4px 50px 4px 20px;
-}
-
-.category-select .s {
-   background-color: var(--rts-gray);
-   border: none !important;
-   padding: 15px;
-   min-width: 180px;
-}
-
-.category-select .s:focus {
-   box-shadow: unset;
 }
 
 .rts__job__card__big.style__gradient,
@@ -4499,22 +4504,14 @@ input::placeholder {
 }
 
 .advance__search__bg .search__item input,
-.advance__search__bg .search__item .nice-select,
-.advance__search__bg .search__item select {
+.advance__search__bg .search__item .nice-select {
    background-color: var(--rts-gray);
    border: none;
    border-radius: 6px;
-   padding: 15px 20px 15px 40px;
-}
-
-.advance__search__bg .search__item input:focus,
-.advance__search__bg .search__item .nice-select:focus,
-.advance__search__bg .search__item select:focus {
-   box-shadow: unset;
 }
 
 .advance__search__bg .search__item i {
-   margin-top: 27.5px;
+   z-index: 9;
 }
 
 .advance__search__bg .job__search {
@@ -4714,6 +4711,14 @@ input::placeholder {
 
 .blog__meta {
    padding: 12px 12px 0 12px;
+}
+
+.blog__meta a {
+   transition: var(--transition);
+}
+
+.blog__meta a:hover {
+   color: var(--rts-button-1);
 }
 
 .blog__meta__info span,

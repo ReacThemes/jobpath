@@ -68,11 +68,9 @@
       }
     },
     niceSelect: function (e) {
-      try {
-        $("select").niceSelect();
-      } catch (error) {
-        console.log("error niceSelect");
-      }
+      $(document).ready(function() {
+        $('.select-nice').niceSelect();
+      });
     },
     pricingToggle: function () {
       $(document).ready(function () {

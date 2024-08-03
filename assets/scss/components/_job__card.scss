@@ -512,6 +512,7 @@
 
             &:last-child {
                 border-bottom: 0;
+                padding-bottom: 0;
             }
         }
     }
@@ -592,15 +593,6 @@
         background-color: var(--rts-gray);
         border: none !important;
         padding: 4px 50px 4px 20px;
-    }
-    .s{
-        background-color: var(--rts-gray);
-        border: none !important;
-        padding: 15px;
-        min-width: 180px;
-        &:focus{
-            box-shadow: unset;
-        }
     }
 }
 
@@ -766,17 +758,13 @@
         width: 100%;
 
         input,
-        .nice-select, select {
+        .nice-select {
             background-color: var(--rts-gray);
             border: none;
             border-radius: 6px;
-            padding: 15px 20px 15px 40px;
-            &:focus{
-                box-shadow: unset;
-            }
         }
         i{
-            margin-top: 27.5px;
+            z-index: 9;
         }
     }
 

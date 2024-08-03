@@ -30,7 +30,10 @@
             font-weight: 500;
             letter-spacing: -0.5px;
             color: var(--rts-heading);
-
+            transition: var(--transition);
+            &:hover{
+                color: var(--rts-button-1);
+            }
             i {
                 color: var(--rts-button-1);
             }

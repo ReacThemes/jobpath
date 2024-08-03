@@ -39,6 +39,10 @@
             font-size: 24px;
             color: var(--rts-heading);
             font-weight: 600;
+            transition: var(--transition);
+            &:hover{
+                color: var(--rts-button-1);
+            }
         }
 
         span {

@@ -29,6 +29,10 @@
     &.he-2{
         background-color: var(--rts-button-2);
         border-color: var(--rts-button-2);
+        &:hover{
+            background-color: var(--rts-button-3);
+            border-color:var(--rts-button-3);
+        }
     }
     &.he-3{
         background-color: var(--rts-button-3);

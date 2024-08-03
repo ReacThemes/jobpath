@@ -190,37 +190,49 @@
                         <div class="search__item">
                             <div class="position-relative d-flex">
                                 <i class="fa-light fa-location-dot"></i>
-                                <select name="location" class="selectpicker" id="location">
-                                    <option value="*">Enter Location</option>
-                                    <option value="dhaka">Dhaka</option>
-                                    <option value="Chittagong">Chittagong</option>
-                                    <option value="bhola">Bhola</option>
-                                </select>
-                                
+                                <div class="nice-select" tabindex="0">
+                                    <span class="current">Search Location</span>
+                                    <ul class="list">
+                                        <li data-value="Nothing" data-display="Search Location" class="option selected focus">Search Location</li>
+                                        <li data-value="1" class="option">Dhaka</li>
+                                        <li data-value="2" class="option">Barisal</li>
+                                        <li data-value="3" class="option">Chittagong</li>
+                                        <li data-value="4" class="option">Rajshahi</li>
+                                    </ul>
+                                </div>
+                               
                             </div>
                         </div>
                         <!-- job category -->
                         <div class="search__item">
                             <div class="position-relative d-flex">
                                 <i class="fa-light fa-briefcase"></i>
-                                <select name="cat" class="selectpicker" id="cat">
-                                    <option value="*">Choose a Category</option>
-                                    <option value="gov">Government</option>
-                                    <option value="ngo">NGO</option>
-                                    <option value="private">Private</option>
-                                </select>
+                                <div class="nice-select" tabindex="0">
+                                    <span class="current">Choose a Category</span>
+                                    <ul class="list">
+                                        <li data-value="Nothing" data-display="Choose a Category" class="option selected focus">Choose a Category</li>
+                                        <li data-value="1" class="option">Government</li>
+                                        <li data-value="2" class="option">NGO</li>
+                                        <li data-value="3" class="option">Private</li>
+                                        <li data-value="4" class="option">Freelancing</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <!-- job post time -->
                         <div class="search__item">
                             <div class="position-relative d-flex">
                                 <i class="fa-light fa-clock"></i>
-                                <select name="date" class="form-select" id="date">
-                                    <option value="*">Date Posted</option>
-                                    <option value="jan">01 Jan 24</option>
-                                    <option value="feb">05 Feb 24</option>
-                                    <option value="mar">07 Mar 24</option>
-                                </select>
+                                <div class="nice-select" tabindex="0">
+                                    <span class="current">Date Posted</span>
+                                    <ul class="list">
+                                        <li data-value="Nothing" data-display="Date Posted" class="option selected focus">Date Posted</li>
+                                        <li data-value="1" class="option">01 Jan 24</li>
+                                        <li data-value="2" class="option">05 Feb 24</li>
+                                        <li data-value="3" class="option">07 Mar 24</li>
+                                        <li data-value="4" class="option">10 Mar 24</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <button type="submit" class="rts__btn fill__btn be-1 job__search">Search Job</button>
@@ -241,44 +253,58 @@
                         <div class="d-flex flex-wrap align-items-center gap-4">
                             <form action="#" class="category-select d-flex gap-3">
                                 <div class="position-relative">
-                                    <select name="type" id="type">
-                                        <option value="*">Job Type</option>
-                                        <option value="pt">Part Time</option>
-                                        <option value="fl">Full Time</option>
-                                        <option value="gov">Government</option>
-                                        <option value="ngo">NGO</option>
-                                        <option value="private">Private</option>
-                                    </select>
+                                    <div class="nice-select" tabindex="0">
+                                        <span class="current">Job Type</span>
+                                        <ul class="list">
+                                            <li data-value="Nothing" data-display="Job Type" class="option selected focus">Job Type</li>
+                                            <li data-value="1" class="option">Part Time</li>
+                                            <li data-value="2" class="option">Full Time</li>
+                                            <li data-value="3" class="option">Government</li>
+                                            <li data-value="4" class="option">NGO</li>
+                                            <li data-value="5" class="option">Private</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="position-relative min-200">
-                                    <select name="experience" id="experience">
-                                        <option value="*">Experience Level</option>
-                                        <option value="pt">5+ Years</option>
-                                        <option value="fl">3-5 Years</option>
-                                        <option value="gov">2-3 Years</option>
-                                        <option value="ngo">1-2 Years</option>
-                                        <option value="private">Fresher</option>
-                                    </select>
+                                    <div class="nice-select" tabindex="0">
+                                        <span class="current">Experience Level</span>
+                                        <ul class="list">
+                                            <li data-value="Nothing" data-display="Experience Level" class="option selected focus">Experience Level</li>
+                                            <li data-value="1" class="option">5+ Years</li>
+                                            <li data-value="2" class="option">3-5 Years</li>
+                                            <li data-value="3" class="option">2-3 Years</li>
+                                            <li data-value="4" class="option">1-2 Years</li>
+                                            <li data-value="5" class="option">Fresher</li>
+                                        </ul>
+                                    </div>
+                                    
                                 </div>
                                 <div class="position-relative">
-                                    <select name="salary" id="salay">
-                                        <option value="*">Offerd Salery</option>
-                                        <option value="pt">10000 - 20000</option>
-                                        <option value="fl">20000 - 30000</option>
-                                        <option value="gov">30000 - 40000</option>
-                                        <option value="ngo">40000 - 50000</option>
-                                        <option value="private">50000 - 60000</option>
-                                    </select>
+                                    <div class="nice-select" tabindex="0">
+                                        <span class="current">Offerd Salery</span>
+                                        <ul class="list">
+                                            <li data-value="Nothing" data-display="Offerd Salery" class="option selected focus">Offerd Salery</li>
+                                            <li data-value="1" class="option">10000 - 20000</li>
+                                            <li data-value="2" class="option">20000 - 30000</li>
+                                            <li data-value="3" class="option">30000 - 40000</li>
+                                            <li data-value="4" class="option">40000 - 50000</li>
+                                            <li data-value="5" class="option">50000 - 60000</li>
+                                        </ul>
+                                    </div>
+                                    
                                 </div>
                                 <div class="position-relative">
-                                    <select name="category" id="category">
-                                        <option value="*">All Category</option>
-                                        <option value="pt">Part Time</option>
-                                        <option value="fl">Full Time</option>
-                                        <option value="gov">Government</option>
-                                        <option value="ngo">NGO</option>
-                                        <option value="private">Private</option>
-                                    </select>
+                                    <div class="nice-select" tabindex="0">
+                                        <span class="current">All Category</span>
+                                        <ul class="list">
+                                            <li data-value="Nothing" data-display="All Category" class="option selected focus">All Category</li>
+                                            <li data-value="1" class="option">Part Time</li>
+                                            <li data-value="2" class="option">Full Time</li>
+                                            <li data-value="3" class="option">Government</li>
+                                            <li data-value="4" class="option">NGO</li>
+                                            <li data-value="5" class="option">Private</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </form>
                         </div>
