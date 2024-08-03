@@ -22,6 +22,7 @@
       rtsJs.pricingToggle();
       rtsJs.svgInject();
       rtsJs.mobileMenu();
+      rtsJs.WowJs();
       rtsJs.activeButton();
       rtsJs.backToTop();
     },
@@ -102,6 +103,9 @@
         } catch (error) {
           console.log("Mobile Menu Not loaded");
         }
+    },
+    WowJs: function () {
+      new WOW().init();
     },
     activeButton: function () {
       document.addEventListener('DOMContentLoaded', function() {
