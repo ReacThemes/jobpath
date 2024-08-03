@@ -4274,10 +4274,15 @@ input::placeholder {
    min-width: 200px;
 }
 
-.category-select .nice-select {
+.category-select select {
    background-color: var(--rts-gray);
    border: none !important;
-   padding: 4px 50px 4px 20px;
+   padding: 15px;
+   min-width: 180px;
+}
+
+.category-select select:focus {
+   box-shadow: unset;
 }
 
 .rts__job__card__big.style__gradient,
