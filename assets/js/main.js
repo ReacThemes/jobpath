@@ -16,6 +16,7 @@
         (this._html = $("html"));
     },
     methods: function (e) {
+      rtsJs.StickyHeader();
       rtsJs.swiperActivation();
       rtsJs.counterUp();
       rtsJs.niceSelect();
@@ -26,6 +27,17 @@
       rtsJs.preloader();
       rtsJs.activeButton();
       rtsJs.backToTop();
+    },
+    // sticky Header
+    StickyHeader: function () {
+      $(window).on("scroll", function() {
+        var ScrollBarPostion = $(window).scrollTop();
+        if (ScrollBarPostion > 100) {
+          $(".rts__header").addClass("sticky");      
+        } else {
+          $(".rts__header").removeClass("sticky");   
+        }
+      });
     },
     swiperActivation: function () {
       $(function () {

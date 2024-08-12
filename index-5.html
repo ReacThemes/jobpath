@@ -36,7 +36,7 @@
 <body class="is__home home__five">
         <!-- header area -->
         <header class="rts__section rts__header relative__header">
-            <div class="container-none">
+            <div class="container-fluid">
                 <div class="rts__menu__background">
                     <div class="row">
                         <div class="d-flex align-items-center justify-content-between">
@@ -157,11 +157,11 @@
                     </div>
                     <div class="rts__banner__wrapper pt-150 d-flex gap-xl-4 justify-content-between align-items-center">
                         <div class="rts__banner__content">
-                            <h1 class="rts__banner__title text-white mb-60">
+                            <h1 class="rts__banner__title text-white  wow animated fadeInUp mb-60">
                                 Your Dream Job Is Wating For You
                             </h1>
-                            <p class="rts__banner__desc mb-5 d-xl-none d-lg-block max-700">Looking for a new job can be both exciting and daunting. Navigating the job market involves exploring various avenues, including online job boards.</p>
-                            <div class="rts__job__search form-2 z-1 position-relative max-content">
+                            <p class="rts__banner__desc mb-5 d-xl-none d-lg-block max-700  wow animated fadeInLeft">Looking for a new job can be both exciting and daunting. Navigating the job market involves exploring various avenues, including online job boards.</p>
+                            <div class="rts__job__search form-2 z-1 position-relative max-content  wow animated fadeInUp">
                                 <form action="#" class="d-flex align-items-center flex-wrap flex-md-nowrap flex-xl-nowrap gap-4 justify-content-between">
                                     <div class="input-group flex-md-nowrap d-flex gap-4">
                                         <div class="single__input d-flex flex-column">
@@ -186,7 +186,7 @@
                                 </form>
                             </div>
                             <div class="applicant position-absolute">
-                                <div class="applicant__list">
+                                <div class="applicant__list  wow animated fadeInUp">
                                     <div class="single__list">
                                         <img src="assets/img/author/1.svg" alt="">
                                     </div>
@@ -213,7 +213,7 @@
                     </div>
                     <div class="d-flex justify-content-lg-between justify-content-center">
                         <div></div>
-                        <div class="rts__banner__image position-relative d-flex align-items-end max-content end-0">
+                        <div class="rts__banner__image position-relative d-flex align-items-end max-content end-0 ">
                             <figure>
                                 <img src="assets/img/home-5/banner/banner__image.webp" alt="">
                             </figure>
@@ -231,7 +231,7 @@
             <div class="container">
                 <div class="row justify-content-center mb-50 position-relative ">
                     <div class="col-xl-6 col-lg-10">
-    <div class="rts__section__content text-center">
+    <div class="rts__section__content text-center  wow animated fadeInUp">
         <h3 class="rts__section__title section__mb">Browse Job Category</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further</p>
     </div>
@@ -337,7 +337,7 @@
             <div class="container">
                 <div class="row justify-content-between gap-4 mb-50 position-relative mtn-1">
                     <div class="col-lg-8">
-                        <div class="rts__section__content text-start">
+                        <div class="rts__section__content text-start  wow animated fadeInUp">
                             <h3 class="rts__section__title mb-3">Explore 1000+  Job Post in Jobpath</h3>
                             <p class="rts__section__desc">From entry-level positions to executive roles browse through.</p>
                         </div>
@@ -514,7 +514,7 @@
         <!-- top employer end -->
 
          <!-- brand area -->
-         <div class="rts__section rts__brand pb-120 pt-120 bottom-0 mb-0 text-center">
+         <div class="rts__section rts__brand pb-120 pt-120 bottom-0 mb-0  wow animated fadeInUp text-center">
     <div class="container">
         <div class="row">
             <div class="section__title mb-40">
@@ -630,7 +630,7 @@
                     <div class="col-xl-6 col-lg-12">
                         <div class="spacing">
                             <div class="about__content position-relative">
-                                <div class="rts__section__content text-start mb-5">
+                                <div class="rts__section__content text-start mb-5  wow animated fadeInUp">
                                     <h3 class="rts__section__title mb-2">Find Job With Easy Steps</h3>
                                     <p class="rts__section__desc">From entry-level positions to executive roles browse through.</p>
                                 </div>
@@ -680,7 +680,7 @@
             <div class="container position-relative z-3">
                 <div class="row justify-content-between gap-4 mb-40">
                     <div class="col-xl-6 col-lg-10">
-    <div class="rts__section__content text-start text-white">
+    <div class="rts__section__content text-start text-white wow animated fadeInUp">
         <h3 class="rts__section__title section__mb">Top Candidates</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further</p>
     </div>
@@ -825,7 +825,7 @@
         <div class="container">
             <div class="row justify-content-center position-relative">
                 <div class="col-xl-6 col-lg-10">
-    <div class="rts__section__content text-center mb-60">
+    <div class="rts__section__content text-center mb-60  wow animated fadeInUp">
         <h3 class="rts__section__title section__mb">Explore Nearby with JobPath</h3>
         <p class="rts__section__desc">Looking for your next career opportunity. Look no further.</p>
     </div>
@@ -838,6 +838,8 @@
             <div class="swiper-data overflow-hidden explore__slider" data-swiper='{
                 "slidesPerView": 3,
                 "autoplay": true,
+                "spaceBetween": 30,
+                "centerSlides": true,
                 "loop": true,
                 "navigation": {
                     "nextEl": ".rts__slide__next",
@@ -854,7 +856,7 @@
                         "slidesPerView": 2
                     },
                     "992": {
-                        "slidesPerView": 3
+                        "slidesPerView": 2.3
                     },
                     "1200": {
                         "slidesPerView": 3
@@ -1025,8 +1027,8 @@
                             <img src="assets/img/home-5/cta/shape.svg" alt="">
                         </div>
                         <div class="cta__content position-relative z-1">
-                            <h3 class="text-white mb-5">Join Us Today And Take The First Step Towards Your Dream Job</h3>
-                            <form action="#" class="d-flex align-items-center justify-content-between mt-4 newsletter">
+                            <h3 class="text-white mb-5  wow animated fadeInUp">Join Us Today And Take The First Step Towards Your Dream Job</h3>
+                            <form action="#" class="d-flex align-items-center justify-content-between mt-4 newsletter  wow animated fadeInUp">
                                 <input class="rounded-1 border" type="email" name="cemail" id="cemail" placeholder="Enter your email" required="">
                                 <span class="position-absolute text-primary left-20 ">
                                     <i class="fa-sharp fa-light fa-envelope"></i>

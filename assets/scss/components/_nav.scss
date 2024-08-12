@@ -48,6 +48,7 @@
           font-weight: 500;
           display: block;
           color: var(--rts-heading);
+          transition: padding 0.3s ease;
         }
   
         &.has-child {

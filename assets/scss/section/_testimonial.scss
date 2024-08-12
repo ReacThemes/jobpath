@@ -19,7 +19,6 @@
     }
 }
 
-
 // testimonial three style
 .testimonial__style__three {
     .testimonial__text {
@@ -46,13 +45,25 @@
 // testimonialial four style
 .rts__single__testimonial {
     &.style__four {
-        padding: 30px 80px;
         position: relative;
-        background-color: var(--rts-white);
-        box-shadow: 0px 4px 80px rgba(28, 28, 28, 0.1);
-        z-index: 2;
-      
-
+        &::before{
+            position: absolute;
+            content: "";
+            height: 95%;
+            width: 100%;
+            background-color:red;
+            top: 50%;
+            transform: translate(0, -50%);
+            left: 0;
+            z-index: -1;
+            box-shadow: 0px 4px 80px rgba(28, 28, 28, 0.1);
+        }
+        .testimonial__content{
+            padding: 30px 80px;
+            position: relative;
+            background-color: var(--rts-white);
+            z-index: 1;
+        }
         .author__image img {
             height: 70px;
             width: 70px;
@@ -71,40 +82,8 @@
 .rts__testimonial__four{
     position: relative;
     margin-right: 100px;
-    box-shadow: 0px 4px 80px rgba(28, 28, 28, 0.1);
 }
-.slider__shape{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: var(--rts-white);
-    &::before {
-        position: absolute;
-        content: "";
-        height: 90%;
-        width: 100%;
-        background-color: var(--rts-white);
-        top: 50%;
-        left: 25px;
-        z-index: 1;
-        box-shadow: 0px 4px 80px rgba(28, 28, 28, 0.1);
-        transform: translate(0, -50%);
-    }
 
-    &::after {
-        position: absolute;
-        content: "";
-        height: 80%;
-        width: 100%;
-        background-color: var(--rts-white);
-        top: 50%;
-        left: 40px;
-        z-index: -1;
-        transform: translate(0, -50%);
-        box-shadow: 0px 4px 80px rgba(28, 28, 28, 0.1);
-
-    }
-}
 
 
 // testimonial slider home five style
@@ -115,7 +94,14 @@
     }
 }
 
-.client__testimonial__content {}
+.client__testimonial__content {
+    h3{
+        @include mq($lg){
+            font-size: 45px;
+            margin-bottom: 25px;
+        }
+    }
+}
 
 .testimonial__content {
     p {
@@ -125,7 +111,7 @@
         font-style: italic;
         color: var(--rts-heading);
         @include mq($lg){
-            font-size: 35px;
+            font-size: 30px;
             line-height: 1.5;
         }
     }
