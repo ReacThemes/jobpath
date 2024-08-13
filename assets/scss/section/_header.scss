@@ -29,6 +29,11 @@
     button i{
         font-size: 20px;
     }
+    &.gap-30{
+        @include mq($lg){
+            gap: 20px;
+        }
+    }
 }
 .absolute__header{
     position: absolute;

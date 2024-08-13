@@ -4,6 +4,7 @@
     border-radius: 10px;
     transition: var(--transition);
     position: relative;
+    z-index: 1;
     &::before {
         content: '';
         position: absolute;

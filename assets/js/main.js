@@ -26,6 +26,7 @@
       rtsJs.WowJs();
       rtsJs.preloader();
       rtsJs.activeButton();
+      rtsJs.chartJs();
       rtsJs.backToTop();
     },
     // sticky Header
@@ -126,15 +127,129 @@
       });          
     },
     activeButton: function () {
-      document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = document.querySelectorAll('.nav-link');
+      $(document).ready(function() {
+        const currentPath = window.location.pathname.split("/").pop(); 
+        const navLinks = document.querySelectorAll('.dash__menu .nav-link');
+    
         navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.forEach(link => link.classList.remove('active'));
+            const linkPath = link.getAttribute('href').split("/").pop();
+    
+            if (linkPath === currentPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+      });
+
+        // active button
+        $(document).ready(function() {
+          document.querySelectorAll('.profile__view__tab .nav-link').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.profile__view__tab .nav-link').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+        
+                // Add active class to the clicked button
                 this.classList.add('active');
             });
+          });
         });
-    })
+
+        // dashboard menu show
+        $(document).ready(function() {
+          document.querySelector('.sidebar__action').addEventListener('click', function() {
+            document.querySelector('.dashboard__left').classList.add('active');
+          });
+
+          document.addEventListener('click', function(event) {
+            const dashboardLeft = document.querySelector('.dashboard__left');
+            const sidebarAction = document.querySelector('.sidebar__action');
+
+            if (!dashboardLeft.contains(event.target) && !sidebarAction.contains(event.target)) {
+                dashboardLeft.classList.remove('active');
+            }
+          });
+        });
+
+      
+    },
+    chartJs: function () {
+      try {
+        // chart one
+        var options__candidate = {
+          series: [{
+          name: 'candidate',
+          data: [30, 50, 40, 60, 42, 85, 60, 40, 50, 90, 60, 100]
+        }],
+          chart: {
+          height: 450,
+          type: 'area',
+          toolbar:{
+            show: false,
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'day',
+          categories: ["2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19"]
+        },
+        tooltip: {
+        enabled: true,
+          x: {
+            format: 'dd/MM/yy'
+          },
+        },
+        };
+        var chart = new ApexCharts(document.querySelector("#spline__chart__candidate"), options__candidate);
+        chart.render();
+      } catch (error) {
+        console.log("ChartJs Not used this page");
+      }
+
+      // chart two
+      try{
+        var options_1 = {
+          series: [{
+          name: 'employer',
+          data: [50, 70, 100, 150, 142, 185, 160, 240, 150, 240, 160, 200]
+        }],
+          chart: {
+          height: 450,
+          type: 'area',
+          foreColor: '#373d3f',
+          toolbar:{
+            show: false,
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'day',
+          categories: ["2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19"]
+        },
+        tooltip: {
+        enabled: true,
+          x: {
+            format: 'dd/MM/yy'
+          },
+        },
+        };
+        var chart = new ApexCharts(document.querySelector("#spline__chart"), options_1);
+        chart.render();
+      } catch (error) {
+        console.log("ChartJs Not used this page");
+      }
     },
     backToTop: function () {
       $(document).ready(function () {
