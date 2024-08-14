@@ -63,26 +63,46 @@
             <li class="navigation__menu--item has-child has-arrow">
                 <a href="#" class="navigation__menu--item__link">Browse Jobs</a>
                 <ul class="submenu sub__style" role="menu">
-                    <li role="menuitem"><a href="job-list-1.html">Job List One</a></li>
-                    <li role="menuitem"><a href="job-list-2.html">Job List Two</a></li>
-                    <li role="menuitem"><a href="job-list-3.html">Job List Three</a></li>
-                    <li role="menuitem"><a href="job-list-4.html">Job List Four</a></li>
-                    <li role="menuitem"><a href="job-list-5.html">Job List Five</a></li>
-                    <li role="menuitem"><a href="job-details-1.html">Job Details One</a></li>
-                    <li role="menuitem"><a href="job-details-2.html">Job Details Two</a></li>
-                    <li role="menuitem"><a href="job-details-3.html">Job Details Three</a></li>
-                    <li role="menuitem"><a href="job-details-4.html">Job Details Four</a></li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="#">Job List</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="job-list-1.html">Job List One</a></li>
+                            <li role="menuitem"><a href="job-list-2.html">Job List Two</a></li>
+                            <li role="menuitem"><a href="job-list-3.html">Job List Three</a></li>
+                            <li role="menuitem"><a href="job-list-4.html">Job List Four</a></li>
+                            <li role="menuitem"><a href="job-list-5.html">Job List Five</a></li>
+                        </ul>
+                    </li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="#">Job Details</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="job-details-1.html">Job Details One</a></li>
+                            <li role="menuitem"><a href="job-details-2.html">Job Details Two</a></li>
+                            <li role="menuitem"><a href="job-details-3.html">Job Details Three</a></li>
+                            <li role="menuitem"><a href="job-details-4.html">Job Details Four</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
 
             <li class="navigation__menu--item has-child has-arrow">
                 <a href="#" class="navigation__menu--item__link">Employers</a>
                 <ul class="submenu sub__style" role="menu">
-                    <li role="menuitem"><a href="employer-1.html">Employer One</a></li>
-                    <li role="menuitem"><a href="employer-2.html">Employer Two</a></li>
-                    <li role="menuitem"><a href="employer-3.html">Employer Three</a></li>
-                    <li role="menuitem"><a href="employer-details-1.html">Employer Details 1</a></li>
-                    <li role="menuitem"><a href="employer-details-2.html">Employer Details 2</a></li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="employer-1.html">Employer Style</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="employer-1.html">Employer One</a></li>
+                            <li role="menuitem"><a href="employer-2.html">Employer Two</a></li>
+                            <li role="menuitem"><a href="employer-3.html">Employer Three</a></li>
+                        </ul>
+                    </li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="employer-details-1.html">Employer Details</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="employer-details-1.html">Employer Details 1</a></li>
+                            <li role="menuitem"><a href="employer-details-2.html">Employer Details 2</a></li>
+                        </ul>
+                    </li>
                     <li role="menuitem"><a href="employer-dashboard.html">Employer Dashboard</a></li>
                 </ul>
             </li>
@@ -90,12 +110,23 @@
             <li class="navigation__menu--item has-child has-arrow">
                 <a href="#" class="navigation__menu--item__link">Candidates</a>
                 <ul class="submenu sub__style" role="menu">
-                    <li role="menuitem"><a href="candidate-1.html">Candidate One</a></li>
-                    <li role="menuitem"><a href="candidate-2.html">Candidate Two</a></li>
-                    <li role="menuitem"><a href="candidate-3.html">Candidate Three</a></li>
-                    <li role="menuitem"><a href="candidate-4.html">Candidate Four</a></li>
-                    <li role="menuitem"><a href="candidate-details-1.html">Candidate Details 1</a></li>
-                    <li role="menuitem"><a href="candidate-details-2.html">Candidate Details 2</a></li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="candidate-1.html">Candidate Style</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="candidate-1.html">Candidate One</a></li>
+                            <li role="menuitem"><a href="candidate-2.html">Candidate Two</a></li>
+                            <li role="menuitem"><a href="candidate-3.html">Candidate Three</a></li>
+                            <li role="menuitem"><a href="candidate-4.html">Candidate Four</a></li>
+                        </ul>
+                    </li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="candidate-details-1.html">Candidate Details</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="candidate-details-1.html">Candidate Details 1</a></li>
+                            <li role="menuitem"><a href="candidate-details-2.html">Candidate Details 2</a></li>
+                            
+                        </ul>
+                    </li>
                     <li role="menuitem"><a href="candidate-dashboard.html">Candidate Dashboard</a></li>
                 </ul>
             </li>
@@ -873,7 +904,7 @@
                             </a>
                             <a href="#" class="mt-30 mb-4 d-block max-content cat__link">Job Opportunities</a>
                             <a href="blog-details.html" class="blog__title h5">6 Job Opportunities to Consider in the Freight and Logistics Industry</a>
-                            <div class="blog__meta__info d-flex gap-5 mt-4">
+                            <div class="blog__meta__info flex-wrap d-flex gap-3 gap-md-4 mt-4">
                                 <span class="d-flex gap-2 align-items-center"> <img class="svg" src="assets/img/icon/calender-black.svg" alt=""> 20 March, 2022</span>
                                 <a href="#" class="d-flex gap-2 align-items-center"> <img class="svg" src="assets/img/icon/user-black.svg" alt=""> Jon Adom</a>
                             </div>
@@ -884,7 +915,7 @@
                         <div class="rts__single__blog mb-30 style__six">
                             <a href="#" class="mb-3 d-block max-content cat__link">Job Opportunities</a>
                             <a href="blog-details.html" class="blog__title h5">Navigating the New World: Exploring Modern Job Trends and Careers in the Digital Age</a>
-                            <div class="blog__meta__info d-flex gap-5 mt-4">
+                            <div class="blog__meta__info flex-wrap d-flex gap-3 gap-md-4 mt-4">
                                 <span class="d-flex gap-2 align-items-center"> <img class="svg" src="assets/img/icon/calender-black.svg" alt=""> 20 March, 2022</span>
                                 <a href="#" class="d-flex gap-2 align-items-center"> <img class="svg" src="assets/img/icon/user-black.svg" alt=""> Jon Adom</a>
                             </div>
@@ -893,7 +924,7 @@
                         <div class="rts__single__blog style__six">
                             <a href="#" class="mb-3 d-block max-content cat__link">Job Opportunities</a>
                             <a href="blog-details.html" class="blog__title h5">Empowering Through Trust: Key Principles for Unlocking Employee Potential</a>
-                            <div class="blog__meta__info d-flex gap-5 mt-4">
+                            <div class="blog__meta__info flex-wrap d-flex gap-3 gap-md-4 mt-4">
                                 <span class="d-flex gap-2 align-items-center"> <img class="svg" src="assets/img/icon/calender-black.svg" alt=""> 20 March, 2022</span>
                                 <a href="#" class="d-flex gap-2 align-items-center"> <img class="svg" src="assets/img/icon/user-black.svg" alt=""> Jon Adom</a>
                             </div>
@@ -908,8 +939,8 @@
     <footer class="rts__section pt-80 footer__home__six">
     <div class="container">
         <div class="rts__footer__newsletter d-flex flex-wrap flex-lg-nowrap gap-5 justify-content-center justify-content-lg-between align-items-center pb-60">
-            <div class="text-center text-lg-start mb-5 mb-md-0">
-                <h3 class=" mb-3 wow animated fadeInUp">Subscribe To Get Our  Newsletter</h3>
+            <div class="text-center text-lg-start mb-md-0">
+                <h3 class=" mb-2 wow animated fadeInUp">Subscribe To Get Our  Newsletter</h3>
                 <p class=" wow animated fadeInUp">Looking for your next career opportunity. Look no further</p>
             </div>
             <div class="footer__newsletter__three  wow animated fadeIn">
@@ -920,7 +951,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="footer__wrapper d-flex flex-wrap gap-5 justify-content-between pb-60">
+            <div class="footer__wrapper d-flex flex-wrap gap-3 gap-md-5 justify-content-between pb-60">
                 <!-- footer menu -->
                  <div class="rts__footer__widget max-content">
                     <div class="h6 fw-semibold mb-3 h6 lh-1">Pages</div>
@@ -961,7 +992,7 @@
                   <div class="rts__footer__widget max-360">
                     <div class="h6 fw-semibold mb-3 h6 lh-1">Download The App</div>
                     <p>Looking for your next career opportunity. Look no further</p>
-                   <div class="d-flex gap-3 align-items-center mt-4 app__icon">
+                   <div class="d-flex flex-wrap gap-3 align-items-center mt-4 app__icon">
                     <a href="#" aria-label="footer__menu__link">
                         <img src="assets/img/icon/playstore-black.svg" alt="">
                     </a>

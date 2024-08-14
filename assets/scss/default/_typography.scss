@@ -11,6 +11,10 @@ body{
     overflow-x: hidden;
     letter-spacing: -.5px;
 }
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
 a, a:hover, a:focus{
     text-decoration: none;
 }
@@ -41,6 +45,10 @@ h2, .h2{
     @include mq($md){
         font-size: 50px;
         line-height: 60px;
+    }
+    @include mq($sm){
+        font-size: 40px;
+        line-height: 50px;
     }  
 }
 
@@ -50,6 +58,14 @@ h3, .h3{
     @include mq($md){
         font-size: 40px;
         line-height: 50px;
+    }
+    @include mq($sm){
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @include mq($xs){
+        font-size: 25px;
+        line-height: 35px;
     }
 }
 h4, .h4{
@@ -73,6 +89,10 @@ h5, .h5{
 h6, .h6{
     font-size: var(--h6);
     line-height: 38px;
+    @include mq($xs){
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{

@@ -81,6 +81,10 @@
             @include mq($lg) {
                 font-size: 40px;
             }
+
+            @include mq($md) {
+                font-size: 30px;
+            }
         }
     }
 
@@ -106,6 +110,11 @@
     .app__title{
         @include mq($lg){
             font-size: 40px;
+            line-height: 1.2;
+        }
+        @include mq($xs){
+            font-size: 30px;
+            line-height: 1.2;
         }
     }
 }

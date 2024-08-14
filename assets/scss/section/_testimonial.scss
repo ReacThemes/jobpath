@@ -30,6 +30,10 @@
             font-size: 30px;
             line-height: 45px;
         }
+        @include mq($xs){
+            font-size: 25px;
+            line-height: 35px;
+        }
     }
 
     .slider__btn {
@@ -100,6 +104,15 @@
             font-size: 45px;
             margin-bottom: 25px;
         }
+        @include mq($md){
+            font-size: 40px;
+        }
+        @include mq($sm){
+            font-size: 35px;
+        }
+        @include mq($xs){
+            font-size: 30px;
+        }
     }
 }
 
@@ -114,9 +127,15 @@
             font-size: 30px;
             line-height: 1.5;
         }
+        @include mq($sm){
+            font-size: 20px;
+        }
     }
 
     .rts__rating {
+        @include mq($sm){
+            margin-top: 30px !important;
+        }
         i {
             color: var(--rts-button-1);
             font-size: 25px;

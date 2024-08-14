@@ -61,6 +61,7 @@
 
     .job__title a {
         color: var(--rts-heading);
+        font-weight: 600;
     }
 
     .job__tags {
@@ -183,6 +184,10 @@
     &.is__home{
         padding: 14px 20px;
         text-align: center;
+        @include mq($sm){
+            padding: 10px 14px;
+            border-radius: 6px;
+        }
     }
 }
 
@@ -263,7 +268,7 @@
         border: none;
         box-shadow: 0px 4px 40px rgba(166, 166, 166, 0.16);
         border-radius: 10px;
-
+       
         &:hover {
             background-color: var(--rts-button-3);
             color: var(--rts-white);
@@ -283,7 +288,9 @@
         box-shadow: 0px 4px 40px rgba(166, 166, 166, 0.16);
         border-radius: 10px;
         transition: var(--transition);
-
+        @include mq($xs){
+            padding: 30px;
+        }
         &:hover {
             background-color: var(--rts-button-3);
             color: var(--rts-white);

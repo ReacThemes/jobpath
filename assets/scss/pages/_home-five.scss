@@ -32,6 +32,9 @@
 }
 
 .top__candidate__single{
+    @include mq($sm){
+        padding: 25px !important;
+    }
     .author{
         img{
             height: 60px;

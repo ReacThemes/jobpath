@@ -98,3 +98,11 @@
         }
     }
 }
+
+.rts__pricing__box{
+    &.pricing__style__three{
+        &::before{
+            display: none;;
+        }
+    }
+}

@@ -8,7 +8,7 @@
         max-height: 100%;
     }
     @include mq($md){
-        padding: 25px;
+        padding: 0;
     }
     &>*{
         position: relative;
@@ -37,6 +37,9 @@
         @include mq($lg){
             padding: 90px 0;
             margin: 0 auto;
+        }
+        p{
+            padding: 0 15px;
         }
     }
     .top-15px{

@@ -65,26 +65,46 @@
             <li class="navigation__menu--item has-child has-arrow">
                 <a href="#" class="navigation__menu--item__link">Browse Jobs</a>
                 <ul class="submenu sub__style" role="menu">
-                    <li role="menuitem"><a href="job-list-1.html">Job List One</a></li>
-                    <li role="menuitem"><a href="job-list-2.html">Job List Two</a></li>
-                    <li role="menuitem"><a href="job-list-3.html">Job List Three</a></li>
-                    <li role="menuitem"><a href="job-list-4.html">Job List Four</a></li>
-                    <li role="menuitem"><a href="job-list-5.html">Job List Five</a></li>
-                    <li role="menuitem"><a href="job-details-1.html">Job Details One</a></li>
-                    <li role="menuitem"><a href="job-details-2.html">Job Details Two</a></li>
-                    <li role="menuitem"><a href="job-details-3.html">Job Details Three</a></li>
-                    <li role="menuitem"><a href="job-details-4.html">Job Details Four</a></li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="#">Job List</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="job-list-1.html">Job List One</a></li>
+                            <li role="menuitem"><a href="job-list-2.html">Job List Two</a></li>
+                            <li role="menuitem"><a href="job-list-3.html">Job List Three</a></li>
+                            <li role="menuitem"><a href="job-list-4.html">Job List Four</a></li>
+                            <li role="menuitem"><a href="job-list-5.html">Job List Five</a></li>
+                        </ul>
+                    </li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="#">Job Details</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="job-details-1.html">Job Details One</a></li>
+                            <li role="menuitem"><a href="job-details-2.html">Job Details Two</a></li>
+                            <li role="menuitem"><a href="job-details-3.html">Job Details Three</a></li>
+                            <li role="menuitem"><a href="job-details-4.html">Job Details Four</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
 
             <li class="navigation__menu--item has-child has-arrow">
                 <a href="#" class="navigation__menu--item__link">Employers</a>
                 <ul class="submenu sub__style" role="menu">
-                    <li role="menuitem"><a href="employer-1.html">Employer One</a></li>
-                    <li role="menuitem"><a href="employer-2.html">Employer Two</a></li>
-                    <li role="menuitem"><a href="employer-3.html">Employer Three</a></li>
-                    <li role="menuitem"><a href="employer-details-1.html">Employer Details 1</a></li>
-                    <li role="menuitem"><a href="employer-details-2.html">Employer Details 2</a></li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="employer-1.html">Employer Style</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="employer-1.html">Employer One</a></li>
+                            <li role="menuitem"><a href="employer-2.html">Employer Two</a></li>
+                            <li role="menuitem"><a href="employer-3.html">Employer Three</a></li>
+                        </ul>
+                    </li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="employer-details-1.html">Employer Details</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="employer-details-1.html">Employer Details 1</a></li>
+                            <li role="menuitem"><a href="employer-details-2.html">Employer Details 2</a></li>
+                        </ul>
+                    </li>
                     <li role="menuitem"><a href="employer-dashboard.html">Employer Dashboard</a></li>
                 </ul>
             </li>
@@ -92,12 +112,23 @@
             <li class="navigation__menu--item has-child has-arrow">
                 <a href="#" class="navigation__menu--item__link">Candidates</a>
                 <ul class="submenu sub__style" role="menu">
-                    <li role="menuitem"><a href="candidate-1.html">Candidate One</a></li>
-                    <li role="menuitem"><a href="candidate-2.html">Candidate Two</a></li>
-                    <li role="menuitem"><a href="candidate-3.html">Candidate Three</a></li>
-                    <li role="menuitem"><a href="candidate-4.html">Candidate Four</a></li>
-                    <li role="menuitem"><a href="candidate-details-1.html">Candidate Details 1</a></li>
-                    <li role="menuitem"><a href="candidate-details-2.html">Candidate Details 2</a></li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="candidate-1.html">Candidate Style</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="candidate-1.html">Candidate One</a></li>
+                            <li role="menuitem"><a href="candidate-2.html">Candidate Two</a></li>
+                            <li role="menuitem"><a href="candidate-3.html">Candidate Three</a></li>
+                            <li role="menuitem"><a href="candidate-4.html">Candidate Four</a></li>
+                        </ul>
+                    </li>
+                    <li role="menuitem" class="has-child has-arrow">
+                        <a href="candidate-details-1.html">Candidate Details</a>
+                        <ul class="sub__style" role="menu">
+                            <li role="menuitem"><a href="candidate-details-1.html">Candidate Details 1</a></li>
+                            <li role="menuitem"><a href="candidate-details-2.html">Candidate Details 2</a></li>
+                            
+                        </ul>
+                    </li>
                     <li role="menuitem"><a href="candidate-dashboard.html">Candidate Dashboard</a></li>
                 </ul>
             </li>
@@ -192,7 +223,7 @@
                                         Job</button>
                                 </form>
                             </div>
-                            <div class="d-flex gap-3 flex-wrap align-items-center justify-content-center mt-30">
+                            <div class="d-flex gap-3 flex-wrap align-items-center justify-content-center mt-30 position-relative z-0">
                                 <span class="font-20  text-white mb-0 d-block fw-medium">Applicants</span>
                                 <div class="applicant__list">
                                     <div class="single__list">

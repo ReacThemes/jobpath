@@ -52,6 +52,9 @@
     margin-left: 100px;
 }
 // padding
+.pt--10{
+    top: -10px;
+}
 .pt-30{
     padding-top: 30px;
 }
@@ -61,6 +64,9 @@
 }
 .pt-40{
     padding-top: 40px;
+}
+.pt-50{
+    padding-top: 50px;
 }
 .pt-60{
     padding-top: 60px;
@@ -73,17 +79,32 @@
 }
 .pt-100{
     padding-top: 100px;
+    @include mq($sm){
+        padding-top: 60px;
+    }
 }
 .pb-100{
     padding-bottom: 100px;
+    @include mq($sm){
+        padding-bottom: 60px;
+    }
 }
 .pt-110{
     padding-top: 110px;
+    @include mq($md){
+        padding-top: 100px;
+    }
+    @include mq($sm){
+        padding-top: 60px;
+    }
 }
 .pb-120{
     padding-bottom: 120px;
     @include mq($md){
         padding-bottom: 100px;
+    }
+    @include mq($sm){
+        padding-bottom: 60px;
     }
 }
 .pb-130{
@@ -97,6 +118,12 @@
     padding-top: 120px;
     @include mq($lg){
         padding-top: 100px;
+    }
+    @include mq($md){
+        padding-top: 80px;
+    }
+    @include mq($sm){
+        padding-top: 60px;
     }
 }
 .pt-260{
@@ -133,6 +160,10 @@
     @include mq($md){
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+    @include mq($sm){
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
