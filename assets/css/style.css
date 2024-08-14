@@ -9580,6 +9580,22 @@ input::placeholder {
    max-width: max-content;
 }
 
+.user__info .user__image.if__employer {
+   height: 48px;
+   width: 48px;
+   border-radius: 50%;
+   background-color: var(--rts-gray);
+   display: grid;
+   place-items: center;
+}
+
+.user__info .user__image.if__employer img {
+   height: 32px;
+   width: 32px;
+   -o-object-fit: cover;
+   object-fit: cover;
+}
+
 @media screen and (max-width: 992px) {
    .mobile__padding {
       padding: 25px 20px;
@@ -9790,7 +9806,7 @@ input::placeholder {
 }
 
 .profile__view {
-   min-width: 895px;
+   min-width: calc(100% - 40%);
 }
 
 @media screen and (max-width: 1400px) {
@@ -9920,6 +9936,12 @@ input::placeholder {
    padding-bottom: 30px;
    margin-bottom: 30px;
    border-bottom: 1px solid var(--rts-border);
+}
+
+@media screen and (max-width: 576px) {
+   .notification__list .notification__item {
+      flex-wrap: wrap;
+   }
 }
 
 .notification__list .notification__item:last-child {
@@ -10348,6 +10370,12 @@ input::placeholder {
    }
 }
 
+@media screen and (max-width: 1400px) {
+   .single__applied__job {
+      gap: 20px;
+   }
+}
+
 .single__applied__job__content {
    display: flex;
    align-items: center;
@@ -10739,7 +10767,7 @@ input::placeholder {
 
 .message__content .chat__content .input__msg input[type=text] {
    width: 100%;
-   border: 1px solid rgba(125, 128, 135, 0.3);
+   border: 1px solid rgba(125, 128, 135, 0.5);
    padding: 18px 20px;
    position: relative;
 }
@@ -10747,7 +10775,7 @@ input::placeholder {
 .message__content .chat__content .input__msg label {
    position: absolute;
    top: 15px;
-   right: 125px;
+   right: 135px;
    cursor: pointer;
 }
 
@@ -10757,8 +10785,8 @@ input::placeholder {
    background-color: var(--rts-button-1);
    color: var(--rts-white);
    position: absolute;
-   right: 20px;
-   top: 10px;
+   right: 30px;
+   top: 12px;
 }
 
 .candidate__meeting__content {
@@ -10900,6 +10928,7 @@ input::placeholder {
 @media screen and (max-width: 1400px) {
    .single__meeting__left {
       flex-wrap: wrap;
+      gap: 20px;
    }
 }
 
@@ -11141,10 +11170,24 @@ input::placeholder {
    gap: 50px;
 }
 
+@media screen and (max-width: 576px) {
+   .middle__content {
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+   }
+}
+
 .job__post {
    display: flex;
    align-items: center;
    gap: 30px;
+}
+
+@media screen and (max-width: 576px) {
+   .job__post .icon__text {
+      display: none;
+   }
 }
 
 .job__post .icon__text i {
@@ -11167,6 +11210,12 @@ input::placeholder {
    border-radius: 16px;
    display: flex;
    gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+   .package__selection {
+      display: grid;
+   }
 }
 
 .single__package__selection {
@@ -11249,6 +11298,12 @@ input::placeholder {
    align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+   .shortlist__action {
+      flex-wrap: wrap;
+   }
+}
+
 .shortlist__action .action__item {
    position: relative;
    height: 42px;
@@ -11317,6 +11372,8 @@ input::placeholder {
    background-color: var(--rts-white);
    padding: 30px;
    border-radius: 16px;
+   flex-wrap: wrap;
+   gap: 30px;
 }
 
 .single__shortlist__item .author__info {
@@ -11325,10 +11382,30 @@ input::placeholder {
    align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+   .single__shortlist__item .author__info {
+      gap: 40px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .single__shortlist__item .author__info {
+      gap: 20px;
+      flex-wrap: wrap;
+   }
+}
+
 .single__shortlist__item .author__meta {
    display: flex;
    gap: 30px;
    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+   .single__shortlist__item .author__meta {
+      flex-wrap: wrap;
+      gap: 20px;
+   }
 }
 
 .single__shortlist__item .author__meta .author__image {
@@ -11348,9 +11425,31 @@ input::placeholder {
    gap: 80px;
 }
 
+@media screen and (max-width: 1400px) {
+   .single__shortlist__item .author__info__list {
+      gap: 40px;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .single__shortlist__item .author__info__list {
+      flex-wrap: wrap;
+      gap: 20px;
+   }
+}
+
 .single__shortlist__item .author__info__list span {
    display: flex;
    gap: 10px;
    align-items: center;
+}
+
+.action__click {
+   background: linear-gradient(228.34deg, #FEF2EB 0%, #F1F1F1 46.31%, #E4E0EA 100%), #FFFFFF;
+   color: var(--rts-button-1);
+   transition: var(--transition);
+   padding: 12px 18px;
+   line-height: 1;
+   border-radius: 6px;
 }
 /*# sourceMappingURL=../maps/style.css.map */

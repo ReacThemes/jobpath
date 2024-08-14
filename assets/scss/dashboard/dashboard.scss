@@ -18,7 +18,21 @@
     cursor: pointer;
     max-width: max-content;
 }
-
+.user__info{
+    .user__image.if__employer{
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        background-color: var(--rts-gray);
+        display: grid;
+        place-items: center;
+        img{
+            height: 32px;
+            width: 32px;
+            object-fit: cover;
+        }
+    }
+}
 // dashboard menu
 .mobile__padding {
     @include mq($md) {
@@ -220,14 +234,15 @@
         margin-left: 0;
         width: 100%;
     }
-    @include mq($xs){
+
+    @include mq($xs) {
         padding: 20px;
     }
 }
 
 // dashboard content css
 .profile__view {
-    min-width: 895px;
+    min-width: calc(100% - 40%);
 
     @include mq($xl) {
         min-width: 100%;
@@ -347,6 +362,9 @@
         padding-bottom: 30px;
         margin-bottom: 30px;
         border-bottom: 1px solid var(--rts-border);
+        @include mq($xs){
+            flex-wrap: wrap;
+        }
 
         &:last-child {
             border-bottom: none;
@@ -778,6 +796,9 @@
     @include mq($xxl) {
         flex-wrap: nowrap;
     }
+    @include mq($xl) {
+        gap: 20px
+    }
 
     &__content {
         display: flex;
@@ -909,14 +930,16 @@
 }
 
 // candidate message
-.user__list__as__messanger{
-    ul{
+.user__list__as__messanger {
+    ul {
         display: flex;
         gap: 10px;
-        li{
-            .avatar__user{
+
+        li {
+            .avatar__user {
                 cursor: pointer;
-                img{
+
+                img {
                     height: 60px;
                     width: 60px;
                     border: 1px solid var(--rts-border);
@@ -926,13 +949,16 @@
         }
     }
 }
+
 .candidate__message {
     padding: 30px;
     border-radius: 16px;
     background-color: var(--rts-white);
-    @include mq($sm){
+
+    @include mq($sm) {
         padding: 15px;
     }
+
     &__content {
         border: 1px solid var(--rts-border);
     }
@@ -944,12 +970,14 @@
         border-right: 1px solid var(--rts-border);
         overflow: hidden;
         transition: var(--transition);
+
         @include mq($xl) {
             max-width: 380px;
             min-width: 380px;
             padding: 14px;
         }
-        @include mq($lg){
+
+        @include mq($lg) {
             display: none;
         }
     }
@@ -1076,9 +1104,11 @@
         display: flex;
         flex-direction: column;
         gap: 45px;
-        @include mq($xs){
+
+        @include mq($xs) {
             padding: 15px;
         }
+
         .msg {
             display: flex;
             gap: 20px;
@@ -1088,7 +1118,8 @@
             @include mq($xl) {
                 width: 100%;
             }
-            @include mq($xs){
+
+            @include mq($xs) {
                 flex-wrap: wrap;
             }
 
@@ -1154,7 +1185,7 @@
 
             input[type="text"] {
                 width: 100%;
-                border: 1px solid rgba(#7D8087, $alpha: 0.3);
+                border: 1px solid rgba(125, 128, 135, 0.5);
                 padding: 18px 20px;
                 position: relative;
             }
@@ -1162,7 +1193,7 @@
             label {
                 position: absolute;
                 top: 15px;
-                right: 125px;
+                right: 135px;
                 cursor: pointer;
             }
 
@@ -1172,8 +1203,8 @@
                 background-color: var(--rts-button-1);
                 color: var(--rts-white);
                 position: absolute;
-                right: 20px;
-                top: 10px;
+                right: 30px;
+                top: 12px;
             }
         }
     }
@@ -1315,6 +1346,7 @@
 
     @include mq($xl) {
         flex-wrap: wrap;
+        gap: 20px;      
     }
 }
 
@@ -1554,14 +1586,22 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    @include mq($xs){
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
 }
 
 .job__post {
     display: flex;
     align-items: center;
     gap: 30px;
-
+   
     .icon__text {
+        @include mq($xs){
+            display: none;
+        }
         i {
             color: var(--rts-button-3);
         }
@@ -1589,6 +1629,9 @@
     border-radius: 16px;
     display: flex;
     gap: 30px;
+    @include mq($sm){
+        display: grid;
+    }
 }
 
 .single__package__selection {
@@ -1670,7 +1713,9 @@
     display: flex;
     gap: 20px;
     align-items: center;
-
+    @include mq($sm){
+        flex-wrap: wrap;
+    }
     .action__item {
         position: relative;
         height: 42px;
@@ -1740,18 +1785,30 @@
     background-color: var(--rts-white);
     padding: 30px;
     border-radius: 16px;
+    flex-wrap: wrap;
+    gap: 30px;
 
     .author__info {
         display: flex;
         gap: 60px;
         align-items: center;
+        @include mq($lg){
+            gap: 40px;
+        }
+        @include mq($sm){
+            gap: 20px;
+            flex-wrap: wrap;
+        }
     }
 
     .author__meta {
         display: flex;
         gap: 30px;
         align-items: center;
-
+        @include mq($xs){
+            flex-wrap: wrap;
+            gap: 20px;
+        }
         .author__image {
             height: 92px;
             width: 92px;
@@ -1769,10 +1826,27 @@
         display: flex;
         gap: 80px;
 
+        @include mq($xl) {
+            gap: 40px;
+        }
+        @include mq($xs){
+            flex-wrap: wrap;
+            gap: 20px;
+        }
         span {
             display: flex;
             gap: 10px;
             align-items: center;
         }
     }
+}
+
+// employer action click
+.action__click {
+    background: linear-gradient(228.34deg, #FEF2EB 0%, #F1F1F1 46.31%, #E4E0EA 100%), #FFFFFF;
+    color: var(--rts-button-1);
+    transition: var(--transition);
+    padding: 12px 18px;
+    line-height: 1;
+    border-radius: 6px;
 }
