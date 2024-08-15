@@ -90,6 +90,10 @@
     background-color: var(--rts-white);
     border-radius: 10px;
     padding: 30px;
+    @include mq($xs){
+        font-size: 16px;
+        font-weight: 400 !important;
+    }
     &.is__video__in{
         margin-top: -70px;
         margin-left: 50px;
@@ -109,7 +113,9 @@
         justify-content: center;
         transition: var(--transition);
         align-items: center;
-
+        @include mq($md){
+            display: none;
+        }
         img {
             height: 65px;
             width: 65px;
@@ -171,12 +177,17 @@
 }
 
 .apply__btn {
-    padding: 20px;
-    border-radius: 10px;
+    padding: 20px 18px;
+    border-radius: 6px;
     background-color: #F1F1F1;
     color: var(--rts-heading);
     transition: var(--transition);
-
+    line-height: 100%;
+    @include mq($sm){
+        padding: 12px 15px;
+        border-radius: 6px;
+        line-height: 1.2;
+    }
     &:hover {
         background-color: var(--rts-button-3);
         color: var(--rts-white);
@@ -184,8 +195,12 @@
     &.is__home{
         padding: 14px 20px;
         text-align: center;
+        @include mq($md){
+            padding: 12px 14px;
+            border-radius: 6px;
+        }
         @include mq($sm){
-            padding: 10px 14px;
+            padding: 12px 14px;
             border-radius: 6px;
         }
     }
@@ -414,6 +429,11 @@
             color: var(--rts-button-3);
         }
     }
+    &__big{
+        .apply__btn{
+            padding: 15px 18px;
+        }
+    }
 
 }
 
@@ -570,7 +590,7 @@
 
     .category-select {
         min-width: 180px;
-
+        flex-wrap: wrap;
         .nice-select {
             border: 1px solid #D8D9DB;
 

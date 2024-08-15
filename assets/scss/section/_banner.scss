@@ -121,7 +121,8 @@
     box-shadow: 0px 30px 30px rgba(175, 175, 175, 0.16);
     border-radius: 16px;
     padding: 22px 20px;
-   
+    position: relative;
+    z-index: 99;
     .single__input {
         min-width: 190px;
 
@@ -274,7 +275,11 @@
                 top: 5%;
                 left: 18%;
                 box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
-
+                @include mq($sm){
+                    height: 55px;
+                    width: 55px;
+                    font-size: 25px;
+                }
             }
 
             .twitter {
@@ -352,6 +357,9 @@
             background: var(--rts-gray);
             border: none;
             line-height: 1;
+            @include mq($sm){
+                font-size: 16px;
+            }
         }
 
         .search__icon,
@@ -370,7 +378,10 @@
             border: none;
             line-height: 1;
             font-size: 18px;
-
+            @include mq($sm){
+                font-size: 16px;
+            }            
+            
             &.open {
                 &::before {
                     content: "\f077";
@@ -506,6 +517,9 @@
         @include mq($md){
             font-size: 60px;
         }
+        @include mq($sm){
+            margin-bottom: 30px;
+        }
         @include mq($xs){
             font-size: 45px;
             line-height: 1.2;
@@ -613,6 +627,9 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    @include mq($sm){
+        padding-top: 70px;
+    }
 
     & *> {
         position: relative;
@@ -687,7 +704,7 @@
             line-height: 1.2;
         }
         @include mq($xs){
-            font-size: 40px;
+            font-size: 35px;
             line-height: 1.2;
         }
     }

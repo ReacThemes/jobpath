@@ -207,7 +207,7 @@
     </div>
 </div>
     <!-- breadcrumb area end -->
-         <!-- advance search -->
+    <!-- advance search -->
     <div class="rts__section">
         <div class="container">
             <div class="row">
@@ -215,39 +215,45 @@
                     <form action="#" class="advance__search__form">
                         <div class="search__item">
                             <div class="position-relative">
-                                <input type="text" id="search" placeholder="Search Blog....">
+                                <input type="text" id="search" placeholder="Enter Type Of job" required>
                                 <i class="fa-light fa-magnifying-glass"></i>
                             </div>
                         </div>
-                       
                         <!-- job category -->
                         <div class="search__item">
-                            <div class="position-relative">
-                                <select name="cat" id="cat">
-                                    <option value="*">Category</option>
-                                    <option value="gov">Business</option>
-                                    <option value="ngo">Web Design</option>
-                                    <option value="private">Web Developer</option>
-                                </select>
-                                <i class="rt-briefcase"></i>
+                            <div class="position-relative d-flex">
+                                <i class="fa-light fa-briefcase"></i>
+                                <div class="nice-select" tabindex="0">
+                                    <span class="current">Choose a Category</span>
+                                    <ul class="list">
+                                        <li data-value="Nothing" data-display="Choose a Category" class="option selected focus">Choose a Category</li>
+                                        <li data-value="1" class="option">Government</li>
+                                        <li data-value="2" class="option">NGO</li>
+                                        <li data-value="3" class="option">Private</li>
+                                        <li data-value="4" class="option">Freelancing</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <!-- job category end -->
-                        <!-- person -->
+                        <!-- job category -->
+
                          <!-- job location -->
-                         <div class="search__item">
-                            <div class="position-relative">
-                                <select name="person" id="person">
-                                    <option value="*">Author</option>
-                                    <option value="jon">Jhon Doe</option>
-                                    <option value="mic">Michael Jon</option>
-                                    <option value="patrick">Patrick Doe</option>
-                                </select>
+                        <div class="search__item">
+                            <div class="position-relative d-flex">
                                 <i class="fa-light fa-user"></i>
+                                <div class="nice-select" tabindex="0">
+                                    <span class="current">Author</span>
+                                    <ul class="list">
+                                        <li data-value="Nothing" data-display="Search Author" class="option selected focus">Search Author</li>
+                                        <li data-value="1" class="option">Jonathon</li>
+                                        <li data-value="2" class="option">Alamain</li>
+                                    </ul>
+                                </div>
+                                
                             </div>
                         </div>
-                        <!-- person end -->
-                        <button type="submit" class="rts__btn fill__btn he-3 job__search">Search Blog</button>
+                        <!-- job location end -->
+                        <button type="submit" class="rts__btn fill__btn be-1 job__search">Search Blog</button>
                     </form>
                 </div>
             </div>
@@ -255,6 +261,7 @@
     </div>
     <!-- advance search end -->
 
+    <!-- blog -->
     <div class="rts__section section__padding">
         <div class="container">
             <div class="row g-30">
@@ -292,7 +299,7 @@
                             </div>
                         </div>
                         <!-- single blog -->
-                        <div class="col-lg-6 col-xl-4 col-md-6">
+                        <div class="col-xl-6 col-xxl-4">
                             <div class="rts__single__blog">
                                 <a href="blog-details.html" class="blog__img">
                                     <img src="assets/img/pages/blog-2/1.webp" class="mb-2" alt="blog">
@@ -311,7 +318,7 @@
                         </div>
                         <!-- single blog end -->
                         <!-- single blog -->
-                        <div class="col-lg-6 col-xl-4 col-md-6">
+                        <div class="col-xl-6 col-xxl-4">
                             <div class="rts__single__blog">
                                 <a href="blog-details.html" class="blog__img">
                                     <img src="assets/img/pages/blog-2/2.webp" class="mb-2" alt="blog">
@@ -330,7 +337,7 @@
                         </div>
                         <!-- single blog end -->
                         <!-- single blog -->
-                        <div class="col-lg-6 col-xl-4 col-md-6">
+                        <div class="col-xl-6 col-xxl-4">
                             <div class="rts__single__blog">
                                 <a href="blog-details.html" class="blog__img">
                                     <img src="assets/img/pages/blog-2/3.webp" class="mb-2" alt="blog">
@@ -349,7 +356,7 @@
                         </div>
                         <!-- single blog end -->
                         <!-- single blog -->
-                        <div class="col-lg-6 col-xl-4 col-md-6">
+                        <div class="col-xl-6 col-xxl-4">
                             <div class="rts__single__blog">
                                 <a href="blog-details.html" class="blog__img">
                                     <img src="assets/img/pages/blog-2/4.webp" class="mb-2" alt="blog">
@@ -368,7 +375,7 @@
                         </div>
                         <!-- single blog end -->
                         <!-- single blog -->
-                        <div class="col-lg-6 col-xl-4 col-md-6">
+                        <div class="col-xl-6 col-xxl-4">
                             <div class="rts__single__blog">
                                 <a href="blog-details.html" class="blog__img">
                                     <img src="assets/img/pages/blog-2/5.webp" class="mb-2" alt="blog">
@@ -387,7 +394,7 @@
                         </div>
                         <!-- single blog end -->
                         <!-- single blog -->
-                        <div class="col-lg-6 col-xl-4 col-md-6">
+                        <div class="col-xl-6 col-xxl-4">
                             <div class="rts__single__blog">
                                 <a href="blog-details.html" class="blog__img">
                                     <img src="assets/img/pages/blog-2/6.webp" class="mb-2" alt="blog">
@@ -420,6 +427,7 @@
             </div>
         </div>
     </div>
+    <!-- blog area end -->
 
     <!-- app center -->
     

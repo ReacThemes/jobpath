@@ -10,6 +10,9 @@
     @include mq($md){
         padding: 0;
     }
+    @include mq($sm){
+        border-radius: 0;
+    }
     &>*{
         position: relative;
         z-index: 1;

@@ -99,3 +99,11 @@
 .focus-none{
     
 }
+
+// hide savefrom extension download icon
+a[savefrom_lm="1"][savefrom_lm_is_link="1"] {
+    display: none !important;
+    background-image: none !important;
+    position: absolute !important;
+}
+

@@ -69,6 +69,10 @@
             @include mq($md) {
                 margin-left: 50px;
             }
+
+            @include mq($sm) {
+                margin-left: 25px;
+            }
         }
 
         .max-500 {

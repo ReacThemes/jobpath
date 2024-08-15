@@ -270,6 +270,7 @@
     display: flex;
     gap: 30px;
     flex: 1;
+    align-items: center;
 
     @media screen and (min-width: 1399px) and (max-width: 1585px) {
         padding: 20px;
@@ -328,12 +329,14 @@
         display: flex;
         gap: 10px;
         align-items: center;
-
+        flex-wrap: wrap;
         .nav-link {
             padding: 10px;
             transition: var(--transition);
             border-radius: 6px;
-
+            @include mq($xs){
+                font-size: 14px;
+            }
             &.active {
                 background-color: var(--rts-button-1);
                 color: var(--rts-white);
@@ -491,7 +494,10 @@
             width: 100%;
             border-radius: 6px;
             border: 1px solid var(--rts-border);
-
+            @include mq($sm){
+                padding: 12px 20px;
+                font-size: 16px;
+            }
             &:focus {
                 box-shadow: none;
             }
@@ -516,7 +522,9 @@
     border-radius: 6px;
     display: inline-block;
     transition: var(--transition);
-
+    @include mq($sm){
+        line-height: 1.2;
+    }
     &:hover {
         background-color: var(--rts-button-1);
         color: var(--rts-white);
@@ -621,25 +629,29 @@
         color: var(--rts-button-3);
     }
 }
-
-.accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    .accordion-item {
-        border: 0;
-
-        button {
-            background-color: var(--rts-gray);
-            border-radius: 0;
-            font-weight: 600;
-            font-size: 20px;
-            border-radius: 6px;
-            padding: 20px 30px;
-
-            &:focus {
-                box-shadow: none;
+.template-dashboard{
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+        .accordion-item {
+            border: 0;
+    
+            button {
+                background-color: var(--rts-gray);
+                border-radius: 0;
+                font-weight: 600;
+                font-size: 20px;
+                border-radius: 6px;
+                padding: 20px 30px;
+    
+                &:focus {
+                    box-shadow: none;
+                }
+                &:not(.collapsed) {
+                    box-shadow: none;
+                }
             }
         }
     }
@@ -1035,6 +1047,7 @@
         }
 
         .chat__person__meta {
+            cursor: pointer;
             p {
                 font-size: 16px;
             }
@@ -1579,6 +1592,10 @@
     padding: 20px 30px;
     margin-left: 15px;
     border-radius: 6px;
+
+    @include mq($sm) {
+        padding: 15px 20px;
+    }
 }
 
 // employer dashboard css

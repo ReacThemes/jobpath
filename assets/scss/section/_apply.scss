@@ -7,6 +7,9 @@
         padding: 50px;
         text-align: center;
     }
+    @include mq($xs){
+        padding: 40px 30px;
+    }
 }
 .apply__area__img{
     position: absolute;

@@ -143,37 +143,31 @@
       });
 
         // active button
-        $(document).ready(function() {
-          document.querySelectorAll('.profile__view__tab .nav-link').forEach(button => {
-            button.addEventListener('click', function() {
-                // Remove active class from all buttons
-                document.querySelectorAll('.profile__view__tab .nav-link').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-        
-                // Add active class to the clicked button
-                this.classList.add('active');
-            });
-          });
+      $(document).ready(function() {
+        $('.nav-link').on('click', function() {
+            $('.nav-link').removeClass('active');
+            $(this).addClass('active');
         });
+      });
+    
 
-        // dashboard menu show
-        $(document).ready(function() {
-          document.querySelector('.sidebar__action').addEventListener('click', function() {
-            document.querySelector('.dashboard__left').classList.add('active');
-          });
-
-          document.addEventListener('click', function(event) {
-            const dashboardLeft = document.querySelector('.dashboard__left');
-            const sidebarAction = document.querySelector('.sidebar__action');
-
-            if (!dashboardLeft.contains(event.target) && !sidebarAction.contains(event.target)) {
-                dashboardLeft.classList.remove('active');
+      // dashboard menu show
+      $(document).ready(function() {
+        $('.sidebar__action').on('click', function() {
+            $('.dashboard__left').addClass('active');
+        });
+    
+        $(document).on('click', function(event) {
+            const $dashboardLeft = $('.dashboard__left');
+            const $sidebarAction = $('.sidebar__action');
+    
+            if (!$dashboardLeft.is(event.target) && !$dashboardLeft.has(event.target).length && 
+                !$sidebarAction.is(event.target) && !$sidebarAction.has(event.target).length) {
+                $dashboardLeft.removeClass('active');
             }
-          });
         });
-
-      
+      });
+    
     },
     chartJs: function () {
       try {

@@ -9,11 +9,16 @@ body{
     font-family: var(--font);
     color: var(--rts-para);
     overflow-x: hidden;
-    letter-spacing: -.5px;
+    margin: 0 auto;
 }
-.row{
-    margin-right: 0;
-    margin-left: 0;
+// .row{
+//     margin-right: 0;
+//     margin-left: 0;
+// }
+html, body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 a, a:hover, a:focus{
     text-decoration: none;
@@ -42,9 +47,13 @@ h1, .h1{
 h2, .h2{
     font-size: var(--h2);
     line-height: 70px;
-    @include mq($md){
+    @include mq($lg){
         font-size: 50px;
         line-height: 60px;
+    }
+    @include mq($md){
+        font-size: 48px;
+        line-height: 58px;
     }
     @include mq($sm){
         font-size: 40px;
@@ -88,7 +97,7 @@ h5, .h5{
 
 h6, .h6{
     font-size: var(--h6);
-    line-height: 38px;
+    line-height: 30px;
     @include mq($xs){
         font-size: 20px;
         line-height: 30px;
@@ -105,6 +114,9 @@ p{
 }
 .font-20{
     font-size: 20px;
+    @include mq($xs){
+        font-size: 18px;
+    }
 }
 .text-dark{
     color: var(--rts-heading) !important;
