@@ -5,7 +5,86 @@
 .top-30 {
     top: 30px !important;
 }
+// dashboard profile action
+.rts__dropdown{
+    padding: 15px 15px;
+    min-width: 230px;
+    max-width: 360px;
+    li{
 
+        a{
+            font-weight: 500;
+            padding: 6px 15px;
+            transition: var(--transition);
+            &:hover{
+                background-color: var(--rts-button-1);
+                color: var(--rts-white);
+            }
+        }
+    }
+}
+// dashboard profile action
+.notification__dropdown{
+    padding: 0;
+}
+.rts__dropdown__content{
+    .notification__header{
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--rts-border);
+        padding-bottom: 15px;
+        h6{
+            font-size: 18px;
+            color: var(--rts-para);
+        }
+        a i{
+            color: var(--rts-para);
+            font-size: 18px;
+        }
+    }
+    .notification__date{
+        padding: 5px 15px;
+        background-color: var(--rts-gray);
+        display: inline-block;
+        width: 100%;
+        font-weight: 500;
+    }
+    .single__notification{
+        padding: 15px 15px;
+        border-bottom: 1px solid var(--rts-border);
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+        &:last-child{
+            border-bottom: 0;
+        }
+        .notification__image{
+            img{
+                height: 40px;
+                min-width: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        .notification__content{
+            p{
+                font-size: 16px;
+                line-height: 1.2;
+                font-weight: 500;
+                color: var(--rts-para);
+            }
+        }
+        .time{
+            font-size: 14px;
+            
+            font-weight: 500;
+            min-width: max-content;
+        }
+    }
+}
 // dashboard mobile menu
 .sidebar__action {
     display: flex;
@@ -272,14 +351,20 @@
     flex: 1;
     align-items: center;
 
-    @media screen and (min-width: 1399px) and (max-width: 1585px) {
+
+    @media screen and (min-width: 1399px) and (max-width: 1680px) {
         padding: 20px;
+        gap: 15px;
     }
 
     @include mq($lg) {
         padding: 20px;
     }
-
+    .content h5{
+        @include mq($xl){
+            font-size: 25px;
+        }
+    }
     .icon {
         height: 70px;
         min-width: 70px;
@@ -474,6 +559,7 @@
 .info__field {
     display: flex;
     flex-direction: column;
+    gap: calc(40px / 2);
 
     .rt-input-group {
         label {
@@ -481,7 +567,10 @@
             margin-bottom: 15px;
             color: var(--rts-button-3);
             margin-top: 15px;
-
+            text-transform: capitalize;
+            &:first-child{
+                margin-top: 0;
+            }
             @include mq($xs) {
                 margin-top: 15px;
             }
@@ -490,7 +579,7 @@
         input,
         .form-select,
         textarea {
-            padding: 15px 30px;
+            padding: 15px 20px;
             width: 100%;
             border-radius: 6px;
             border: 1px solid var(--rts-border);
@@ -1582,6 +1671,11 @@
             position: absolute;
             right: 10px;
             transform: translate(0, -55%);
+            @include mq($sm){
+                top: -4px;
+                padding: 8px 12px;
+                right: 5px;
+            }
         }
     }
 }
@@ -1732,6 +1826,7 @@
     align-items: center;
     @include mq($sm){
         flex-wrap: wrap;
+        gap: 15px;
     }
     .action__item {
         position: relative;
@@ -1780,7 +1875,9 @@
         gap: 10px;
         color: var(--rts-para);
         font-weight: 500;
-
+        @include mq($sm){
+            font-size: 16px;
+        }
         &:hover {
             background-color: var(--rts-button-1);
             color: var(--rts-white);
@@ -1804,7 +1901,9 @@
     border-radius: 16px;
     flex-wrap: wrap;
     gap: 30px;
-
+    @include mq($sm){
+        gap: 20px;
+    }
     .author__info {
         display: flex;
         gap: 60px;
@@ -1826,6 +1925,9 @@
             flex-wrap: wrap;
             gap: 20px;
         }
+        @include mq($sm){
+            gap: 15px;
+        }
         .author__image {
             height: 92px;
             width: 92px;
@@ -1846,10 +1948,15 @@
         @include mq($xl) {
             gap: 40px;
         }
+        @include mq($sm){
+            font-size: 15px;
+            gap: 30px;
+        }
         @include mq($xs){
             flex-wrap: wrap;
             gap: 20px;
         }
+        
         span {
             display: flex;
             gap: 10px;
@@ -1864,6 +1971,6 @@
     color: var(--rts-button-1);
     transition: var(--transition);
     padding: 12px 18px;
-    line-height: 1;
+    line-height: 1.2;
     border-radius: 6px;
 }

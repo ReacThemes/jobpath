@@ -53,6 +53,9 @@
             border-radius: 6px;
             line-height: 1;
             color: var(--rts-para);
+            @include mq($md){
+                font-size: 16px;
+            }
         }
     }
     .apply__btn{

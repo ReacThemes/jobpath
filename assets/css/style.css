@@ -1152,6 +1152,10 @@ p {
    top: 30px;
 }
 
+.top-25 {
+   top: 25px !important;
+}
+
 .end-30 {
    right: 30px;
 }
@@ -2976,6 +2980,10 @@ p {
 .bg-primary {
    background: var(--rts-primary) !important;
    color: var(--rts-white) !important;
+}
+
+.pointer {
+   cursor: pointer;
 }
 
 a[savefrom_lm="1"][savefrom_lm_is_link="1"] {
@@ -5660,6 +5668,14 @@ input::placeholder {
    top: -30px;
 }
 
+@media screen and (max-width: 576px) {
+   .home__six__banner .rounded-full {
+      top: 0;
+      margin-bottom: 20px;
+      border-radius: 4px;
+   }
+}
+
 .home__six__banner .rts__banner__shape {
    position: absolute;
    height: 100%;
@@ -6676,6 +6692,12 @@ input::placeholder {
    }
 }
 
+@media screen and (max-width: 1300px) and (min-width: 1200px) {
+   .navigation__menu--item {
+      margin: 0 15px;
+   }
+}
+
 @media screen and (max-width: 1200px) {
    .navigation__menu--item {
       margin: 0 14px;
@@ -7475,6 +7497,7 @@ input::placeholder {
 .rts__job__card .job__title a {
    color: var(--rts-heading);
    font-weight: 600;
+   letter-spacing: -0.5px;
 }
 
 .rts__job__card .job__tags a {
@@ -7634,7 +7657,7 @@ input::placeholder {
    background-color: #F1F1F1;
    color: var(--rts-heading);
    transition: var(--transition);
-   line-height: 100%;
+   line-height: 1.2;
 }
 
 @media screen and (max-width: 768px) {
@@ -9476,6 +9499,12 @@ input::placeholder {
    color: var(--rts-para);
 }
 
+@media screen and (max-width: 992px) {
+   .top__candidate__single .job__tags a {
+      font-size: 16px;
+   }
+}
+
 .top__candidate__single .apply__btn:hover {
    background-color: var(--rts-button-1);
 }
@@ -10140,6 +10169,89 @@ input::placeholder {
    top: 30px !important;
 }
 
+.rts__dropdown {
+   padding: 15px 15px;
+   min-width: 230px;
+   max-width: 360px;
+}
+
+.rts__dropdown li a {
+   font-weight: 500;
+   padding: 6px 15px;
+   transition: var(--transition);
+}
+
+.rts__dropdown li a:hover {
+   background-color: var(--rts-button-1);
+   color: var(--rts-white);
+}
+
+.notification__dropdown {
+   padding: 0;
+}
+
+.rts__dropdown__content .notification__header {
+   padding: 10px 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid var(--rts-border);
+   padding-bottom: 15px;
+}
+
+.rts__dropdown__content .notification__header h6 {
+   font-size: 18px;
+   color: var(--rts-para);
+}
+
+.rts__dropdown__content .notification__header a i {
+   color: var(--rts-para);
+   font-size: 18px;
+}
+
+.rts__dropdown__content .notification__date {
+   padding: 5px 15px;
+   background-color: var(--rts-gray);
+   display: inline-block;
+   width: 100%;
+   font-weight: 500;
+}
+
+.rts__dropdown__content .single__notification {
+   padding: 15px 15px;
+   border-bottom: 1px solid var(--rts-border);
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   cursor: pointer;
+}
+
+.rts__dropdown__content .single__notification:last-child {
+   border-bottom: 0;
+}
+
+.rts__dropdown__content .single__notification .notification__image img {
+   height: 40px;
+   min-width: 40px;
+   border-radius: 50%;
+   -o-object-fit: cover;
+   object-fit: cover;
+}
+
+.rts__dropdown__content .single__notification .notification__content p {
+   font-size: 16px;
+   line-height: 1.2;
+   font-weight: 500;
+   color: var(--rts-para);
+}
+
+.rts__dropdown__content .single__notification .time {
+   font-size: 14px;
+   font-weight: 500;
+   min-width: -moz-max-content;
+   min-width: max-content;
+}
+
 .sidebar__action {
    display: flex;
    gap: 10px;
@@ -10416,15 +10528,22 @@ input::placeholder {
    align-items: center;
 }
 
-@media screen and (min-width: 1399px) and (max-width: 1585px) {
+@media screen and (min-width: 1399px) and (max-width: 1680px) {
    .single__overview {
       padding: 20px;
+      gap: 15px;
    }
 }
 
 @media screen and (max-width: 1200px) {
    .single__overview {
       padding: 20px;
+   }
+}
+
+@media screen and (max-width: 1400px) {
+   .single__overview .content h5 {
+      font-size: 25px;
    }
 }
 
@@ -10623,6 +10742,7 @@ input::placeholder {
 .info__field {
    display: flex;
    flex-direction: column;
+   gap: calc(40px / 2);
 }
 
 .info__field .rt-input-group label {
@@ -10630,6 +10750,11 @@ input::placeholder {
    margin-bottom: 15px;
    color: var(--rts-button-3);
    margin-top: 15px;
+   text-transform: capitalize;
+}
+
+.info__field .rt-input-group label:first-child {
+   margin-top: 0;
 }
 
 @media screen and (max-width: 576px) {
@@ -10641,7 +10766,7 @@ input::placeholder {
 .info__field .rt-input-group input,
 .info__field .rt-input-group .form-select,
 .info__field .rt-input-group textarea {
-   padding: 15px 30px;
+   padding: 15px 20px;
    width: 100%;
    border-radius: 6px;
    border: 1px solid var(--rts-border);
@@ -11760,6 +11885,14 @@ input::placeholder {
    transform: translate(0, -55%);
 }
 
+@media screen and (max-width: 768px) {
+   .rt-input-group .position-relative .rts__btn {
+      top: -4px;
+      padding: 8px 12px;
+      right: 5px;
+   }
+}
+
 .info__field .rts__btn {
    margin-top: 30px;
    max-width: -moz-max-content;
@@ -11912,6 +12045,7 @@ input::placeholder {
 @media screen and (max-width: 768px) {
    .shortlist__action {
       flex-wrap: wrap;
+      gap: 15px;
    }
 }
 
@@ -11964,6 +12098,12 @@ input::placeholder {
    font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+   .shortlist__action .action__item__long {
+      font-size: 16px;
+   }
+}
+
 .shortlist__action .action__item__long:hover {
    background-color: var(--rts-button-1);
    color: var(--rts-white);
@@ -11985,6 +12125,12 @@ input::placeholder {
    border-radius: 16px;
    flex-wrap: wrap;
    gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+   .single__shortlist__item {
+      gap: 20px;
+   }
 }
 
 .single__shortlist__item .author__info {
@@ -12019,6 +12165,12 @@ input::placeholder {
    }
 }
 
+@media screen and (max-width: 768px) {
+   .single__shortlist__item .author__meta {
+      gap: 15px;
+   }
+}
+
 .single__shortlist__item .author__meta .author__image {
    height: 92px;
    width: 92px;
@@ -12042,6 +12194,13 @@ input::placeholder {
    }
 }
 
+@media screen and (max-width: 768px) {
+   .single__shortlist__item .author__info__list {
+      font-size: 15px;
+      gap: 30px;
+   }
+}
+
 @media screen and (max-width: 576px) {
    .single__shortlist__item .author__info__list {
       flex-wrap: wrap;
@@ -12060,7 +12219,7 @@ input::placeholder {
    color: var(--rts-button-1);
    transition: var(--transition);
    padding: 12px 18px;
-   line-height: 1;
+   line-height: 1.2;
    border-radius: 6px;
 }
 /*# sourceMappingURL=../maps/style.css.map */

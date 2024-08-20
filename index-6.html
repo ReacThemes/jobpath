@@ -19,6 +19,13 @@
     <meta name="twitter:title" content="Your Ultimate Job HTML Template">
     <meta name="twitter:description" content="Your Ultimate Job HTML Template">
     <meta name="twitter:image" content="https://html.themewant.com/hostie/landing/assets/images/banner/slider-img-01.webp">
+
+    <!-- fabicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut-icon" href="assets/img/favicon-16x16.png" type="image/x-icon">
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
@@ -234,7 +241,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="rts__banner__images d-flex justify-content-between flex-wrap flex-sm-nowrap">
+                        <div class="rts__banner__images d-flex justify-content-center justify-content-sm-between flex-wrap flex-sm-nowrap">
                             <div>
                                 <img class="rounded-full" src="assets/img/home-6/banner/banner-image-1.jpg" alt="">
                             </div>
@@ -776,7 +783,7 @@
                 </div>
                 <div class="row g-30">
                     <div class="col-lg-6">
-                        <div class="rts__single__employer style__six d-flex justify-content-center justify-content-md-between flex-wrap gap-4">
+                        <div class="rts__single__employer style__six d-flex justify-content-start justify-content-md-between flex-wrap gap-3">
                             <div class="d-flex gap-4 align-items-center">
                                 <div class="icon">
                                     <img src="assets/img/icon/linkedin.svg" alt="">
@@ -795,7 +802,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="rts__single__employer style__six d-flex justify-content-center justify-content-md-between flex-wrap gap-4">
+                        <div class="rts__single__employer style__six d-flex justify-content-start justify-content-md-between flex-wrap gap-3">
                             <div class="d-flex gap-4 align-items-center">
                                 <div class="icon">
                                     <img src="assets/img/icon/upwork.svg" alt="">
@@ -814,7 +821,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="rts__single__employer style__six d-flex justify-content-center justify-content-md-between flex-wrap gap-4">
+                        <div class="rts__single__employer style__six d-flex justify-content-start justify-content-md-between flex-wrap gap-3">
                             <div class="d-flex gap-4 align-items-center">
                                 <div class="icon">
                                     <img src="assets/img/icon/microsoft.svg" alt="">
@@ -833,7 +840,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="rts__single__employer style__six d-flex justify-content-center justify-content-md-between flex-wrap gap-4">
+                        <div class="rts__single__employer style__six d-flex justify-content-start justify-content-md-between flex-wrap gap-3">
                             <div class="d-flex gap-4 align-items-center">
                                 <div class="icon">
                                     <img src="assets/img/icon/google.svg" alt="">
@@ -1060,18 +1067,21 @@
                 <button class="rts__btn nav-link  active"><i class="fa-light fa-user"></i>Candidate</button>
                 <button class="rts__btn nav-link"><i class="rt-briefcase"></i> Employer</button>
             </div>
-            <form action="#" class="d-flex flex-column gap-3">
+            <div class="tab-content" id="">
+                
+            </div>
+            <form action="candidate-dashboard.html" method="post" class="d-flex flex-column gap-3">
                 <div class="form-group">
                     <label for="email" class="fw-medium text-dark mb-3">Your Email</label>
                     <div class="position-relative">
-                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <input type="email" name="email" id="email" value="user@test.com" placeholder="Enter your email" required>
                         <i class="fa-light fa-user icon"></i>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password" class="fw-medium text-dark mb-3">Password</label>
                     <div class="position-relative">
-                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                        <input type="password" name="password" value="1234" id="password" placeholder="Enter your password" required>
                         <i class="fa-light fa-lock icon"></i>
                     </div>
                 </div>

@@ -46,6 +46,7 @@
         initSwipers(".swiper-data", {
           spaceBetween: 30,
           slidesPerView: 2,
+          loop: true,
         });
         // utility function to initialize swipers
         function initSwipers(selector, defaults) {
@@ -170,81 +171,417 @@
     
     },
     chartJs: function () {
-      try {
-        // chart one
-        var options__candidate = {
-          series: [{
-          name: 'candidate',
-          data: [30, 50, 40, 60, 42, 85, 60, 40, 50, 90, 60, 100]
-        }],
-          chart: {
-          height: 450,
-          type: 'area',
-          toolbar:{
-            show: false,
-          }
-        },
-        dataLabels: {
-          enabled: false
-        },
-        stroke: {
-          curve: 'smooth'
-        },
-        xaxis: {
-          type: 'day',
-          categories: ["2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19"]
-        },
-        tooltip: {
-        enabled: true,
-          x: {
-            format: 'dd/MM/yy'
-          },
-        },
-        };
-        var chart = new ApexCharts(document.querySelector("#spline__chart__candidate"), options__candidate);
-        chart.render();
-      } catch (error) {
-        console.log("ChartJs Not used this page");
-      }
+      
+      $(document).ready(function(){
 
-      // chart two
-      try{
-        var options_1 = {
-          series: [{
-          name: 'employer',
-          data: [50, 70, 100, 150, 142, 185, 160, 240, 150, 240, 160, 200]
-        }],
-          chart: {
-          height: 450,
-          type: 'area',
-          foreColor: '#373d3f',
-          toolbar:{
-            show: false,
-          }
-        },
-        dataLabels: {
-          enabled: false
-        },
-        stroke: {
-          curve: 'smooth'
-        },
-        xaxis: {
-          type: 'day',
-          categories: ["2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19", "2018-09-19"]
-        },
-        tooltip: {
-        enabled: true,
-          x: {
-            format: 'dd/MM/yy'
-          },
-        },
-        };
-        var chart = new ApexCharts(document.querySelector("#spline__chart"), options_1);
-        chart.render();
-      } catch (error) {
-        console.log("ChartJs Not used this page");
-      }
+          // chart one
+          var options__candidate = {
+            series: [
+              {
+                name: "candidate",
+                data: [100, 200, 300, 400, 500, 800, 700, 800, 1000],
+              },
+            ],
+            chart: {
+              height: 480,
+              type: "area",
+              toolbar: {
+                show: false,
+              },
+            },
+            colors: ['#34A853'],
+            grid: {
+              show: true,
+              borderColor: "#7D8087",
+              strokeDashArray: 3,
+              position: "back",
+              yaxis: {
+                lines: {
+                  show: true,
+                },
+              },
+            },
+            dataLabels: {
+              enabled: false,
+            },
+            stroke: {
+              curve: "smooth",
+            },
+            xaxis: {
+              type: "day",
+              categories: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+              ],
+              labels:{
+                show: true,
+                offsetY: 2,
+                style:{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  cssClass: 'apexcharts-xaxis-label',
+                },
+              },
+            },
+            yaxis: {
+              labels:{
+                show: true,
+                style:{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  cssClass: 'apexcharts-xaxis-label',
+                },
+              },
+            },
+            tooltip: {
+              enabled: true,
+              x: {
+                format: "dd/MM/yy",
+              },
+            },
+            fill: {
+              type: "gradient",
+              gradient: {
+                opacityFrom: 1,
+                opacityTo: 0,
+                stops: [0, 46, 100],
+                type: "vertical",
+                colorStops:[
+                  {
+                    offset: 0,
+                    color: "#FEF2EB",
+                    opacity: 1
+                  },
+                  {
+                    offset: 50,
+                    color: "#F1F1F1",
+                    opacity: 0.5
+                  },
+                  {
+                    offset: 100,
+                    color: "#E4E0EA",
+                    opacity: 0.9
+                  }
+                ],
+              },
+            },
+            responsive: [
+              {
+                breakpoint: 1800,
+                options: {
+                  chart: {
+                    height: "550",
+                    width: "100%",
+                  },
+                },
+              },
+              {
+                breakpoint: 1400,
+                options: {
+                  chart: {
+                    height: "400",
+                    width: "100%",
+                  },
+                },
+              },
+            ],
+          };
+          var chart = new ApexCharts(
+            document.querySelector("#spline__chart__candidate"),
+            options__candidate
+          );
+          chart.render();
+
+        
+      });
+
+      // chart monthly
+      $(document).ready(function(){
+
+        
+          // chart one
+          var options__candidate__monthly = {
+            series: [
+              {
+                name: "candidate",
+                data: [100, 200, 300, 400, 500, 800, 700, 800, 1000],
+              },
+            ],
+            chart: {
+              height: 480,
+              type: "area",
+              toolbar: {
+                show: false,
+              },
+            },
+            colors: ['#34A853'],
+            grid: {
+              show: true,
+              borderColor: "#7D8087",
+              strokeDashArray: 3,
+              position: "back",
+              yaxis: {
+                lines: {
+                  show: true,
+                },
+              },
+            },
+            dataLabels: {
+              enabled: false,
+            },
+            stroke: {
+              curve: "smooth",
+            },
+            xaxis: {
+              type: "day",
+              categories: [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+              ],
+              labels:{
+                show: true,
+                offsetY: 2,
+                style:{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  cssClass: 'apexcharts-xaxis-label',
+                },
+              },
+            },
+            yaxis: {
+              labels:{
+                show: true,
+                style:{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  cssClass: 'apexcharts-xaxis-label',
+                },
+              },
+            },
+            tooltip: {
+              enabled: true,
+              x: {
+                format: "dd/MM/yy",
+              },
+            },
+            fill: {
+              type: "gradient",
+              gradient: {
+                opacityFrom: 1,
+                opacityTo: 0,
+                stops: [0, 46, 100],
+                type: "vertical",
+                colorStops:[
+                  {
+                    offset: 0,
+                    color: "#FEF2EB",
+                    opacity: 1
+                  },
+                  {
+                    offset: 50,
+                    color: "#F1F1F1",
+                    opacity: 0.5
+                  },
+                  {
+                    offset: 100,
+                    color: "#E4E0EA",
+                    opacity: 0.9
+                  }
+                ],
+              },
+            },
+            responsive: [
+              {
+                breakpoint: 1800,
+                options: {
+                  chart: {
+                    height: "550",
+                    width: "100%",
+                  },
+                },
+              },
+              {
+                breakpoint: 1400,
+                options: {
+                  chart: {
+                    height: "400",
+                    width: "100%",
+                  },
+                },
+              },
+            ],
+          };
+          var chart = new ApexCharts(
+            document.querySelector("#spline__chart__candidate__monthly"),
+            options__candidate__monthly
+          );
+          chart.render();
+
+  
+
+        
+      });
+
+      // chart yearly
+
+      $(document).ready(function(){
+
+        
+          // chart one
+          var options__candidate__yearly = {
+            series: [
+              {
+                name: "candidate",
+                data: [2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000],
+              },
+            ],
+            chart: {
+              height: 480,
+              type: "area",
+              toolbar: {
+                show: false,
+              },
+            },
+            colors: ['#34A853'],
+            grid: {
+              show: true,
+              borderColor: "#7D8087",
+              strokeDashArray: 3,
+              position: "back",
+              yaxis: {
+                lines: {
+                  show: true,
+                },
+              },
+            },
+            dataLabels: {
+              enabled: false,
+            },
+            stroke: {
+              curve: "smooth",
+            },
+            xaxis: {
+              type: "year",
+              categories: [
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+              ],
+              labels:{
+                show: true,
+                offsetY: 2,
+                style:{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  cssClass: 'apexcharts-xaxis-label',
+                },
+              },
+            },
+  
+            yaxis: {
+              labels:{
+                show: true,
+                style:{
+                  fontSize: '14px',
+                  fontWeight: 500,
+                  cssClass: 'apexcharts-xaxis-label',
+                },
+              },
+            },
+            tooltip: {
+              enabled: true,
+              x: {
+                format: "dd/MM/yy",
+              },
+            },
+            fill: {
+              type: "gradient",
+              gradient: {
+                opacityFrom: 1,
+                opacityTo: 0,
+                stops: [0, 46, 100],
+                type: "vertical",
+                colorStops:[
+                  {
+                    offset: 0,
+                    color: "#FEF2EB",
+                    opacity: 1,
+                  },
+                  {
+                    offset: 50,
+                    color: "#F1F1F1",
+                    opacity: 0.5,
+                  },
+                  {
+                    offset: 100,
+                    color: "#E4E0EA",
+                    opacity: 0.9,
+                  }
+                ],
+              },
+            },
+            responsive: [
+              {
+                breakpoint: 1800,
+                options: {
+                  chart: {
+                    height: "550",
+                    width: "100%",
+                  },
+                },
+              },
+              {
+                breakpoint: 1400,
+                options: {
+                  chart: {
+                    height: "400",
+                    width: "100%",
+                  },
+                },
+              },
+            ],
+          };
+          var chart = new ApexCharts(
+            document.querySelector("#spline__chart__candidate__yearly"),
+            options__candidate__yearly
+          );
+          chart.render();
+
+
+      });
+
     },
+
+
+
+
+
     backToTop: function () {
       $(document).ready(function () {
         var backButton = $("#rts-back-to-top");
