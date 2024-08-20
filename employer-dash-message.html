@@ -276,7 +276,6 @@
     </div>
 </header>
 <!-- header area end -->
-
     <!-- content area -->
     <div class="dashboard__content d-flex">
         <div class="dashboard__left">
@@ -437,30 +436,140 @@
                 <!-- sidebar menu end -->
 
                 <h6 class="fw-semibold mb-4">Message</h6>
-                
-                <div class="candidate__message">
-                    <div class="user__list__as__messanger d-xl-none mb-30">
-                        <h6 class="fw-semibold mb-4 font-20">Active Users</h6>
-                        <ul class="list-unstyled">
-                            
-                            <li>
-                                <div class="avatar__user"><img src="assets/img/icon/upwork.svg" alt="">
+                <!-- mobile message -->
+                <div class="user__list__as__messanger d-xxl-none mb-30">
+                    <h6 class="fw-semibold mb-4 font-20">Active Users</h6>
+                    <div class="message__left">
+                        <!-- search people -->
+                        <div class="search__job">
+                            <div class="position-relative">
+                                <input type="text" id="search" placeholder="Find Top Employer" required="">
+                                <i class="fa-light fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <!-- search people end -->
+                        <!-- message filter -->
+                        <div class="message__filter mt-4">
+                            <ul class="list-unstyled d-flex gap-3">
+                                <li class="nav-item"><a href="#" class="nav-link active">All</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Unread</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Read</a></li>
+                            </ul>
+                        </div>
+                        <!-- message filter end -->
+                        <!-- CHAT USER -->
+                        <div class="chat__user__list">
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/icon/upwork.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Upwork</h6>
+                                        <p>you: hello how are you?</p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="avatar__user"><img src="assets/img/icon/udemy.svg" alt="">
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
+                                    <span class="count">2</span>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="avatar__user"><img src="assets/img/icon/google.svg" alt="">
+                            </div>
+                            <!-- single user end -->
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/icon/apple.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Apple</h6>
+                                        <p>you: hello how are you?</p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="avatar__user"><img src="assets/img/icon/figma.svg" alt="">
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                            <!-- single user end -->
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/icon/microsoft.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Microsoft</h6>
+                                        <p>you: hello how are you?</p>
+                                    </div>
+                                </div>
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
+                                </div>
+                            </div>
+                            <!-- single user end -->
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/icon/google.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Google</h6>
+                                        <p>you: hello how are you?</p>
+                                    </div>
+                                </div>
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
+                                </div>
+                            </div>
+                            <!-- single user end -->
+                             
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/icon/linkedin.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Linkedin</h6>
+                                        <p>you: hello how are you?</p>
+                                    </div>
+                                </div>
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
+                                </div>
+                            </div>
+                            <!-- single user end -->
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/icon/udemy.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Udemy</h6>
+                                        <p>you: hello how are you?</p>
+                                    </div>
+                                </div>
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
+                                </div>
+                            </div>
+                            <!-- single user end -->
+                        </div>
+                        <!-- CHAT USER ENMD -->
                     </div>
+                </div>
+                <!-- mobile message end -->
+
+                <div class="candidate__message">
                     <div class="candidate__message__content">
                         <div class="message__left">
                             <!-- search people -->

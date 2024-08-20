@@ -492,29 +492,121 @@
                 <!-- sidebar menu end -->
 
                 <h6 class="fw-semibold mb-4">Message</h6>
-                <div class="candidate__message">
-                    <div class="user__list__as__messanger d-xl-none mb-30">
-                        <h6 class="fw-semibold mb-4 font-20">Active Users</h6>
-                        <ul class="list-unstyled">
-                            
-                            <li>
-                                <div class="avatar__user"><img src="assets/img/author/1.svg" alt="">
+                <!-- mobile message -->
+                <div class="user__list__as__messanger d-xxl-none mb-30">
+                    <h6 class="fw-semibold mb-4 font-20">Active Users</h6>
+                    <div class="message__left">
+                        <!-- search people -->
+                        <div class="search__job">
+                            <div class="position-relative">
+                                <input type="text" id="search" placeholder="Find Top Employer" required="">
+                                <i class="fa-light fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <!-- search people end -->
+                        <!-- message filter -->
+                        <div class="message__filter mt-4">
+                            <ul class="list-unstyled d-flex gap-3">
+                                <li class="nav-item"><a href="#" class="nav-link active">All</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Unread</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Read</a></li>
+                            </ul>
+                        </div>
+                        <!-- message filter end -->
+                        <!-- CHAT USER -->
+                        <div class="chat__user__list">
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/author/1.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">John Smith</h6>
+                                        <p>you: hello how are you?</p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="avatar__user"><img src="assets/img/author/2.svg" alt="">
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
+                                    <span class="count">2</span>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="avatar__user"><img src="assets/img/author/3.svg" alt="">
+                            </div>
+                            <!-- single user end -->
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/author/2.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Michael Raschel</h6>
+                                        <p>you: hello </p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="avatar__user"><img src="assets/img/author/4.svg" alt="">
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                            <!-- single user end -->
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/author/3.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Jon Simmons</h6>
+                                        <p>you: Attractive !!</p>
+                                    </div>
+                                </div>
+
+                                <div class="right__count">
+                                    <span class="time">8 Hour ago</span>
+                                </div>
+                            </div>
+                            <!-- single user end -->
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/author/4.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Renna</h6>
+                                        <p>you: Awesome Work !!</p>
+                                    </div>
+                                </div>
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
+                                </div>
+                            </div>
+                            <!-- single user end -->
+                            <!-- single user -->
+                            <div class="single__chat__person">
+                                <div class="d-flex align-items-center gap-30">
+                                    <div class="avater">
+                                        <img src="assets/img/author/5.svg" alt="">
+                                    </div>
+                                    <div class="chat__person__meta">
+                                        <h6 class="font-20 fw-medium mb-0">Rania Esmail</h6>
+                                        <p>you: ??</p>
+                                    </div>
+                                </div>
+
+                                <div class="right__count">
+                                    <span class="time">6 Hour ago</span>
+                                </div>
+                            </div>
+                            <!-- single user end -->
+                        </div>
+                        <!-- CHAT USER ENMD -->
                     </div>
+                </div>
+                <!-- mobile message end -->
+                <div class="candidate__message">
                     <div class="candidate__message__content">
                         <div class="message__left">
                             <!-- search people -->
@@ -558,11 +650,11 @@
                                 <div class="single__chat__person">
                                     <div class="d-flex align-items-center gap-30">
                                         <div class="avater">
-                                            <img src="assets/img/author/1.svg" alt="">
+                                            <img src="assets/img/author/2.svg" alt="">
                                         </div>
                                         <div class="chat__person__meta">
-                                            <h6 class="font-20 fw-medium mb-0">John Smith</h6>
-                                            <p>you: hello how are you?</p>
+                                            <h6 class="font-20 fw-medium mb-0">Michael Raschel</h6>
+                                            <p>you: hello </p>
                                         </div>
                                     </div>
 
@@ -575,11 +667,28 @@
                                 <div class="single__chat__person">
                                     <div class="d-flex align-items-center gap-30">
                                         <div class="avater">
-                                            <img src="assets/img/author/1.svg" alt="">
+                                            <img src="assets/img/author/3.svg" alt="">
                                         </div>
                                         <div class="chat__person__meta">
-                                            <h6 class="font-20 fw-medium mb-0">John Smith</h6>
-                                            <p>you: hello how are you?</p>
+                                            <h6 class="font-20 fw-medium mb-0">Jon Simmons</h6>
+                                            <p>you: Attractive !!</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="right__count">
+                                        <span class="time">8 Hour ago</span>
+                                    </div>
+                                </div>
+                                <!-- single user end -->
+                                <!-- single user -->
+                                <div class="single__chat__person">
+                                    <div class="d-flex align-items-center gap-30">
+                                        <div class="avater">
+                                            <img src="assets/img/author/4.svg" alt="">
+                                        </div>
+                                        <div class="chat__person__meta">
+                                            <h6 class="font-20 fw-medium mb-0">Renna</h6>
+                                            <p>you: Awesome Work !!</p>
                                         </div>
                                     </div>
 
@@ -592,28 +701,11 @@
                                 <div class="single__chat__person">
                                     <div class="d-flex align-items-center gap-30">
                                         <div class="avater">
-                                            <img src="assets/img/author/1.svg" alt="">
+                                            <img src="assets/img/author/5.svg" alt="">
                                         </div>
                                         <div class="chat__person__meta">
-                                            <h6 class="font-20 fw-medium mb-0">John Smith</h6>
-                                            <p>you: hello how are you?</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="right__count">
-                                        <span class="time">6 Hour ago</span>
-                                    </div>
-                                </div>
-                                <!-- single user end -->
-                                <!-- single user -->
-                                <div class="single__chat__person">
-                                    <div class="d-flex align-items-center gap-30">
-                                        <div class="avater">
-                                            <img src="assets/img/author/1.svg" alt="">
-                                        </div>
-                                        <div class="chat__person__meta">
-                                            <h6 class="font-20 fw-medium mb-0">John Smith</h6>
-                                            <p>you: hello how are you?</p>
+                                            <h6 class="font-20 fw-medium mb-0">Rania Esmail</h6>
+                                            <p>you: ??</p>
                                         </div>
                                     </div>
 

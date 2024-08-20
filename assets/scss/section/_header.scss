@@ -101,3 +101,9 @@
         }
     }
 }
+
+.notification__btn{
+    @include mq($xs){
+        display: none;
+    }
+}

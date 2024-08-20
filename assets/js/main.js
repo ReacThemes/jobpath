@@ -100,6 +100,20 @@
           }
         });
       });
+      // radio pricing check box
+      $(document).ready(function() {
+        // Listen for clicks on the radio buttons
+        $('input[name="package"]').on('change', function() {
+            if ($('#package1').is(':checked')) {
+                $('.monthly__pricing').removeClass('').addClass('active'); 
+                $('.yearly__pricing').removeClass('active').addClass('hide'); 
+            } else if ($('#package2').is(':checked')) {
+                $('.monthly__pricing').removeClass('active').addClass('hide'); 
+                $('.yearly__pricing').removeClass('hide').addClass('active'); 
+            }
+        });
+    });
+
     },
     svgInject: function () {
       try {
@@ -168,13 +182,12 @@
             }
         });
       });
+
     
     },
     chartJs: function () {
-      
       $(document).ready(function(){
-
-          // chart one
+        try {
           var options__candidate = {
             series: [
               {
@@ -301,15 +314,14 @@
             options__candidate
           );
           chart.render();
-
-        
+        } catch (error) {
+          console.log("chartjs is not declared");
+        }
       });
 
       // chart monthly
       $(document).ready(function(){
-
-        
-          // chart one
+        try {
           var options__candidate__monthly = {
             series: [
               {
@@ -436,18 +448,14 @@
             options__candidate__monthly
           );
           chart.render();
-
-  
-
+      } catch (error) {
+        console.log("spline__chart__candidate__monthly not declared");
+      }
         
       });
 
-      // chart yearly
-
       $(document).ready(function(){
-
-        
-          // chart one
+        try {
           var options__candidate__yearly = {
             series: [
               {
@@ -572,15 +580,13 @@
             options__candidate__yearly
           );
           chart.render();
-
+        } catch (error) {
+          console.log("spline__chart__candidate__yearly not declared");
+        }
 
       });
 
     },
-
-
-
-
 
     backToTop: function () {
       $(document).ready(function () {
