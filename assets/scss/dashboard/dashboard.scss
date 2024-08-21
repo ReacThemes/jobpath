@@ -1407,10 +1407,13 @@
         align-items: center;
         margin-left: 60px;
         flex-wrap: wrap;
-
+        @include mq($xxl){
+            margin-left: 25px;
+            gap: 25px;
+        }
         @include mq($xl) {
             margin-left: 0;
-            gap: 20px;
+            gap: 15px;
         }
 
         span {
@@ -1423,6 +1426,9 @@
     .content {
         h6 {
             font-weight: 600;
+            @include mq($xl){
+                font-size: 20px;
+            }
         }
     }
 
@@ -1430,7 +1436,9 @@
         display: flex;
         gap: 20px;
         align-items: center;
-
+        @include mq($xxl){
+            gap: 15px;
+        }
         .action__item {
             position: relative;
             height: 42px;
@@ -1480,10 +1488,17 @@
     display: flex;
     gap: 30px;
     align-items: center;
-
-    @include mq($xl) {
-        flex-wrap: wrap;
-        gap: 20px;      
+    @include mq($xxl){
+        gap: 15px;
+        font-size: 16px;
+    }
+    @include mq($xl) {;
+        gap: 15px;      
+    }
+    .content h6{
+        @include mq($xxl) {
+            font-size: 22px;
+        }
     }
 }
 
@@ -1859,6 +1874,12 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    @include mq($xxl){
+        gap: 10px;
+    }
+    @include mq($xl){
+        gap: 10px;
+    }
     @include mq($sm){
         flex-wrap: wrap;
         gap: 15px;
@@ -1936,6 +1957,13 @@
     border-radius: 16px;
     flex-wrap: wrap;
     gap: 30px;
+    @include mq($xxl){
+        gap: 10px;
+    }
+    @include mq($xl){
+        font-size: 16px;
+        gap: 15px;
+    }
     @include mq($sm){
         gap: 20px;
     }
@@ -1943,6 +1971,12 @@
         display: flex;
         gap: 60px;
         align-items: center;
+        @include mq($xxl){
+            gap: 20px;
+        }
+        @include mq($xl){
+            gap: 15px;
+        }
         @include mq($lg){
             gap: 40px;
         }
@@ -1956,6 +1990,12 @@
         display: flex;
         gap: 30px;
         align-items: center;
+        @include mq($xxl){
+            gap: 20px;
+        }
+        @include mq($xl){
+            gap: 15px;
+        }
         @include mq($xs){
             flex-wrap: wrap;
             gap: 20px;
@@ -1974,14 +2014,24 @@
                 border-radius: 6px;
             }
         }
+        .author__name{
+            h6{
+                @include mq($xxl){
+                    font-size: 22px;
+                }
+                @include mq($xl){
+                    font-size: 22px;
+                }
+            }
+        }
     }
 
     .author__info__list {
         display: flex;
-        gap: 80px;
+        gap: 60px;
 
         @include mq($xl) {
-            gap: 40px;
+            gap: 15px;
         }
         @include mq($sm){
             font-size: 15px;

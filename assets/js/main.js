@@ -198,7 +198,7 @@
                 },
               ],
               chart: {
-                height: 480,
+                height: 420,
                 type: "area",
                 toolbar: {
                   show: false,
@@ -333,7 +333,7 @@
                 },
               ],
               chart: {
-                height: 480,
+                height: 420,
                 type: "area",
                 toolbar: {
                   show: false,
@@ -468,7 +468,7 @@
                 },
               ],
               chart: {
-                height: 480,
+                height: 420,
                 type: "area",
                 toolbar: {
                   show: false,
@@ -515,7 +515,6 @@
                   },
                 },
               },
-    
               yaxis: {
                 labels:{
                   show: true,

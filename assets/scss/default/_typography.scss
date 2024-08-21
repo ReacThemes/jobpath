@@ -47,6 +47,7 @@ h1, .h1{
 h2, .h2{
     font-size: var(--h2);
     line-height: 70px;
+
     @include mq($lg){
         font-size: 50px;
         line-height: 60px;
@@ -64,6 +65,10 @@ h2, .h2{
 h3, .h3{
     font-size: var(--h3);
     line-height: 58px;
+    @include mq($xl){
+        font-size: 40px;
+        line-height: 50px;
+    }
     @include mq($md){
         font-size: 40px;
         line-height: 50px;
@@ -98,6 +103,9 @@ h5, .h5{
 h6, .h6{
     font-size: var(--h6);
     line-height: 30px;
+    @include mq($xl){
+        font-size: 20px;
+    }
     @include mq($xs){
         font-size: 20px;
         line-height: 30px;
