@@ -235,13 +235,18 @@
     border-radius: 10px;
 
     &__content {
+        @include mq($xl){
+            font-size: 16px;
+        }
         li {
             padding-bottom: 15px;
             margin-top: 15px;
             border-bottom: 1px solid rgba(#7D8087, $alpha: 0.2);
+            
             @include mq($xs){
                 display: grid !important;
             }
+
             &:last-child {
                 border-bottom: none;
             }

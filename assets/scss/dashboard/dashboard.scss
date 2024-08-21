@@ -189,7 +189,6 @@
     overflow-y: scroll;
     transition: var(--transition);
     margin-top: 100px;
-    z-index: 99;
 
     @include mq($md) {
         margin-left: -360px;
@@ -479,6 +478,14 @@
                 height: 40px;
                 width: 40px;
             }
+            &.is__image{
+                img{
+                    height: 70px;
+                    width: 70px;
+                    object-fit: cover;
+                    border-radius: 6px;
+                }
+            }
         }
 
         .content {
@@ -597,6 +604,9 @@
             &:focus {
                 box-shadow: none;
             }
+        }
+        textarea{
+            height: 150px;
         }
 
     }
@@ -1240,6 +1250,7 @@
 
             @include mq($xs) {
                 flex-wrap: wrap;
+                width: 100%;
             }
 
             .avatar {
@@ -1288,6 +1299,9 @@
                     @include mq($xl) {
                         width: 80%;
                     }
+                    @include mq($sm){
+                        width: 100%;
+                    }
 
                     p {
                         background-color: var(--rts-button-1);
@@ -1316,7 +1330,7 @@
             label {
                 position: absolute;
                 top: 15px;
-                right: 135px;
+                right: 110px;
                 cursor: pointer;
             }
 
@@ -1704,7 +1718,7 @@
 .info__field .rts__btn {
     margin-top: 30px;
     max-width: max-content;
-    padding: 20px 30px;
+    padding: 18px 26px;
     margin-left: 15px;
     border-radius: 6px;
 
@@ -1994,4 +2008,44 @@
     padding: 12px 18px;
     line-height: 1.2;
     border-radius: 6px;
+}
+
+// candidate shortlist
+.candidate__filter__area{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--rts-white);
+    align-items: center;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    @include mq($sm){
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        justify-content: start;
+    }
+}
+.candidate__filter{
+    width: 40%;
+    @include mq($lg){
+        width: 60%;
+    }
+    @include mq($sm){
+        width: 100%;
+    }
+}
+.candidate__filter__shorting{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    button{
+        font-weight: 500;
+        &.active{
+            color: var(--rts-button-3);
+            font-weight: 600;
+        }
+    }
 }

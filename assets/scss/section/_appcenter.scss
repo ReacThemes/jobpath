@@ -42,7 +42,10 @@
             margin: 0 auto;
         }
         p{
-            padding: 0 15px;
+            @include mq($md){
+                padding: 0 15px;
+            }
+            
         }
     }
     .top-15px{
