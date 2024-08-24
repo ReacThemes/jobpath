@@ -7526,7 +7526,7 @@ input::placeholder {
 }
 
 .rts__job__card .job__tags a {
-   padding: 10px;
+   padding: 8px 12px;
    border-radius: 6px;
    background-color: var(--rts-gray);
    color: var(--rts-para);
@@ -7630,7 +7630,7 @@ input::placeholder {
 .rts__author__card__big .job__meta span.badge,
 .rts__author__card .job__meta span.badge {
    color: var(--rts-button-1);
-   padding: 10px;
+   padding: 7px 12px;
    font-weight: 500;
    background: linear-gradient(228.34deg, #FEF2EB 0%, #F1F1F1 46.31%, #E4E0EA 100%), #FFFFFF;
    border-radius: 6px;
@@ -7639,7 +7639,7 @@ input::placeholder {
 .rts__job__card__big .job__tags a,
 .rts__author__card__big .job__tags a,
 .rts__author__card .job__tags a {
-   padding: 5px 10px;
+   padding: 5px 14px;
    border-radius: 6px;
    background-color: transparent;
    color: var(--rts-para);
@@ -7648,6 +7648,7 @@ input::placeholder {
    transition: var(--transition);
    border: 1px solid #F1F1F1;
    font-weight: 500;
+   font-size: 16px;
 }
 
 .rts__job__card__big .job__tags a:hover,
@@ -7677,7 +7678,7 @@ input::placeholder {
 }
 
 .apply__btn {
-   padding: 20px 18px;
+   padding: 12px 18px;
    border-radius: 6px;
    background-color: #F1F1F1;
    color: var(--rts-heading);
@@ -7847,7 +7848,8 @@ input::placeholder {
 .style__two.rts__author__card__big .job__tags a,
 .style__two.rts__author__card .job__tags a {
    border-radius: 25px;
-   padding: 7px 10px;
+   padding: 5px 15px;
+   font-size: 16px;
 }
 
 .rts__job__card__big.style__two:hover,
@@ -8116,7 +8118,7 @@ input::placeholder {
 .category-select .nice-select {
    background-color: var(--rts-gray);
    border: none !important;
-   padding: 4px 50px 4px 20px;
+   padding: 0 50px 1px 20px;
 }
 
 .rts__job__card__big.style__gradient,
@@ -9838,7 +9840,8 @@ input::placeholder {
 }
 
 .job__overview__content .text {
-   font-weight: 500;
+   font-weight: 400;
+   font-size: 16px;
 }
 
 .job__overview .icon {
@@ -10635,9 +10638,10 @@ input::placeholder {
 }
 
 .profile__view__tab .nav-link {
-   padding: 10px;
+   padding: 10px 12px;
    transition: var(--transition);
    border-radius: 6px;
+   font-size: 16px;
 }
 
 @media screen and (max-width: 576px) {
@@ -10742,8 +10746,8 @@ input::placeholder {
 }
 
 .info__top .delete__data {
-   height: 52px;
-   min-width: 52px;
+   height: 48px;
+   min-width: 48px;
    border-radius: 6px;
    background-color: var(--rts-gray);
    display: grid;
@@ -12009,7 +12013,7 @@ input::placeholder {
    margin-top: 30px;
    max-width: -moz-max-content;
    max-width: max-content;
-   padding: 18px 26px;
+   padding: 16px 28px;
    margin-left: 15px;
    border-radius: 6px;
 }
@@ -12391,9 +12395,10 @@ input::placeholder {
    background: linear-gradient(228.34deg, #FEF2EB 0%, #F1F1F1 46.31%, #E4E0EA 100%), #FFFFFF;
    color: var(--rts-button-1);
    transition: var(--transition);
-   padding: 12px 18px;
+   padding: 10px 18px;
    line-height: 1.2;
    border-radius: 6px;
+   font-size: 16px;
 }
 
 .candidate__filter__area {
