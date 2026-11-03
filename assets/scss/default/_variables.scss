@@ -15,7 +15,9 @@
     --rts-border: rgba(125, 128, 135, 0.3);
 
     
-    --transition: all .4s ease;
+    --transition-duration: 450ms;
+    --transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: all var(--transition-duration) var(--transition-easing);
     --color-success: #26CF4B;
     --color-danger: #FF0003;
     --color-warning: #FF8F3C;

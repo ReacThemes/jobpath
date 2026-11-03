@@ -1,0 +1,69 @@
+/* Keep transitions on the resting state so hover-in and hover-out both animate.
+   Limit fallback transitions to visual properties to avoid animating layout. */
+:where(a, button, .rts__btn) {
+    transition: color var(--transition-duration) var(--transition-easing),
+        background-color var(--transition-duration) var(--transition-easing),
+        border-color var(--transition-duration) var(--transition-easing),
+        box-shadow var(--transition-duration) var(--transition-easing),
+        opacity var(--transition-duration) var(--transition-easing),
+        transform var(--transition-duration) var(--transition-easing);
+}
+
+.rts__single__blog,
+.rts__author__card__big {
+    transition: var(--transition);
+}
+
+/* These children change color when their parent card is hovered. */
+:where(.rts__job__card, .rts__job__card__big, .rts__author__card,
+    .rts__author__card__big, .rts__single__employer, .single__cat,
+    .rts__pricing__box) :where(.job__title, .job__meta, .job__meta div,
+    .job__meta i, .badge, .text-dark, .single__cat__link span,
+    .plan__price .h4, .plan__feature li i) {
+    transition: color var(--transition-duration) var(--transition-easing);
+}
+
+.navigation__menu--item__link {
+    transition: padding var(--transition-duration) var(--transition-easing),
+        color var(--transition-duration) var(--transition-easing);
+}
+
+/* A gradient cannot interpolate from transparent; fade an overlay instead. */
+.rts__workprocess__box.is__contact {
+    position: relative;
+    isolation: isolate;
+    background: transparent;
+}
+
+.rts__workprocess__box.is__contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: inherit;
+    background: linear-gradient(226.58deg, #FEF2EB 1.52%, #F1F1F1 47.05%, #E4E0EA 99.84%);
+    opacity: 0;
+    transition: opacity var(--transition-duration) var(--transition-easing);
+}
+
+.rts__workprocess__box.is__contact:hover {
+    background: transparent;
+}
+
+.rts__workprocess__box.is__contact:hover::before {
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --transition-duration: 0s;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}
